@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
         </ul>
       </div>
     </header>
@@ -119,97 +119,113 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/llm-assert/1/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclwrdwyaj20zk0m8are.jpg"></a>
+    <a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" itemprop="url" title="DICT.C源码阅读报告"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicit31ffoj20zk0m8naf.jpg"></a>
   </div>
   <div class="info">
     
 <div class="meta">
-  <span class="item" title="Created: 2024-07-03 01:28:37">
+  <span class="item" title="Created: 2024-07-03 01:43:21">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:28:37+08:00">2024-07-03</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:43:21+08:00">2024-07-03</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>1.3k</span>
+    <span>9k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
     <span class="icon">
       <i class="ic i-clock"></i>
     </span>
-    <span>1 mins.</span>
+    <span>8 mins.</span>
   </span>
 </div>
 
-    <h3><a href="/llm-assert/1/" itemprop="url" title="Untitled">Untitled</a></h3>
+    <h3><a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" itemprop="url" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></h3>
     <div class="excerpt">
-        # 分析和理解步骤
-# 第一步：找 10 个项目每个随机选 10 个左右的 test case（包含 assert）
-分析和理解：
+        # 一、各函数分部解析
 
-找 10 个项目：我们需要选择 10 个开源项目，这些项目应该包含单元测试，并且测试用例使用了 assert 语句。
-随机选 10 个左右的 test case：从每个项目中随机选择大约 10 个测试用例。每个测试用例必须包含至少一个 assert 语句。
+struct dictEntry 结构体：
 
-具体操作：
+用于表示字典中的键值对。
+成员变量：
+void *key：键的指针。
+union：联合体，可以存储值的不同类型（void *val, uint64_t u64, int64_t s64, double d）。
+struct dictEntry *next：指向下一个相同哈希槽中的 entry 的指针。
 
-在 GitHub 等平台上寻找 10 个开源项目。
-确保这些项目有单元测试（通常在 tests 目录下）。
-在每个项目中随机选择 10 个包含 assert 语句的测试用例。
+typedef struct dictEntryNoValue 结构体：
 
-# 第二步：把...
+表示字典中的无值 entry。
+成员变量：
+
+void *key：键的指针。
+dictEntry *next：指向下一个相同哈希槽中的 entry...
     </div>
-    <a href="/llm-assert/1/" itemprop="url" title="Untitled" class="btn">more...</a>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/eceb/" itemprop="url" title="eceb"><i class="ic i-flag"></i>eceb</a>
+      </span>
+    </div>
+    <a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" itemprop="url" title="DICT.C源码阅读报告" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/llm-assert/X_artificial-adversary-master/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipexbei4hj20zk0m8npd.jpg"></a>
+    <a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" itemprop="url" title="Request阅读报告"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></a>
   </div>
   <div class="info">
     
 <div class="meta">
-  <span class="item" title="Created: 2024-07-03 01:28:37">
+  <span class="item" title="Created: 2024-07-03 01:41:31">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:28:37+08:00">2024-07-03</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:41:31+08:00">2024-07-03</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>5.8k</span>
+    <span>8.7k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
     <span class="icon">
       <i class="ic i-clock"></i>
     </span>
-    <span>5 mins.</span>
+    <span>8 mins.</span>
   </span>
 </div>
 
-    <h3><a href="/llm-assert/X_artificial-adversary-master/" itemprop="url" title="Untitled">Untitled</a></h3>
+    <h3><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" itemprop="url" title="Request阅读报告">Request阅读报告</a></h3>
     <div class="excerpt">
-        # artificial-adversary
-# 简介
+        # Requests-HTML 项目阅读报告
+# 项目概述
+requests-html 是一个用于简化 HTML 解析和网页抓取的 Python 库。它通过结合 requests 库的简单和强大，与 pyquery、beautifulsoup4 和 lxml 等工具进行二次封装，提供了一个直观的 API，使得网页抓取和 HTML 解析变得更容易。该库不仅支持同步请求，还支持异步请求，能够处理由 JavaScript 驱动的动态内容。
+# 关键特性
 
-在对用户生成的文本进行分类时，用户可以通过多种方式修改其内容以避免被检测到。这些方法通常是对文本进行表面修改，即更改所使用的原始字符或单词，但保留足够明显的原始含义以供人类读者理解。这些方法包括用相似的字符替换字符、删除或添加标点和空格以及交换单词中的字母。例如，这 please wire me 10,000 US DOLLARS to bank of scamland 可能是一条明显的诈骗信息，但 pl3@se.wire me 10000 US DoLars to,BANK of ScamIand...
+完整的 JavaScript 支持：通过 pyppeteer 支持渲染和解析由 JavaScript 动态生成的内容。
+CSS 选择器：使用...
     </div>
-    <a href="/llm-assert/X_artificial-adversary-master/" itemprop="url" title="Untitled" class="btn">more...</a>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/eceb/" itemprop="url" title="eceb"><i class="ic i-flag"></i>eceb</a>
+      </span>
+    </div>
+    <a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" itemprop="url" title="Request阅读报告" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/cs231n/README_2_Linear%20Classification/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicm0n457cj20zk0m8e81.jpg"></a>
+    <a href="/cs231n/README_2_Linear%20Classification/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipesng5oej20zk0m87d4.jpg"></a>
   </div>
   <div class="info">
     
@@ -248,7 +264,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/cs231n/README_1_KNN/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
+    <a href="/cs231n/README_1_KNN/" itemprop="url" title="Untitled"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipexbei4hj20zk0m8npd.jpg"></a>
   </div>
   <div class="info">
     
@@ -285,7 +301,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/hello-world/" itemprop="url" title="Hello World"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></a>
+    <a href="/hello-world/" itemprop="url" title="Hello World"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicivghyooj20zk0m8dir.jpg"></a>
   </div>
   <div class="info">
     
@@ -365,7 +381,7 @@ More info: Writing
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -422,15 +438,6 @@ More info: Writing
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/cs231n/README_2_Linear%20Classification/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/cs231n/README_1_KNN/" title="Untitled">Untitled</a></span>
   </li>
 
@@ -438,9 +445,10 @@ More info: Writing
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/2_cronex-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/1/" title="研究方法">研究方法</a></span>
   </li>
 
       
@@ -449,16 +457,47 @@ More info: Writing
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/5_giskard-main/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/X_artificial-adversary-master/" title="artificial-adversary">artificial-adversary</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
   </li>
 
       
@@ -475,37 +514,20 @@ More info: Writing
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/eceb/" title="In eceb">eceb</a>
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" title="Request阅读报告">Request阅读报告</a></span>
+    <span><a href="/llm-assert/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/4_oj-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/7_ttach-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/2_cronex-master/" title="cronex">cronex</a></span>
   </li>
 
   </ul>

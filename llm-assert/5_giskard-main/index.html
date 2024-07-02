@@ -24,13 +24,15 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EnjunDu/EnjunDu.github.io@latest/css/app.css?v=0.2.5">
 
   
+  <meta name="keywords" content="Hexo,Front Matter" />
+
 
 <link rel="canonical" href="https://enjundu.github.io/llm-assert/5_giskard-main/">
 
 
 
   <title>
- |
+Giskard-AI/giskard - llm-assert |
 蓝天° = Hexo</title>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,16 +60,16 @@
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline">Giskard-AI/giskard
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2024-07-03 01:28:37">
+  <span class="item" title="Created: 2024-07-03 02:08:35">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:28:37+08:00">2024-07-03</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-03T02:08:35+08:00">2024-07-03</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
@@ -115,12 +117,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
         </ul>
       </div>
     </header>
@@ -145,7 +147,9 @@
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/llm-assert/" itemprop="item" rel="index" title="In llm-assert"><span itemprop="name">llm-assert</span></a>
+<meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
@@ -174,6 +178,10 @@
 <p><strong>base prompt 为</strong>：我这个 tests 代码缺少 assert 断言，请你自动填充</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> pytest</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> giskard <span class="keyword">import</span> Dataset, SlicingFunction, slicing_function</span><br><span class="line"><span class="keyword">from</span> giskard.registry.transformation_function <span class="keyword">import</span> transformation_function</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@slicing_function(<span class="params">name=<span class="string">&quot;slice with parenthesis&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">filter_with_parenthesis</span>(<span class="params">x: pd.Series</span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">    <span class="keyword">return</span> x.credit_amount &gt; <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@slicing_function(<span class="params">name=<span class="string">&quot;slice cell level&quot;</span>, cell_level=<span class="literal">True</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">filter_cell_level</span>(<span class="params">amount: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">    <span class="keyword">return</span> amount &gt; <span class="number">1000</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@slicing_function</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">filter_without_parenthesis</span>(<span class="params">x: pd.Series</span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">    <span class="keyword">return</span> x.credit_amount &gt; <span class="number">2000</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@transformation_function(<span class="params">name=<span class="string">&quot;transform with parenthesis&quot;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">transform_with_parenthesis</span>(<span class="params">x: pd.Series</span>) -&gt; pd.Series:</span><br><span class="line">    x.credit_amount = -<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@transformation_function</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">transform_without_parenthesis</span>(<span class="params">x: pd.Series</span>) -&gt; pd.Series:</span><br><span class="line">    x.credit_amount = -<span class="number">2</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@transformation_function</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">transform_divide_by_five</span>(<span class="params">x: pd.Series</span>) -&gt; pd.Series:</span><br><span class="line">    x.credit_amount /= <span class="number">5</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@transformation_function(<span class="params">cell_level=<span class="literal">True</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">column_level_divide</span>(<span class="params">nb: <span class="built_in">float</span>, amount: <span class="built_in">int</span></span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">    <span class="keyword">return</span> nb / amount</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_slicing</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = german_credit_data.<span class="built_in">slice</span>(filter_with_parenthesis)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line">    ds = ds.<span class="built_in">slice</span>(filter_without_parenthesis)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_slicing_using_lambda</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = german_credit_data.<span class="built_in">slice</span>(<span class="keyword">lambda</span> x: x.credit_amount &gt; <span class="number">1000</span>)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line">    ds = ds.<span class="built_in">slice</span>(<span class="keyword">lambda</span> x: x.credit_amount &gt; <span class="number">2000</span>)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_slicing_cell_level</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = german_credit_data.<span class="built_in">slice</span>(filter_cell_level, column_name=<span class="string">&quot;credit_amount&quot;</span>)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line">    ds = ds.<span class="built_in">slice</span>(<span class="keyword">lambda</span> amount: amount &gt; <span class="number">2000</span>, cell_level=<span class="literal">True</span>, column_name=<span class="string">&quot;credit_amount&quot;</span>)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_chain</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    german_credit_data.add_slicing_function(filter_without_parenthesis)</span><br><span class="line">    german_credit_data.add_transformation_function(transform_divide_by_five)</span><br><span class="line">    german_credit_data.add_slicing_function(filter_with_parenthesis)</span><br><span class="line">    ds = german_credit_data.process()</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transform_cell_level</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = (</span><br><span class="line">        german_credit_data.<span class="built_in">slice</span>(filter_without_parenthesis)</span><br><span class="line">        .transform(column_level_divide(amount=<span class="number">5</span>), column_name=<span class="string">&quot;credit_amount&quot;</span>)</span><br><span class="line">        .<span class="built_in">slice</span>(filter_with_parenthesis)</span><br><span class="line">    )</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transform_cell_level_parameterized</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = (</span><br><span class="line">        german_credit_data.<span class="built_in">slice</span>(filter_without_parenthesis)</span><br><span class="line">        .transform(column_level_divide(column_name=<span class="string">&quot;credit_amount&quot;</span>, amount=<span class="number">5</span>))</span><br><span class="line">        .<span class="built_in">slice</span>(filter_with_parenthesis)</span><br><span class="line">    )</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transform_cell_level_lambda</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = (</span><br><span class="line">        german_credit_data.<span class="built_in">slice</span>(filter_without_parenthesis)</span><br><span class="line">        .transform(<span class="keyword">lambda</span> i: i / <span class="number">5</span>, cell_level=<span class="literal">True</span>, column_name=<span class="string">&quot;credit_amount&quot;</span>)</span><br><span class="line">        .<span class="built_in">slice</span>(filter_with_parenthesis)</span><br><span class="line">    )</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transformation</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    ds = german_credit_data.transform(transform_without_parenthesis)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line">    ds = german_credit_data.transform(transform_with_parenthesis)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transformation_without_annotation</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">transform_without_annotation</span>(<span class="params">x: pd.Series</span>) -&gt; pd.Series:</span><br><span class="line">        x.credit_amount = -<span class="number">2</span></span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line">    ds = german_credit_data.transform(transform_without_annotation)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_missing_arg_slicing_function</span>():</span><br><span class="line">    <span class="keyword">with</span> pytest.raises(</span><br><span class="line">        TypeError, <span class="keyword">match</span>=<span class="string">&quot;Required arg 0 of slice_fn to be &lt;class &#x27;pandas.core.series.Series&#x27;&gt;, but none was defined&quot;</span></span><br><span class="line">    ):</span><br><span class="line"><span class="meta">        @slicing_function</span></span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">slice_fn</span>():</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_wrong_type_slicing_function</span>():</span><br><span class="line">    <span class="keyword">with</span> pytest.raises(</span><br><span class="line">        TypeError,</span><br><span class="line">        <span class="keyword">match</span>=<span class="string">&quot;Required arg 0 of slice_fn to be &lt;class &#x27;pandas.core.series.Series&#x27;&gt;, but &lt;class &#x27;int&#x27;&gt; was defined&quot;</span>,</span><br><span class="line">    ):</span><br><span class="line"><span class="meta">        @slicing_function</span></span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">slice_fn</span>(<span class="params">row: <span class="built_in">int</span></span>):</span><br><span class="line">            <span class="keyword">return</span> row &gt; <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        slice_fn(<span class="string">&quot;str&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_chain_with_parameters</span>(<span class="params">german_credit_data: Dataset</span>):</span><br><span class="line"><span class="meta">    @slicing_function(<span class="params">name=<span class="string">&quot;row greater than&quot;</span></span>)</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">filter_greater_than</span>(<span class="params">x: pd.Series, row: <span class="built_in">str</span>, threshold: <span class="built_in">int</span></span>) -&gt; <span class="built_in">bool</span>:</span><br><span class="line">        <span class="keyword">return</span> x[row] &gt; threshold</span><br><span class="line"></span><br><span class="line"><span class="meta">    @transformation_function</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">transform_divide_by</span>(<span class="params">x: pd.Series, row: <span class="built_in">str</span>, divider: <span class="built_in">int</span></span>) -&gt; pd.Series:</span><br><span class="line">        x[row] /= divider</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line">    german_credit_data.add_slicing_function(filter_greater_than(<span class="string">&quot;credit_amount&quot;</span>, <span class="number">2000</span>))</span><br><span class="line">    german_credit_data.add_transformation_function(transform_divide_by(<span class="string">&quot;credit_amount&quot;</span>, <span class="number">5</span>))</span><br><span class="line">    german_credit_data.add_slicing_function(filter_greater_than(<span class="string">&quot;credit_amount&quot;</span>, <span class="number">1000</span>))</span><br><span class="line">    ds = german_credit_data.process()</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(ds) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_transformation_without_type</span>():</span><br><span class="line"><span class="meta">    @transformation_function(<span class="params">row_level=<span class="literal">True</span></span>)</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add_positive_sentence</span>(<span class="params">row</span>):</span><br><span class="line">        row = row.copy()</span><br><span class="line">        row.text += <span class="string">&quot; I love this!&quot;</span></span><br><span class="line">        <span class="keyword">return</span> row</span><br><span class="line"></span><br><span class="line">    df = pd.DataFrame([&#123;<span class="string">&quot;text&quot;</span>: <span class="string">&quot;testing.&quot;</span>&#125;])</span><br><span class="line">    dataset = Dataset(df, cat_columns=[])</span><br><span class="line">    transformed_dataset = dataset.transform(add_positive_sentence)</span><br><span class="line">    <span class="keyword">assert</span> <span class="built_in">len</span>(transformed_dataset) &gt; <span class="number">0</span>  <span class="comment"># Example assertion</span></span><br></pre></td></tr></table></figure>
 
+      <div class="tags">
+          <a href="/tags/Hexo/" rel="tag"><i class="ic i-tag"></i> Hexo</a>
+          <a href="/tags/Front-Matter/" rel="tag"><i class="ic i-tag"></i> Front Matter</a>
+      </div>
   </div>
 
    <footer>
@@ -184,7 +192,7 @@
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-07-02 15:41:52" itemprop="dateModified" datetime="2024-07-02T15:41:52+08:00">2024-07-02</time>
+    <time title="Modified: 2024-07-03 02:15:28" itemprop="dateModified" datetime="2024-07-03T02:15:28+08:00">2024-07-03</time>
   </span>
 </div>
 
@@ -220,7 +228,7 @@
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="https://enjundu.github.io/llm-assert/5_giskard-main/" title="">https://enjundu.github.io/llm-assert/5_giskard-main/</a>
+    <a href="https://enjundu.github.io/llm-assert/5_giskard-main/" title="Giskard-AI&#x2F;giskard">https://enjundu.github.io/llm-assert/5_giskard-main/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -239,20 +247,20 @@
     <div class="item left">
       
 
-  <a href="/llm-assert/4_oj-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciukx8a7j20zk0m8aio.jpg" title="Untitled">
+  <a href="/llm-assert/7_ttach-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="ttach">
   <span class="type">Previous Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Untitled</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>ttach</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/llm-assert/7_ttach-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="Untitled">
+  <a href="/llm-assert/4_oj-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevgoki5j20zk0m84qp.jpg" title="online-judge-tools&#x2F;oj">
   <span class="type">Next Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Untitled</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>online-judge-tools/oj</h3>
   </a>
 
     </div>
@@ -274,6 +282,9 @@
           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#giskard-aigiskard"><span class="toc-number">1.</span> <span class="toc-text"> Giskard-AI&#x2F;giskard</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#test_data_processing_pipelinepy3%E4%BB%A3%E7%A0%81%E5%A4%84%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text"> test_data_processing_pipeline.py3 代码处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9Ftest%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 原 test 代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%BB%E9%99%A4assert%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 去除 assert 后的代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gpt35%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.3.</span> <span class="toc-text"> gpt3.5 自动填充的代码</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li class="active"><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li>
+        </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -292,7 +303,7 @@
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -323,12 +334,12 @@
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/llm-assert/4_oj-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/llm-assert/7_ttach-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/llm-assert/7_ttach-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/llm-assert/4_oj-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -350,6 +361,25 @@
   <li class="item">
     
 <div class="breadcrumb">
+</div>
+
+    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/9_sumeval-master/" title="sumeval">sumeval</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/eceb/" title="In eceb">eceb</a>
 </div>
 
@@ -360,55 +390,40 @@
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/llm-assert/X_artificial-adversary-master/" title="artificial-adversary">artificial-adversary</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/eceb/" title="In eceb">eceb</a>
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></span>
+    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/1/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/4_oj-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/7_ttach-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/9_sumeval-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
   </li>
 
       
@@ -417,25 +432,27 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/llm-assert/X_artificial-adversary-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/cs231n/README_1_KNN/" title="Untitled">Untitled</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
+    <span><a href="/llm-assert/2_cronex-master/" title="cronex">cronex</a></span>
   </li>
 
   </ul>

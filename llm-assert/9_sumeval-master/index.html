@@ -24,13 +24,15 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EnjunDu/EnjunDu.github.io@latest/css/app.css?v=0.2.5">
 
   
+  <meta name="keywords" content="Hexo,Front Matter" />
+
 
 <link rel="canonical" href="https://enjundu.github.io/llm-assert/9_sumeval-master/">
 
 
 
   <title>
- |
+sumeval - llm-assert |
 蓝天° = Hexo</title>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,16 +60,16 @@
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline">sumeval
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2024-07-03 01:28:37">
+  <span class="item" title="Created: 2024-07-03 02:08:35">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:28:37+08:00">2024-07-03</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-03T02:08:35+08:00">2024-07-03</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
@@ -115,12 +117,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
         </ul>
       </div>
     </header>
@@ -145,7 +147,9 @@
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/llm-assert/" itemprop="item" rel="index" title="In llm-assert"><span itemprop="name">llm-assert</span></a>
+<meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
@@ -179,6 +183,10 @@
 <p>**base prompt 为：** 该 tests case 缺少 assert 断言 请你自动填充它</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> rougescore <span class="keyword">import</span> rouge_n, rouge_l</span><br><span class="line"><span class="keyword">from</span> pythonrouge.pythonrouge <span class="keyword">import</span> Pythonrouge</span><br><span class="line"><span class="keyword">from</span> sumeval.metrics.rouge <span class="keyword">import</span> RougeCalculator</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">TestRouge</span>(unittest.TestCase):</span><br><span class="line">    DATA_DIR = os.path.join(os.path.dirname(__file__), <span class="string">&quot;data/rouge&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">load_test_data</span>(<span class="params">self</span>):</span><br><span class="line">        test_file = os.path.join(self.DATA_DIR, <span class="string">&quot;ROUGE-test.json&quot;</span>)</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(test_file, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            data = json.load(f)</span><br><span class="line">        <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_rouge</span>(<span class="params">self</span>):</span><br><span class="line">        data = self.load_test_data()</span><br><span class="line">        rouge = RougeCalculator(stopwords=<span class="literal">False</span>)</span><br><span class="line">        <span class="keyword">for</span> eval_id <span class="keyword">in</span> data:</span><br><span class="line">            summaries = data[eval_id][<span class="string">&quot;summaries&quot;</span>]</span><br><span class="line">            references = data[eval_id][<span class="string">&quot;references&quot;</span>]</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>]:</span><br><span class="line">                <span class="keyword">for</span> s <span class="keyword">in</span> summaries:</span><br><span class="line">                    baseline = Pythonrouge(</span><br><span class="line">                                summary_file_exist=<span class="literal">False</span>,</span><br><span class="line">                                summary=[[s]],</span><br><span class="line">                                reference=[[[r] <span class="keyword">for</span> r <span class="keyword">in</span> references]],</span><br><span class="line">                                n_gram=n, recall_only=<span class="literal">False</span>,</span><br><span class="line">                                length_limit=<span class="literal">False</span>,</span><br><span class="line">                                stemming=<span class="literal">False</span>, stopwords=<span class="literal">False</span>)</span><br><span class="line">                    b1_v = baseline.calc_score()</span><br><span class="line">                    b2_v = rouge_n(rouge.tokenize(s),</span><br><span class="line">                                   [rouge.tokenize(r) <span class="keyword">for</span> r <span class="keyword">in</span> references],</span><br><span class="line">                                   n, <span class="number">0.5</span>)</span><br><span class="line">                    v = rouge.rouge_n(s, references, n)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], b2_v, places=<span class="number">4</span>)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], v, places=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_rouge_with_stop_word</span>(<span class="params">self</span>):</span><br><span class="line">        data = self.load_test_data()</span><br><span class="line">        rouge = RougeCalculator(stopwords=<span class="literal">True</span>)</span><br><span class="line">        <span class="keyword">for</span> eval_id <span class="keyword">in</span> data:</span><br><span class="line">            summaries = data[eval_id][<span class="string">&quot;summaries&quot;</span>]</span><br><span class="line">            references = data[eval_id][<span class="string">&quot;references&quot;</span>]</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>]:</span><br><span class="line">                <span class="keyword">for</span> s <span class="keyword">in</span> summaries:</span><br><span class="line">                    baseline = Pythonrouge(</span><br><span class="line">                                summary_file_exist=<span class="literal">False</span>,</span><br><span class="line">                                summary=[[s]],</span><br><span class="line">                                reference=[[[r] <span class="keyword">for</span> r <span class="keyword">in</span> references]],</span><br><span class="line">                                n_gram=n, recall_only=<span class="literal">False</span>,</span><br><span class="line">                                length_limit=<span class="literal">False</span>,</span><br><span class="line">                                stemming=<span class="literal">False</span>, stopwords=<span class="literal">True</span>)</span><br><span class="line">                    b1_v = baseline.calc_score()</span><br><span class="line">                    b2_v = rouge_n(rouge.tokenize(s),</span><br><span class="line">                                   [rouge.tokenize(r) <span class="keyword">for</span> r <span class="keyword">in</span> references],</span><br><span class="line">                                   n, <span class="number">0.5</span>)</span><br><span class="line">                    v = rouge.rouge_n(s, references, n)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], b2_v, places=<span class="number">4</span>)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], v, places=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_rouge_with_length_limit</span>(<span class="params">self</span>):</span><br><span class="line">        data = self.load_test_data()</span><br><span class="line">        rouge = RougeCalculator(stopwords=<span class="literal">True</span>, length_limit=<span class="number">50</span>)</span><br><span class="line">        <span class="keyword">for</span> eval_id <span class="keyword">in</span> data:</span><br><span class="line">            summaries = data[eval_id][<span class="string">&quot;summaries&quot;</span>]</span><br><span class="line">            references = data[eval_id][<span class="string">&quot;references&quot;</span>]</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>]:</span><br><span class="line">                <span class="keyword">for</span> s <span class="keyword">in</span> summaries:</span><br><span class="line">                    baseline = Pythonrouge(</span><br><span class="line">                                summary_file_exist=<span class="literal">False</span>,</span><br><span class="line">                                summary=[[s]],</span><br><span class="line">                                reference=[[[r] <span class="keyword">for</span> r <span class="keyword">in</span> references]],</span><br><span class="line">                                n_gram=n, recall_only=<span class="literal">False</span>,</span><br><span class="line">                                length_limit=<span class="literal">True</span>, length=<span class="number">50</span>,</span><br><span class="line">                                word_level=<span class="literal">False</span>,</span><br><span class="line">                                stemming=<span class="literal">False</span>, stopwords=<span class="literal">True</span>)</span><br><span class="line">                    b1_v = baseline.calc_score()</span><br><span class="line">                    b2_v = rouge_n(rouge.tokenize(s),</span><br><span class="line">                                   [rouge.tokenize(r) <span class="keyword">for</span> r <span class="keyword">in</span> references],</span><br><span class="line">                                   n, <span class="number">0.5</span>)</span><br><span class="line">                    v = rouge.rouge_n(s, references, n)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], b2_v, places=<span class="number">4</span>)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], v, places=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_rouge_with_word_limit</span>(<span class="params">self</span>):</span><br><span class="line">        data = self.load_test_data()</span><br><span class="line">        rouge = RougeCalculator(stopwords=<span class="literal">True</span>, word_limit=<span class="number">5</span>)</span><br><span class="line">        <span class="keyword">for</span> eval_id <span class="keyword">in</span> data:</span><br><span class="line">            summaries = data[eval_id][<span class="string">&quot;summaries&quot;</span>]</span><br><span class="line">            references = data[eval_id][<span class="string">&quot;references&quot;</span>]</span><br><span class="line">            <span class="keyword">for</span> n <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>]:</span><br><span class="line">                <span class="keyword">for</span> s <span class="keyword">in</span> summaries:</span><br><span class="line">                    baseline = Pythonrouge(</span><br><span class="line">                                summary_file_exist=<span class="literal">False</span>,</span><br><span class="line">                                summary=[[s]],</span><br><span class="line">                                reference=[[[r] <span class="keyword">for</span> r <span class="keyword">in</span> references]],</span><br><span class="line">                                n_gram=n, recall_only=<span class="literal">False</span>,</span><br><span class="line">                                length_limit=<span class="literal">True</span>, length=<span class="number">5</span>,</span><br><span class="line">                                word_level=<span class="literal">True</span>,</span><br><span class="line">                                stemming=<span class="literal">False</span>, stopwords=<span class="literal">True</span>)</span><br><span class="line">                    b1_v = baseline.calc_score()</span><br><span class="line">                    b2_v = rouge_n(rouge.tokenize(s),</span><br><span class="line">                                   [rouge.tokenize(r) <span class="keyword">for</span> r <span class="keyword">in</span> references],</span><br><span class="line">                                   n, <span class="number">0.5</span>)</span><br><span class="line">                    v = rouge.rouge_n(s, references, n)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], b2_v, places=<span class="number">4</span>)</span><br><span class="line">                    self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-&#123;&#125;&quot;</span>.<span class="built_in">format</span>(n)], v, places=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_rouge_l</span>(<span class="params">self</span>):</span><br><span class="line">        data = self.load_test_data()</span><br><span class="line">        rouge = RougeCalculator(stopwords=<span class="literal">True</span>)</span><br><span class="line">        <span class="keyword">for</span> eval_id <span class="keyword">in</span> data:</span><br><span class="line">            summaries = data[eval_id][<span class="string">&quot;summaries&quot;</span>]</span><br><span class="line">            references = data[eval_id][<span class="string">&quot;references&quot;</span>]</span><br><span class="line">            <span class="keyword">for</span> s <span class="keyword">in</span> summaries:</span><br><span class="line">                baseline = Pythonrouge(</span><br><span class="line">                            summary_file_exist=<span class="literal">False</span>,</span><br><span class="line">                            summary=[[s]],</span><br><span class="line">                            reference=[[[r] <span class="keyword">for</span> r <span class="keyword">in</span> references]],</span><br><span class="line">                            n_gram=<span class="number">1</span>, recall_only=<span class="literal">False</span>, ROUGE_L=<span class="literal">True</span>,</span><br><span class="line">                            length_limit=<span class="literal">True</span>, length=<span class="number">50</span>,</span><br><span class="line">                            stemming=<span class="literal">False</span>, stopwords=<span class="literal">True</span>)</span><br><span class="line">                b1_v = baseline.calc_score()</span><br><span class="line">                b2_v = rouge_l(rouge.tokenize(s),</span><br><span class="line">                               [rouge.tokenize(r) <span class="keyword">for</span> r <span class="keyword">in</span> references],</span><br><span class="line">                               <span class="number">0.5</span>)</span><br><span class="line">                v = rouge.rouge_l(s, references)</span><br><span class="line">                self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-L&quot;</span>], b2_v, places=<span class="number">4</span>)</span><br><span class="line">                self.assertAlmostEqual(b1_v[<span class="string">&quot;ROUGE-L&quot;</span>], v, places=<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    unittest.main()</span><br></pre></td></tr></table></figure>
 
+      <div class="tags">
+          <a href="/tags/Hexo/" rel="tag"><i class="ic i-tag"></i> Hexo</a>
+          <a href="/tags/Front-Matter/" rel="tag"><i class="ic i-tag"></i> Front Matter</a>
+      </div>
   </div>
 
    <footer>
@@ -189,7 +197,7 @@
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-07-02 16:21:48" itemprop="dateModified" datetime="2024-07-02T16:21:48+08:00">2024-07-02</time>
+    <time title="Modified: 2024-07-03 02:15:43" itemprop="dateModified" datetime="2024-07-03T02:15:43+08:00">2024-07-03</time>
   </span>
 </div>
 
@@ -225,7 +233,7 @@
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="https://enjundu.github.io/llm-assert/9_sumeval-master/" title="">https://enjundu.github.io/llm-assert/9_sumeval-master/</a>
+    <a href="https://enjundu.github.io/llm-assert/9_sumeval-master/" title="sumeval">https://enjundu.github.io/llm-assert/9_sumeval-master/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -244,20 +252,20 @@
     <div class="item left">
       
 
-  <a href="/llm-assert/8_pytorch-lr-finder-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="Untitled">
+  <a href="/llm-assert/X_artificial-adversary-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="artificial-adversary">
   <span class="type">Previous Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Untitled</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>artificial-adversary</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/README/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="蓝天の留言">
+  <a href="/llm-assert/8_pytorch-lr-finder-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="pytorch-lr-finder">
   <span class="type">Next Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>蓝天の留言</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>pytorch-lr-finder</h3>
   </a>
 
     </div>
@@ -279,6 +287,9 @@
           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#sumeval"><span class="toc-number">1.</span> <span class="toc-text"> sumeval</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#test_rougepy%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-number">1.2.</span> <span class="toc-text"> test_rouge.py 代码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#test_rougepy%E5%8E%9F%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.1.</span> <span class="toc-text"> test_rouge.py 原代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%BB%E6%8E%89assert%E6%96%AD%E8%A8%80%E5%92%8C%E4%B8%80%E4%BA%9B%E8%BE%85%E5%8A%A9%E8%AF%B4%E6%98%8E%E5%90%8E%E5%96%82%E7%BB%99llm%E7%9A%84test%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 去掉 assert 断言和一些辅助说明后喂给 LLM 的 test 代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#llm%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85assert%E6%96%AD%E8%A8%80%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.3.</span> <span class="toc-text"> LLM 自动填充 assert 断言后的代码</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li class="active"><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li>
+        </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -297,7 +308,7 @@
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -328,12 +339,12 @@
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/llm-assert/8_pytorch-lr-finder-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/llm-assert/X_artificial-adversary-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/README/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/llm-assert/8_pytorch-lr-finder-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -357,7 +368,67 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/llm-assert/4_oj-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/8_pytorch-lr-finder-master/" title="pytorch-lr-finder">pytorch-lr-finder</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/7_ttach-master/" title="ttach">ttach</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/X_artificial-adversary-master/" title="artificial-adversary">artificial-adversary</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/1/" title="研究方法">研究方法</a></span>
   </li>
 
       
@@ -366,35 +437,17 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/llm-assert/5_giskard-main/" title="Untitled">Untitled</a></span>
+    <span><a href="/cs231n/README_2_Linear%20Classification/" title="Untitled">Untitled</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/eceb/" title="In eceb">eceb</a>
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" title="Request阅读报告">Request阅读报告</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/2_cronex-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/8_pytorch-lr-finder-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
   </li>
 
       
@@ -405,42 +458,6 @@
 </div>
 
     <span><a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/1/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/7_ttach-master/" title="Untitled">Untitled</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="Untitled">Untitled</a></span>
   </li>
 
   </ul>

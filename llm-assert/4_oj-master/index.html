@@ -24,13 +24,15 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EnjunDu/EnjunDu.github.io@latest/css/app.css?v=0.2.5">
 
   
+  <meta name="keywords" content="Hexo,Front Matter" />
+
 
 <link rel="canonical" href="https://enjundu.github.io/llm-assert/4_oj-master/">
 
 
 
   <title>
- |
+online-judge-tools/oj - llm-assert |
 蓝天° = Hexo</title>
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,16 +60,16 @@
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">
+  <h1 itemprop="name headline">online-judge-tools/oj
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2024-07-03 01:28:37">
+  <span class="item" title="Created: 2024-07-03 02:08:35">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">Posted on</span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T01:28:37+08:00">2024-07-03</time>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-03T02:08:35+08:00">2024-07-03</time>
   </span>
   <span class="item" title="Symbols count in article">
     <span class="icon">
@@ -115,12 +117,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
         </ul>
       </div>
     </header>
@@ -145,7 +147,9 @@
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/llm-assert/" itemprop="item" rel="index" title="In llm-assert"><span itemprop="name">llm-assert</span></a>
+<meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
@@ -182,6 +186,10 @@
 <h3 id="llm自动填充assert语句后的代码"><a class="markdownIt-Anchor" href="#llm自动填充assert语句后的代码">#</a> LLM 自动填充 assert 语句后的代码</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> onlinejudge_command.subcommand.download <span class="keyword">as</span> subcommand_download</span><br><span class="line"><span class="keyword">import</span> tests.utils</span><br><span class="line"><span class="keyword">from</span> onlinejudge_command.main <span class="keyword">import</span> get_parser</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_files_from_json</span>(<span class="params">samples</span>):</span><br><span class="line">    files = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i, sample <span class="keyword">in</span> <span class="built_in">enumerate</span>(samples):</span><br><span class="line">        <span class="keyword">for</span> ext <span class="keyword">in</span> (<span class="string">&#x27;in&#x27;</span>, <span class="string">&#x27;out&#x27;</span>):</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;name&#x27;</span> <span class="keyword">in</span> sample:</span><br><span class="line">                name = sample[<span class="string">&#x27;name&#x27;</span>] + <span class="string">&#x27;.&#x27;</span> + ext</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                name = <span class="string">&#x27;sample-&#123;&#125;.&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(i + <span class="number">1</span>, ext)</span><br><span class="line">            files[name] = hashlib.md5(sample[ext + <span class="string">&#x27;put&#x27;</span>].encode()).hexdigest()</span><br><span class="line">    <span class="keyword">return</span> files</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">snippet_call_download</span>(<span class="params">self, url, files, is_system=<span class="literal">False</span>, is_silent=<span class="literal">False</span>, <span class="built_in">type</span>=<span class="string">&#x27;files&#x27;</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">type</span> == <span class="string">&#x27;json&#x27;</span>:</span><br><span class="line">        files = get_files_from_json(files)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> tests.utils.sandbox([]):</span><br><span class="line">        args = [<span class="string">&#x27;download&#x27;</span>, url]</span><br><span class="line">        <span class="keyword">if</span> is_system:</span><br><span class="line">            args += [<span class="string">&#x27;--system&#x27;</span>]</span><br><span class="line">        <span class="keyword">if</span> is_silent:</span><br><span class="line">            args += [<span class="string">&#x27;--silent&#x27;</span>]</span><br><span class="line">        tests.utils.run(args, check=<span class="literal">True</span>)</span><br><span class="line">        result = &#123;&#125;</span><br><span class="line">        <span class="keyword">if</span> os.path.exists(<span class="string">&#x27;test&#x27;</span>):</span><br><span class="line">            <span class="keyword">for</span> name <span class="keyword">in</span> os.listdir(<span class="string">&#x27;test&#x27;</span>):</span><br><span class="line">                <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join(<span class="string">&#x27;test&#x27;</span>, name)) <span class="keyword">as</span> fh:</span><br><span class="line">                    result[name] = hashlib.md5(fh.buffer.read()).hexdigest()</span><br><span class="line">        self.assertEqual(result, files)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">snippet_call_download_failure</span>(<span class="params">self, url, is_system=<span class="literal">False</span>, is_silent=<span class="literal">False</span></span>):</span><br><span class="line">    args = [<span class="string">&quot;download&quot;</span>, url]</span><br><span class="line">    <span class="keyword">if</span> is_system:</span><br><span class="line">        args.append(<span class="string">&quot;--system&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_silent:</span><br><span class="line">        args.append(<span class="string">&quot;--silent&quot;</span>)</span><br><span class="line">    <span class="keyword">with</span> self.assertRaises(SystemExit):</span><br><span class="line">        tests.utils.run(args, check=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">snippet_call_download_twice</span>(<span class="params">self, url1, url2, files, is_system=<span class="literal">False</span>, is_silent=<span class="literal">False</span>, <span class="built_in">type</span>=<span class="string">&#x27;files&#x27;</span></span>):</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">type</span> == <span class="string">&#x27;json&#x27;</span>:</span><br><span class="line">        files = get_files_from_json(files)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> tests.utils.sandbox([]):</span><br><span class="line">        args = [<span class="string">&#x27;download&#x27;</span>, url1]</span><br><span class="line">        <span class="keyword">if</span> is_system:</span><br><span class="line">            args += [<span class="string">&#x27;--system&#x27;</span>]</span><br><span class="line">        <span class="keyword">if</span> is_silent:</span><br><span class="line">            args += [<span class="string">&#x27;--silent&#x27;</span>]</span><br><span class="line">        tests.utils.run(args, check=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">        args = [<span class="string">&#x27;download&#x27;</span>, url2]</span><br><span class="line">        <span class="keyword">if</span> is_system:</span><br><span class="line">            args += [<span class="string">&#x27;--system&#x27;</span>]</span><br><span class="line">        <span class="keyword">if</span> is_silent:</span><br><span class="line">            args += [<span class="string">&#x27;--silent&#x27;</span>]</span><br><span class="line">        tests.utils.run(args, check=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">        result = &#123;&#125;</span><br><span class="line">        <span class="keyword">if</span> os.path.exists(<span class="string">&#x27;test&#x27;</span>):</span><br><span class="line">            <span class="keyword">for</span> name <span class="keyword">in</span> os.listdir(<span class="string">&#x27;test&#x27;</span>):</span><br><span class="line">                <span class="keyword">with</span> <span class="built_in">open</span>(os.path.join(<span class="string">&#x27;test&#x27;</span>, name)) <span class="keyword">as</span> fh:</span><br><span class="line">                    result[name] = hashlib.md5(fh.buffer.read()).hexdigest()</span><br><span class="line">        self.assertEqual(result, files)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">DownloadTest</span>(unittest.TestCase):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;DownloadTest is a class to test `download` subcommand itself. Don&#x27;t try to test sample parsers.</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">snippet_call_download</span>(<span class="params">self, *args, **kwargs</span>):</span><br><span class="line">        tests.command_download.snippet_call_download(self, *args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">snippet_call_download_failure</span>(<span class="params">self, *args, **kwargs</span>):</span><br><span class="line">        tests.command_download.snippet_call_download_failure(self, *args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_atcoder_abc114_c</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download(<span class="string">&#x27;https://atcoder.jp/contests/abc114/tasks/abc114_c&#x27;</span>, [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;575\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;4\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;3600\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;13\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;999999999\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;26484\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">        ], <span class="built_in">type</span>=<span class="string">&#x27;json&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_atcoder_abc003_4</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download(<span class="string">&#x27;https://atcoder.jp/contests/abc003/tasks/abc003_4&#x27;</span>, [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;3 2\n2 2\n2 2\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;12\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;4 5\n3 1\n3 0\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;10\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;23 18\n15 13\n100 95\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;364527243\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;30 30\n24 22\n145 132\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;976668549\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">        ], <span class="built_in">type</span>=<span class="string">&#x27;json&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_invalid_url</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download_failure(<span class="string">&#x27;http://abc001.contest.atcoder.jp/tasks/abc001_100&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_413</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># This task is not supported.</span></span><br><span class="line">        self.snippet_call_download_failure(<span class="string">&#x27;https://chokudai001.contest.atcoder.jp/tasks/chokudai_001_a&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">DownloadInvalidTest</span>(unittest.TestCase):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">snippet_call_download_failure</span>(<span class="params">self, *args, **kwargs</span>):</span><br><span class="line">        tests.command_download.snippet_call_download_failure(self, *args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">snippet_call_download_twice</span>(<span class="params">self, *args, **kwargs</span>):</span><br><span class="line">        tests.command_download.snippet_call_download_twice(self, *args, **kwargs)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_invalid</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download_failure(<span class="string">&#x27;https://not_exist_contest.jp/tasks/001_a&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_no_sample_found</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download_failure(<span class="string">&#x27;https://atcoder.jp/contests/tenka1-2013-quala/tasks/tenka1_2013_qualA_a&#x27;</span>)</span><br><span class="line">        self.snippet_call_download_failure(<span class="string">&#x27;https://open.kattis.com/problems/hello&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_call_download_twice</span>(<span class="params">self</span>):</span><br><span class="line">        self.snippet_call_download_twice(<span class="string">&#x27;https://atcoder.jp/contests/abc114/tasks/abc114_c&#x27;</span>, <span class="string">&#x27;https://atcoder.jp/contests/abc003/tasks/abc003_4&#x27;</span>, [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;575\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;4\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;3600\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;13\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&quot;input&quot;</span>: <span class="string">&quot;999999999\n&quot;</span>,</span><br><span class="line">                <span class="string">&quot;output&quot;</span>: <span class="string">&quot;26484\n&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">        ], <span class="built_in">type</span>=<span class="string">&#x27;json&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
+      <div class="tags">
+          <a href="/tags/Hexo/" rel="tag"><i class="ic i-tag"></i> Hexo</a>
+          <a href="/tags/Front-Matter/" rel="tag"><i class="ic i-tag"></i> Front Matter</a>
+      </div>
   </div>
 
    <footer>
@@ -192,7 +200,7 @@
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-07-02 15:27:02" itemprop="dateModified" datetime="2024-07-02T15:27:02+08:00">2024-07-02</time>
+    <time title="Modified: 2024-07-03 02:15:24" itemprop="dateModified" datetime="2024-07-03T02:15:24+08:00">2024-07-03</time>
   </span>
 </div>
 
@@ -228,7 +236,7 @@
   </li>
   <li class="link">
     <strong>Post link: </strong>
-    <a href="https://enjundu.github.io/llm-assert/4_oj-master/" title="">https://enjundu.github.io/llm-assert/4_oj-master/</a>
+    <a href="https://enjundu.github.io/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">https://enjundu.github.io/llm-assert/4_oj-master/</a>
   </li>
   <li class="license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
@@ -247,20 +255,20 @@
     <div class="item left">
       
 
-  <a href="/llm-assert/3_robotframework-webservice-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="Untitled">
+  <a href="/llm-assert/5_giskard-main/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4wqtg4j20zk0m8x6p.jpg" title="Giskard-AI&#x2F;giskard">
   <span class="type">Previous Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Untitled</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>Giskard-AI/giskard</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/llm-assert/5_giskard-main/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="Untitled">
+  <a href="/llm-assert/3_robotframework-webservice-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="robotframework-webservice">
   <span class="type">Next Post</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>Untitled</h3>
+  <span class="category"><i class="ic i-flag"></i> llm-assert</span>
+  <h3>robotframework-webservice</h3>
   </a>
 
     </div>
@@ -282,6 +290,9 @@
           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#online-judge-toolsoj"><span class="toc-number">1.</span> <span class="toc-text"> online-judge-tools&#x2F;oj</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command_downloadpy%E4%BB%A3%E7%A0%81%E4%BF%AE%E6%94%B9"><span class="toc-number">1.2.</span> <span class="toc-text"> command_download.py 代码修改</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E6%9C%AC%E7%9A%84command_downloadpy%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 原本的 command_download.py 代码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E9%99%A4assert%E6%96%AD%E8%A8%80%E5%90%8E%E7%9A%84command_downloadpy%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 移除 assert 断言后的 command_download.py 代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#llm%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85assert%E8%AF%AD%E5%8F%A5%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.2.3.</span> <span class="toc-text"> LLM 自动填充 assert 语句后的代码</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li class="active"><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li>
+        </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -300,7 +311,7 @@
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">1</span>
+        <span class="count">2</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -331,12 +342,12 @@
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/llm-assert/3_robotframework-webservice-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/llm-assert/5_giskard-main/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/llm-assert/5_giskard-main/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/llm-assert/3_robotframework-webservice-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -358,9 +369,30 @@
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/1/" title="研究方法">研究方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/eceb/" title="In eceb">eceb</a>
+</div>
+
+    <span><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" title="Request阅读报告">Request阅读报告</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/2_cronex-master/" title="cronex">cronex</a></span>
   </li>
 
       
@@ -369,34 +401,27 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/llm-assert/7_ttach-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/4_oj-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/7_ttach-master/" title="ttach">ttach</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/llm-assert/5_giskard-main/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
   </li>
 
       
@@ -412,37 +437,30 @@
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/9_sumeval-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/8_pytorch-lr-finder-master/" title="pytorch-lr-finder">pytorch-lr-finder</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/8_pytorch-lr-finder-master/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/eceb/" title="In eceb">eceb</a>
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
+    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
   </li>
 
   </ul>
