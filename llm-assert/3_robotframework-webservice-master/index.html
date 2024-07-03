@@ -117,12 +117,12 @@ robotframework-webservice - llm-assert |
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/sTHU7wL5qkSiloC.jpg"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/03/PwEoecqCVMZg6kp.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/6vserUNHJbOxI4y.gif"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/sTHU7wL5qkSiloC.jpg"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/03/flquHABaRmV2onx.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/8Rq9gGbxm7TXjfp.png"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/As6g8SnCP2tGRDm.jpg"></li>
         </ul>
       </div>
     </header>
@@ -195,7 +195,7 @@ robotframework-webservice - llm-assert |
 </li>
 <li>
 <p>启动本地 Web 服务：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python -m RobotFrameworkService.main</span><br><span class="line">python -m RobotFrameworkService.main --help</span><br><span class="line">python -m RobotFrameworkService.main -p 5003 -t path_to_my_taskfolder // example</span><br></pre></td></tr></table></figure>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python -m RobotFrameworkService<span class="selector-class">.main</span></span><br><span class="line">python -m RobotFrameworkService<span class="selector-class">.main</span> <span class="attr">--help</span></span><br><span class="line">python -m RobotFrameworkService<span class="selector-class">.main</span> -<span class="selector-tag">p</span> <span class="number">5003</span> -t path_to_my_taskfolder <span class="comment">// example</span></span><br></pre></td></tr></table></figure>
 <h2 id="test_apppy修改操作"><a class="markdownIt-Anchor" href="#test_apppy修改操作">#</a> test_app.py 修改操作</h2>
 <h3 id="原本的testpy代码"><a class="markdownIt-Anchor" href="#原本的testpy代码">#</a> 原本的 test.py 代码:</h3>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> fastapi.testclient <span class="keyword">import</span> TestClient</span><br><span class="line"><span class="keyword">import</span> unittest</span><br><span class="line"><span class="keyword">from</span> RobotFrameworkService.main <span class="keyword">import</span> app</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">EndpointTesttest_s</span>(unittest.TestCase):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_service_available</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(<span class="string">&quot;/status&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_startable</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run/all&quot;</span>, expected_response_code=<span class="number">400</span></span><br><span class="line">        )</span><br><span class="line">        self.__is_robot_failed(response=response)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_async_startable</span>(<span class="params">self</span>):</span><br><span class="line">        self.__get_robot_webservice(<span class="string">&quot;/robotframework/run/all/async&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_startable</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(<span class="string">&quot;/robotframework/run/anotherTask&quot;</span>)</span><br><span class="line">        self.__is_robot_passed(response=response)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_async_startable</span>(<span class="params">self</span>):</span><br><span class="line">        self.__get_robot_webservice(<span class="string">&quot;/robotframework/run/anotherTask/async&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_robottask_with_variables</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run/Task with variable?input=qwerty&quot;</span></span><br><span class="line">        )</span><br><span class="line">        self.__is_robot_passed(response=response, msg=<span class="string">&quot;Testing with variables failed&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_available_with_logs</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run_and_show/anotherTask&quot;</span></span><br><span class="line">        )</span><br><span class="line">        self.assertIn(<span class="string">&quot;PASS&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_available_with_reports</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run_and_show_report/anotherTask&quot;</span></span><br><span class="line">        )</span><br><span class="line">        self.assertIn(<span class="string">&quot;PASS&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_available_with_logs_and_arguments</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run_and_show/anotherTask?art=tests&amp;description=EreichbarkeitsTestMitLogs&quot;</span></span><br><span class="line">        )</span><br><span class="line">        self.assertIn(<span class="string">&quot;PASS&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robottask_available_with_reports_and_arguments</span>(<span class="params">self</span>):</span><br><span class="line">        response = self.__get_robot_webservice(</span><br><span class="line">            <span class="string">&quot;/robotframework/run_and_show_report/anotherTask?art=tests&amp;description=FunktionsTestMitReports&quot;</span></span><br><span class="line">        )</span><br><span class="line">        self.assertIn(<span class="string">&quot;PASS&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robotlog_available</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">with</span> TestClient(app) <span class="keyword">as</span> client:</span><br><span class="line">            run_response = client.get(<span class="string">&quot;/robotframework/run/anotherTask&quot;</span>)</span><br><span class="line">            execution_id = run_response.headers[<span class="string">&quot;x-request-id&quot;</span>]</span><br><span class="line">            logs_response = client.get(<span class="string">f&quot;/robotframework/show_log/<span class="subst">&#123;execution_id&#125;</span>&quot;</span>)</span><br><span class="line">        self.assertEqual(<span class="number">200</span>, logs_response.status_code)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robotreport_available</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">with</span> TestClient(app) <span class="keyword">as</span> client:</span><br><span class="line">            run_response = client.get(<span class="string">&quot;/robotframework/run/anotherTask&quot;</span>)</span><br><span class="line">            execution_id = run_response.headers[<span class="string">&quot;x-request-id&quot;</span>]</span><br><span class="line">            report_response = client.get(<span class="string">f&quot;/robotframework/show_report/<span class="subst">&#123;execution_id&#125;</span>&quot;</span>)</span><br><span class="line">        self.assertEqual(<span class="number">200</span>, report_response.status_code)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_is_robot_run</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">with</span> TestClient(app) <span class="keyword">as</span> client:</span><br><span class="line">            response = client.post(<span class="string">&quot;/robotframework/run&quot;</span>, json=&#123;<span class="string">&quot;task&quot;</span>: <span class="string">&quot;Another task&quot;</span>, <span class="string">&quot;test&quot;</span>: <span class="string">&quot;Demonstration Test&quot;</span>&#125;)</span><br><span class="line">            self.assertEqual(<span class="number">400</span>, response.status_code)</span><br><span class="line">            self.assertEqual(<span class="string">&quot;Options test and task cannot be both specified&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">            response = client.post(<span class="string">&quot;/robotframework/run&quot;</span>, json=&#123;<span class="string">&quot;task&quot;</span>: <span class="string">&quot;Another task&quot;</span>, <span class="string">&quot;sync&quot;</span>: <span class="literal">True</span>&#125;)</span><br><span class="line">            self.assertEqual(<span class="number">200</span>, response.status_code)</span><br><span class="line"></span><br><span class="line">            response = client.post(<span class="string">&quot;/robotframework/run&quot;</span>, json=&#123;<span class="string">&quot;paths&quot;</span>: [<span class="string">&quot;examples&quot;</span>], <span class="string">&quot;test&quot;</span>: <span class="string">&quot;Demonstration Test&quot;</span>, <span class="string">&quot;sync&quot;</span>: <span class="literal">True</span>&#125;)</span><br><span class="line">            self.assertEqual(<span class="number">200</span>, response.status_code)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">test_delete_robotlogs</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">with</span> TestClient(app) <span class="keyword">as</span> client:</span><br><span class="line">            response = client.delete(<span class="string">&quot;/robotframework/logs/not_existing&quot;</span>)</span><br><span class="line">            self.assertEqual(<span class="number">404</span>, response.status_code)</span><br><span class="line">            self.assertEqual(<span class="string">&quot;The logs not_existing not existing or being generating&quot;</span>, response.text)</span><br><span class="line"></span><br><span class="line">            run_response = client.get(<span class="string">&quot;/robotframework/run/anotherTask&quot;</span>)</span><br><span class="line">            execution_id = run_response.headers[<span class="string">&quot;x-request-id&quot;</span>]</span><br><span class="line">            response = client.delete(<span class="string">f&quot;/robotframework/logs/<span class="subst">&#123;execution_id&#125;</span>&quot;</span>)</span><br><span class="line">            self.assertEqual(<span class="number">204</span>, response.status_code)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__get_robot_webservice</span>(<span class="params">self, endpoint, expected_response_code=<span class="number">200</span></span>):</span><br><span class="line">        <span class="keyword">with</span> TestClient(app) <span class="keyword">as</span> client:</span><br><span class="line">            response = client.get(endpoint)</span><br><span class="line">        self.assertEqual(expected_response_code, response.status_code, response.text)</span><br><span class="line">        <span class="keyword">return</span> response</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__is_robot_passed</span>(<span class="params">self, response, msg=<span class="literal">None</span></span>):</span><br><span class="line">        self.assertNotIn(<span class="string">&quot;FAIL&quot;</span>, response.text, msg=msg)</span><br><span class="line">        self.assertIn(</span><br><span class="line">            <span class="string">&quot;PASS&quot;</span>, response.text, <span class="string">&quot;Test result contains neither PASS nor FAIL&quot;</span></span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__is_robot_failed</span>(<span class="params">self, response, msg=<span class="literal">None</span></span>):</span><br><span class="line">        self.assertIn(<span class="string">&quot;FAIL&quot;</span>, response.text, <span class="string">&quot;Test result contains FAIL&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -277,7 +277,7 @@ robotframework-webservice - llm-assert |
     <div class="item left">
       
 
-  <a href="/llm-assert/7_ttach-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;PwEoecqCVMZg6kp.jpg" title="ttach">
+  <a href="/llm-assert/7_ttach-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;2CIcORrG8hxpSnD.jpg" title="ttach">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> llm-assert</span>
   <h3>ttach</h3>
@@ -287,10 +287,10 @@ robotframework-webservice - llm-assert |
     <div class="item right">
       
 
-  <a href="/llm-assert/2_cronex-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;As6g8SnCP2tGRDm.jpg" title="cronex">
+  <a href="/llm-assert/5_giskard-main/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;qk7VYGUEtZ2oeyB.gif" title="Giskard-AI&#x2F;giskard">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> llm-assert</span>
-  <h3>cronex</h3>
+  <h3>Giskard-AI/giskard</h3>
   </a>
 
     </div>
@@ -313,7 +313,7 @@ robotframework-webservice - llm-assert |
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li class="active"><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li>
+          <li><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li class="active"><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -327,13 +327,13 @@ robotframework-webservice - llm-assert |
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">15</span>
+        <span class="count">21</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -369,7 +369,7 @@ robotframework-webservice - llm-assert |
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/llm-assert/2_cronex-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/llm-assert/5_giskard-main/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -391,19 +391,39 @@ robotframework-webservice - llm-assert |
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+    <span><a href="/cs231n/README_2_Linear%20Classification/" title="Untitled">Untitled</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/eceb/" title="In eceb">eceb</a>
 </div>
 
-    <span><a href="/cs231n/README_2_Linear%20Classification/" title="Untitled">Untitled</a></span>
+    <span><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" title="Request阅读报告">Request阅读报告</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/wangandaolun/" title="In wangandaolun">wangandaolun</a>
+</div>
+
+    <span><a href="/wangandaolun/%E6%A0%88%E6%BA%A2%E5%87%BA/" title="栈溢出">栈溢出</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/1/" title="研究方法">研究方法</a></span>
   </li>
 
       
@@ -439,29 +459,20 @@ robotframework-webservice - llm-assert |
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+<a href="/categories/wangandaolun/" title="In wangandaolun">wangandaolun</a>
 </div>
 
-    <span><a href="/llm-assert/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
+    <span><a href="/wangandaolun/%E5%85%AC%E9%92%A5%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BDPKI/" title="公钥设施基础kpi">公钥设施基础kpi</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/wangandaolun/" title="In wangandaolun">wangandaolun</a>
 </div>
 
-    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
+    <span><a href="/wangandaolun/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E5%AE%89%E5%85%A8_%E5%90%8E%E9%97%A8%E6%94%BB%E5%87%BB/" title="人工智能的后门攻击">人工智能的后门攻击</a></span>
   </li>
 
       
@@ -472,16 +483,6 @@ robotframework-webservice - llm-assert |
 </div>
 
     <span><a href="/llm-assert/7_ttach-master/" title="ttach">ttach</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
   </li>
 
   </ul>
@@ -506,13 +507,13 @@ robotframework-webservice - llm-assert |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">190k words</span>
+    <span title="Symbols count total">236k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">2:53</span>
+    <span title="Reading time total">3:35</span>
   </div>
   <div class="powered-by">
     Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

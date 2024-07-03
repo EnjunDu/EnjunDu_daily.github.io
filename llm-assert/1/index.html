@@ -117,12 +117,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/As6g8SnCP2tGRDm.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/6vserUNHJbOxI4y.gif"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/PwEoecqCVMZg6kp.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/03/sTHU7wL5qkSiloC.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/As6g8SnCP2tGRDm.jpg"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/03/8Rq9gGbxm7TXjfp.png"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/flquHABaRmV2onx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -222,11 +222,11 @@
 <p>这个过程将帮助我们评估 LLM 在自动补全测试用例中 assert 语句的能力，并找出其优缺点，以便进一步改进和优化。</p>
 <h3 id="示例具体操作假设性示例"><a class="markdownIt-Anchor" href="#示例具体操作假设性示例">#</a> 示例具体操作（假设性示例）</h3>
 <p>假设我们从一个项目中选取了以下测试用例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python复制代码def test_multiplication():</span><br><span class="line">    result = multiply(3, 4)</span><br><span class="line">    assert result == 12</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">python</span>复制代码def test_multiplication():</span><br><span class="line">    <span class="attribute">result</span> = multiply(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">    <span class="attribute">assert</span> result == <span class="number">12</span></span><br></pre></td></tr></table></figure>
 <p>去掉 assert 语句后：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python复制代码def test_multiplication():</span><br><span class="line">    result = multiply(3, 4)</span><br><span class="line">    # assert result == 12</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">python</span>复制代码def test_multiplication():</span><br><span class="line">    <span class="attribute">result</span> = multiply(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">    <span class="comment"># assert result == 12</span></span><br></pre></td></tr></table></figure>
 <p>输入 LLM 进行补全后，假设 LLM 生成的结果是：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python复制代码def test_multiplication():</span><br><span class="line">    result = multiply(3, 4)</span><br><span class="line">    assert result == 12  # LLM补全</span><br></pre></td></tr></table></figure>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python复制代码def test_multiplication():</span><br><span class="line">    <span class="built_in">result</span> = <span class="built_in">multiply</span>(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line">    assert <span class="built_in">result</span> == <span class="number">12</span>  <span class="comment"># LLM补全</span></span><br></pre></td></tr></table></figure>
 <p><strong>分析</strong>：</p>
 <ul>
 <li><strong>正确性</strong>：LLM 正确地补全了 assert 语句，与原始测试用例一致。</li>
@@ -303,7 +303,7 @@
     <div class="item left">
       
 
-  <a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;sTHU7wL5qkSiloC.jpg" title="DICT.C源码阅读报告">
+  <a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;8Rq9gGbxm7TXjfp.png" title="DICT.C源码阅读报告">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> eceb</span>
   <h3>DICT.C源码阅读报告</h3>
@@ -313,10 +313,10 @@
     <div class="item right">
       
 
-  <a href="/llm-assert/8_pytorch-lr-finder-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;sTHU7wL5qkSiloC.jpg" title="pytorch-lr-finder">
+  <a href="/llm-assert/X_artificial-adversary-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;NDKVsh3T5XY8lnp.gif" title="artificial-adversary">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> llm-assert</span>
-  <h3>pytorch-lr-finder</h3>
+  <h3>artificial-adversary</h3>
   </a>
 
     </div>
@@ -339,7 +339,7 @@
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li class="active"><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li>
+          <li class="active"><a href="/llm-assert/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/llm-assert/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/llm-assert/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/llm-assert/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/llm-assert/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/llm-assert/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li><a href="/llm-assert/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/llm-assert/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/llm-assert/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li><a href="/llm-assert/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -353,13 +353,13 @@
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">15</span>
+        <span class="count">21</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -395,7 +395,7 @@
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/llm-assert/8_pytorch-lr-finder-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/llm-assert/X_artificial-adversary-master/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -417,19 +417,39 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+    <span><a href="/README/" title="蓝天の留言">蓝天の留言</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
 </div>
 
-    <span><a href="/cs231n/README_1_KNN/" title="Untitled">Untitled</a></span>
+    <span><a href="/llm-assert/9_sumeval-master/" title="sumeval">sumeval</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/7_ttach-master/" title="ttach">ttach</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/wangandaolun/" title="In wangandaolun">wangandaolun</a>
+</div>
+
+    <span><a href="/wangandaolun/%E9%9A%90%E7%A7%81%E4%BF%9D%E6%8A%A4/" title="隐私保护">隐私保护</a></span>
   </li>
 
       
@@ -439,7 +459,27 @@
 <a href="/categories/eceb/" title="In eceb">eceb</a>
 </div>
 
-    <span><a href="/eceb/redis%20dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></span>
+    <span><a href="/eceb/Request%E9%98%85%E8%AF%BB%E6%8A%A5%E5%91%8A/" title="Request阅读报告">Request阅读报告</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+</div>
+
+    <span><a href="/llm-assert/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
   </li>
 
       
@@ -455,20 +495,10 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
+<a href="/categories/wangandaolun/" title="In wangandaolun">wangandaolun</a>
 </div>
 
-    <span><a href="/llm-assert/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/1/" title="研究方法">研究方法</a></span>
+    <span><a href="/wangandaolun/%E5%85%AC%E9%92%A5%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BDPKI/" title="公钥设施基础kpi">公钥设施基础kpi</a></span>
   </li>
 
       
@@ -479,36 +509,6 @@
 </div>
 
     <span><a href="/llm-assert/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/2_cronex-master/" title="cronex">cronex</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/X_artificial-adversary-master/" title="artificial-adversary">artificial-adversary</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/llm-assert/" title="In llm-assert">llm-assert</a>
-</div>
-
-    <span><a href="/llm-assert/3_robotframework-webservice-master/" title="robotframework-webservice">robotframework-webservice</a></span>
   </li>
 
   </ul>
@@ -533,13 +533,13 @@
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">190k words</span>
+    <span title="Symbols count total">236k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">2:53</span>
+    <span title="Reading time total">3:35</span>
   </div>
   <div class="powered-by">
     Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
