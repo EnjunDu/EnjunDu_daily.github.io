@@ -117,12 +117,12 @@ cronex - LLM的test oracle生成 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/f5ySCsjMgUO27Yh.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/ArOLs3qhENaXcUV.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/8ONjfHLDzZ4YiCJ.jpg"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/04/OLqrN6bKDJHW5ek.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/6vserUNHJbOxI4y.gif"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/PwEoecqCVMZg6kp.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/ArOLs3qhENaXcUV.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/f5ySCsjMgUO27Yh.jpg"></li>
         </ul>
       </div>
     </header>
@@ -227,7 +227,9 @@ cronex - LLM的test oracle生成 |
 <li>综上所述，在 <code>test_substitution</code>  函数上，gpt 生成的代码更加优秀。</li>
 </ul>
 <h3 id="填充后不足有缺陷部分"><a class="markdownIt-Anchor" href="#填充后不足有缺陷部分">#</a> 填充后不足 / 有缺陷部分</h3>
-<h4 id="1-test_compute_numtab"><a class="markdownIt-Anchor" href="#1-test_compute_numtab">#</a> 1. test_compute_numtab（）</h4>
+<ol>
+<li>test_compute_numtab（）</li>
+</ol>
 <p><strong>tests 原代码：</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">test_compute_numtab</span>(<span class="params">self</span>):</span><br><span class="line">    testex1 = cronex.CronExpression(<span class="string">&quot;*/7 5-10 5 * *&quot;</span>)</span><br><span class="line">    testex2 = cronex.CronExpression(<span class="string">&quot;*/5 23-2 5 8 *&quot;</span>)</span><br><span class="line">    self.assertNotEqual(testex1.string_tab, testex2.string_tab)</span><br><span class="line">    self.assertNotEqual(testex1.numerical_tab, testex2.numerical_tab)</span><br><span class="line">    testex1.string_tab = testex2.string_tab</span><br><span class="line">    testex1.compute_numtab()</span><br><span class="line">    self.assertEqual(testex1.string_tab, testex2.string_tab)</span><br><span class="line">    self.assertEqual(testex1.numerical_tab, testex2.numerical_tab)</span><br></pre></td></tr></table></figure>
 <p><strong>gpt3.5 自动填充代码</strong></p>
@@ -321,6 +323,9 @@ cronex - LLM的test oracle生成 |
 </ol>
 <h4 id="一致率统计结果"><a class="markdownIt-Anchor" href="#一致率统计结果">#</a> 一致率统计结果</h4>
 <p>共统计了<strong> 35</strong> 个断言，其中逻辑完全一致的 assert 共<strong> 8</strong> 个，不一致的 27 个，一致率为<strong> 22.9%</strong>。</p>
+<h3 id="分析一断言在验证的东西"><a class="markdownIt-Anchor" href="#分析一断言在验证的东西">#</a> 分析一：断言在验证的东西</h3>
+<h3 id="分析二断言是否依赖于具体的-sut-被测软件-的输出及原因"><a class="markdownIt-Anchor" href="#分析二断言是否依赖于具体的-sut-被测软件-的输出及原因">#</a> 分析二：断言是否依赖于具体的 SUT (被测软件) 的输出及原因</h3>
+<h3 id="分析三断言为何能生成"><a class="markdownIt-Anchor" href="#分析三断言为何能生成">#</a> 分析三：断言为何能生成</h3>
 
       <div class="tags">
           <a href="/tags/Hexo/" rel="tag"><i class="ic i-tag"></i> Hexo</a>
@@ -336,7 +341,7 @@ cronex - LLM的test oracle生成 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2024-07-04 17:30:04" itemprop="dateModified" datetime="2024-07-04T17:30:04+08:00">2024-07-04</time>
+    <time title="Modified: 2024-07-05 13:55:04" itemprop="dateModified" datetime="2024-07-05T13:55:04+08:00">2024-07-05</time>
   </span>
   <span id="LLMstestoracle/2_cronex-master/" class="item leancloud_visitors" data-flag-title="cronex" title="Views">
       <span class="icon">
@@ -399,17 +404,17 @@ cronex - LLM的test oracle生成 |
     <div class="item left">
       
 
-  <a href="/LLMstestoracle/1_PythonProjectTemplate-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;04&#x2F;8ONjfHLDzZ4YiCJ.jpg" title="PythonProjectTemplate-master">
+  <a href="/LLMstestoracle/4_oj-master/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;04&#x2F;pVXxd2rsZPS3RLj.jpg" title="online-judge-tools&#x2F;oj">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> LLM的test oracle生成</span>
-  <h3>PythonProjectTemplate-master</h3>
+  <h3>online-judge-tools/oj</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/LLMstestoracle/3_robotframework-webservice-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;03&#x2F;6vserUNHJbOxI4y.gif" title="robotframework-webservice">
+  <a href="/LLMstestoracle/3_robotframework-webservice-master/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;07&#x2F;04&#x2F;crRxfhWIzOaUvSj.jpg" title="robotframework-webservice">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> LLM的test oracle生成</span>
   <h3>robotframework-webservice</h3>
@@ -431,11 +436,11 @@ cronex - LLM的test oracle生成 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cronex"><span class="toc-number">1.</span> <span class="toc-text"> cronex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cronex%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.1.</span> <span class="toc-text"> cronex 功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testspy%E4%BB%A3%E7%A0%81%E5%A4%84%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text"> tests.py 代码处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%AD%A3%E8%AF%B4%E6%98%8E"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 更正说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#debug%E5%90%8E%E7%9A%84tests"><span class="toc-number">1.2.2.</span> <span class="toc-text"> debug 后的 tests</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%BB%E9%99%A4assert%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8F%90%E7%A4%BA%E5%90%8E%E7%9A%84tests_code"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 去除 assert 及相关提示后的 tests_code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gpt35%E7%94%9F%E6%88%90%E8%A1%A5%E5%85%A8%E5%90%8E%E7%9A%84tests"><span class="toc-number">1.2.4.</span> <span class="toc-text"> gpt3.5 生成补全后的 tests</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gpt%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E5%90%8Eassert%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E5%88%86%E6%9E%90"><span class="toc-number">1.3.</span> <span class="toc-text"> gpt 自动填充后 assert 的优缺点分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E5%85%85%E4%BC%98%E7%A7%80%E9%83%A8%E5%88%86"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 填充优秀部分：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1test_substitution"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 1.test_substitution()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E5%85%85%E5%90%8E%E4%B8%8D%E8%B6%B3%E6%9C%89%E7%BC%BA%E9%99%B7%E9%83%A8%E5%88%86"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 填充后不足 &#x2F; 有缺陷部分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-test_compute_numtab"><span class="toc-number">1.3.2.1.</span> <span class="toc-text"> 1. test_compute_numtab（）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#llm%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-number">1.3.3.</span> <span class="toc-text"> LLM 生成代码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%89%8D%E5%90%8E%E4%B8%80%E8%87%B4%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.3.1.</span> <span class="toc-text"> 生成前后一致的代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%87%B4%E7%8E%87%E7%BB%9F%E8%AE%A1%E7%BB%93%E6%9E%9C"><span class="toc-number">1.3.3.2.</span> <span class="toc-text"> 一致率统计结果</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cronex"><span class="toc-number">1.</span> <span class="toc-text"> cronex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cronex%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.1.</span> <span class="toc-text"> cronex 功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testspy%E4%BB%A3%E7%A0%81%E5%A4%84%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text"> tests.py 代码处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9B%B4%E6%AD%A3%E8%AF%B4%E6%98%8E"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 更正说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#debug%E5%90%8E%E7%9A%84tests"><span class="toc-number">1.2.2.</span> <span class="toc-text"> debug 后的 tests</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%BB%E9%99%A4assert%E5%8F%8A%E7%9B%B8%E5%85%B3%E6%8F%90%E7%A4%BA%E5%90%8E%E7%9A%84tests_code"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 去除 assert 及相关提示后的 tests_code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gpt35%E7%94%9F%E6%88%90%E8%A1%A5%E5%85%A8%E5%90%8E%E7%9A%84tests"><span class="toc-number">1.2.4.</span> <span class="toc-text"> gpt3.5 生成补全后的 tests</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gpt%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E5%90%8Eassert%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9%E5%88%86%E6%9E%90"><span class="toc-number">1.3.</span> <span class="toc-text"> gpt 自动填充后 assert 的优缺点分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E5%85%85%E4%BC%98%E7%A7%80%E9%83%A8%E5%88%86"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 填充优秀部分：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1test_substitution"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 1.test_substitution()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E5%85%85%E5%90%8E%E4%B8%8D%E8%B6%B3%E6%9C%89%E7%BC%BA%E9%99%B7%E9%83%A8%E5%88%86"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 填充后不足 &#x2F; 有缺陷部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#llm%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-number">1.3.3.</span> <span class="toc-text"> LLM 生成代码分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%89%8D%E5%90%8E%E4%B8%80%E8%87%B4%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.3.1.</span> <span class="toc-text"> 生成前后一致的代码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E8%87%B4%E7%8E%87%E7%BB%9F%E8%AE%A1%E7%BB%93%E6%9E%9C"><span class="toc-number">1.3.3.2.</span> <span class="toc-text"> 一致率统计结果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%B8%80%E6%96%AD%E8%A8%80%E5%9C%A8%E9%AA%8C%E8%AF%81%E7%9A%84%E4%B8%9C%E8%A5%BF"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 分析一：断言在验证的东西</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%BA%8C%E6%96%AD%E8%A8%80%E6%98%AF%E5%90%A6%E4%BE%9D%E8%B5%96%E4%BA%8E%E5%85%B7%E4%BD%93%E7%9A%84-sut-%E8%A2%AB%E6%B5%8B%E8%BD%AF%E4%BB%B6-%E7%9A%84%E8%BE%93%E5%87%BA%E5%8F%8A%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 分析二：断言是否依赖于具体的 SUT (被测软件) 的输出及原因</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E4%B8%89%E6%96%AD%E8%A8%80%E4%B8%BA%E4%BD%95%E8%83%BD%E7%94%9F%E6%88%90"><span class="toc-number">1.3.6.</span> <span class="toc-text"> 分析三：断言为何能生成</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/LLMstestoracle/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/LLMstestoracle/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li class="active"><a href="/LLMstestoracle/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/LLMstestoracle/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/LLMstestoracle/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/LLMstestoracle/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li><li><a href="/LLMstestoracle/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/LLMstestoracle/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/LLMstestoracle/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/LLMstestoracle/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li><li><a href="/LLMstestoracle/%E7%BB%9F%E8%AE%A1%E7%BB%93%E6%9E%9C/" rel="bookmark" title="a_统计结果">a_统计结果</a></li>
+          <li><a href="/LLMstestoracle/1/" rel="bookmark" title="研究方法">研究方法</a></li><li><a href="/LLMstestoracle/1_PythonProjectTemplate-master/" rel="bookmark" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></li><li><a href="/LLMstestoracle/3_robotframework-webservice-master/" rel="bookmark" title="robotframework-webservice">robotframework-webservice</a></li><li class="active"><a href="/LLMstestoracle/2_cronex-master/" rel="bookmark" title="cronex">cronex</a></li><li><a href="/LLMstestoracle/4_oj-master/" rel="bookmark" title="online-judge-tools/oj">online-judge-tools/oj</a></li><li><a href="/LLMstestoracle/9_sumeval-master/" rel="bookmark" title="sumeval">sumeval</a></li><li><a href="/LLMstestoracle/5_giskard-main/" rel="bookmark" title="Giskard-AI/giskard">Giskard-AI/giskard</a></li><li><a href="/LLMstestoracle/X_artificial-adversary-master/" rel="bookmark" title="artificial-adversary">artificial-adversary</a></li><li><a href="/LLMstestoracle/7_ttach-master/" rel="bookmark" title="ttach">ttach</a></li><li><a href="/LLMstestoracle/%E7%BB%9F%E8%AE%A1%E7%BB%93%E6%9E%9C/" rel="bookmark" title="a_统计结果">a_统计结果</a></li><li><a href="/LLMstestoracle/8_pytorch-lr-finder-master/" rel="bookmark" title="pytorch-lr-finder">pytorch-lr-finder</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -486,7 +491,7 @@ cronex - LLM的test oracle生成 |
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/LLMstestoracle/1_PythonProjectTemplate-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/LLMstestoracle/4_oj-master/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
@@ -513,10 +518,10 @@ cronex - LLM的test oracle生成 |
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/ECEA/" title="In 单片机小学期ECEA">单片机小学期ECEA</a>
+<a href="/categories/shudian/" title="In 数字逻辑实验">数字逻辑实验</a>
 </div>
 
-    <span><a href="/ECEA/4%E4%BA%A7%E7%94%9F%E4%B8%83%E8%89%B2%E7%81%AF/" title="Generate colorful lights">Generate colorful lights</a></span>
+    <span><a href="/shudian/%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%8A%A5%E5%91%8A/" title="复杂组合逻辑模块设计">复杂组合逻辑模块设计</a></span>
   </li>
 
       
@@ -526,27 +531,17 @@ cronex - LLM的test oracle生成 |
 <a href="/categories/bit/" title="In BIT-study">BIT-study</a>
 </div>
 
-    <span><a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4/" title="亚太数模——洪水">亚太数模——洪水</a></span>
+    <span><a href="/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/" title="美赛——七鳃鳗">美赛——七鳃鳗</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LLMstestoracle/" title="In LLM的test oracle生成">LLM的test oracle生成</a>
+<a href="/categories/misc/" title="In 闲来无事赚丶米">闲来无事赚丶米</a>
 </div>
 
-    <span><a href="/LLMstestoracle/9_sumeval-master/" title="sumeval">sumeval</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/bit/" title="In BIT-study">BIT-study</a>
-</div>
-
-    <span><a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/" title="亚太数模——新能源汽车">亚太数模——新能源汽车</a></span>
+    <span><a href="/misc/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E%EF%BC%9A%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%92%8C%E4%BC%81%E4%B8%9A%E8%BD%AC%E5%9E%8B_%E9%80%9A%E8%AF%86%E7%BB%93%E8%AF%BE%E8%AE%BA%E6%96%87/" title="数字经济：科技创新和企业转型_通识结课论文">数字经济：科技创新和企业转型_通识结课论文</a></span>
   </li>
 
       
@@ -566,17 +561,17 @@ cronex - LLM的test oracle生成 |
 <a href="/categories/LLMstestoracle/" title="In LLM的test oracle生成">LLM的test oracle生成</a>
 </div>
 
-    <span><a href="/LLMstestoracle/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+    <span><a href="/LLMstestoracle/8_pytorch-lr-finder-master/" title="pytorch-lr-finder">pytorch-lr-finder</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/ECEA/" title="In 单片机小学期ECEA">单片机小学期ECEA</a>
+<a href="/categories/LLMstestoracle/" title="In LLM的test oracle生成">LLM的test oracle生成</a>
 </div>
 
-    <span><a href="/ECEA/2%E8%9C%82%E9%B8%A3%E5%99%A8%E6%8A%A5%E6%97%B6/" title="The buzzer reports the time based on the student ID">The buzzer reports the time based on the student ID</a></span>
+    <span><a href="/LLMstestoracle/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
   </li>
 
       
@@ -586,7 +581,27 @@ cronex - LLM的test oracle生成 |
 <a href="/categories/misc/" title="In 闲来无事赚丶米">闲来无事赚丶米</a>
 </div>
 
-    <span><a href="/misc/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E%EF%BC%9A%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%92%8C%E4%BC%81%E4%B8%9A%E8%BD%AC%E5%9E%8B_%E9%80%9A%E8%AF%86%E7%BB%93%E8%AF%BE%E8%AE%BA%E6%96%87/" title="数字经济：科技创新和企业转型_通识结课论文">数字经济：科技创新和企业转型_通识结课论文</a></span>
+    <span><a href="/misc/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/" title="数据结构实验">数据结构实验</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/bit/" title="In BIT-study">BIT-study</a>
+</div>
+
+    <span><a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4/" title="亚太数模——洪水">亚太数模——洪水</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LLMstestoracle/" title="In LLM的test oracle生成">LLM的test oracle生成</a>
+</div>
+
+    <span><a href="/LLMstestoracle/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
   </li>
 
       
@@ -597,16 +612,6 @@ cronex - LLM的test oracle生成 |
 </div>
 
     <span><a href="/misc/%E5%93%88%E4%BD%9B%E5%A4%A7%E4%BD%9C%E4%B8%9A/" title="哈佛数据库大作业">哈佛数据库大作业</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/LLMstestoracle/" title="In LLM的test oracle生成">LLM的test oracle生成</a>
-</div>
-
-    <span><a href="/LLMstestoracle/8_pytorch-lr-finder-master/" title="pytorch-lr-finder">pytorch-lr-finder</a></span>
   </li>
 
   </ul>

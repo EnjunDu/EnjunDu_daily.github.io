@@ -194,6 +194,145 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://enjundu.github.io/misc/%E5%93%88%E4%BD%9B%E5%A4%A7%E4%BD%9C%E4%B8%9A/</guid>
+            <title>哈佛数据库大作业</title>
+            <link>https://enjundu.github.io/misc/%E5%93%88%E4%BD%9B%E5%A4%A7%E4%BD%9C%E4%B8%9A/</link>
+            <category>Hexo</category>
+            <category>Front Matter</category>
+            <category>code</category>
+            <category>homework</category>
+            <pubDate>Wed, 03 Jul 2024 22:41:31 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;本项目github仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本项目github仓库&#34;&gt;#&lt;/a&gt; 本项目 github 仓库：&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0VuanVuRHUvSGFydmFyZC1EYXRhYmFzZS1EZXNpZ24tUHJvamVjdA==&#34;&gt;Harvard-Database-Design-Project&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;项目总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目总结&#34;&gt;#&lt;/a&gt; 项目总结&lt;/h2&gt;
+&lt;h3 id=&#34;项目概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目概述&#34;&gt;#&lt;/a&gt; 项目概述&lt;/h3&gt;
+&lt;p&gt;本项目旨在设计和实现一个用于存储和分析全球 COVID-19 疫苗接种数据的数据库模型。数据集包括全球不同国家和地区的疫苗接种信息，并定期更新。为了完成数据库的概念模型设计，我们需要对所涉及的数据集进行详细分析，构建关系模式，并实现数据库结构。&lt;/p&gt;
+&lt;h3 id=&#34;项目要求&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目要求&#34;&gt;#&lt;/a&gt; 项目要求&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;数据集概述&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;locations.csv&lt;/strong&gt;: 包含国家名称及其使用的疫苗类型，每一行代表某一国家的最后一次观测。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;us_state_vaccinations.csv&lt;/strong&gt;: 包含美国各州的疫苗接种历史数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations-by-age-group.csv&lt;/strong&gt;: 包含各国不同年龄组的疫苗接种历史数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations-by-manufacturer.csv&lt;/strong&gt;: 包含各国使用的不同类型疫苗的历史数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations.csv&lt;/strong&gt;: 包含全球各国的疫苗接种数据，每一行代表一个观测日期。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;country_data/Wales.csv, Canada.csv, United States.csv, Denmark.csv&lt;/strong&gt;: 包含这些国家的每日疫苗接种数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据库设计要求&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;设计数据库的概念模型，确保符合第三范式 (3NF)。&lt;/li&gt;
+&lt;li&gt;使用实体关系图 (ERD) 映射为数据库模式。&lt;/li&gt;
+&lt;li&gt;完成数据库的标准化，消除数据冗余。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;数据分析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据分析&#34;&gt;#&lt;/a&gt; 数据分析&lt;/h3&gt;
+&lt;h4 id=&#34;数据集分析与关系确定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据集分析与关系确定&#34;&gt;#&lt;/a&gt; 数据集分析与关系确定&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;country_data&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;vaccine&lt;/code&gt; ,  &lt;code&gt;source_url&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; vaccine, source_url, total_vaccinations, people_vaccinated, people_fully_vaccinated, total_boosters&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;进一步分析：存在推测关系  &lt;code&gt;total_vaccinations ≈ people_vaccinated + people_fully_vaccinated + total_boosters&lt;/code&gt; ，验证后确定可以消除  &lt;code&gt;total_vaccinations&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations-by-age-group&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;age_group&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_with_booster_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, date, age_group) -&amp;gt; people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, people_with_booster_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations-by-manufacturer&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;vaccine&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, date, vaccine) -&amp;gt; total_vaccinations&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;locations&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt; ,  &lt;code&gt;vaccines&lt;/code&gt; ,  &lt;code&gt;last_observation_date&lt;/code&gt; ,  &lt;code&gt;source_name&lt;/code&gt; ,  &lt;code&gt;source_website&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, last_observation_date) -&amp;gt; vaccines, source_website&lt;/code&gt;  和  &lt;code&gt;(source_website) -&amp;gt; source_name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vaccinations&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_per_million&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; people_vaccinated, people_fully_vaccinated, total_boosters, daily_vaccinations, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, daily_vaccinations_per_million, daily_people_vaccinated, daily_people_vaccinated_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;us_state_vaccinations&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt; ,  &lt;code&gt;total_distributed&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;share_doses_used&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; people_vaccinated, people_fully_vaccinated, total_boosters, daily_vaccinations, total_distributed, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, share_doses_used, daily_people_vaccinated, people_vaccinated_per_hundred, distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;数据库实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库实现&#34;&gt;#&lt;/a&gt; 数据库实现&lt;/h3&gt;
+&lt;h4 id=&#34;概念模型设计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概念模型设计&#34;&gt;#&lt;/a&gt; 概念模型设计&lt;/h4&gt;
+&lt;p&gt;使用实体关系图 (ERD) 进行概念模型设计，将数据重要性与残缺程度较好的属性用黑色表示，其他属性存在较大分析困难度，用浅色表示。&lt;/p&gt;
+&lt;h4 id=&#34;数据库模式映射&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库模式映射&#34;&gt;#&lt;/a&gt; 数据库模式映射&lt;/h4&gt;
+&lt;p&gt;使用七步映射法 (7-step mapping process) 将 ERD 映射为数据库模式，创建以下表项：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Source_Website&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;url (主键)&lt;/code&gt; ,  &lt;code&gt;source_name&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record_vaccine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;vaccine (主键)&lt;/code&gt; ,  &lt;code&gt;total_vaccines&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Record_age&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;age_group (主键)&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Location_Data_Total&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;vaccines&lt;/code&gt; ,  &lt;code&gt;source_website (外键)&lt;/code&gt; ,  &lt;code&gt;total_vaccination&lt;/code&gt; ,  &lt;code&gt;total_distributed&lt;/code&gt; ,  &lt;code&gt;share_doses_used&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Location_Data_non_total&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;source_website (外键)&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;US_Location&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ISO_Location&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Location_Data_Per&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_per_million&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;表结构的-sql-代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表结构的-sql-代码&#34;&gt;#&lt;/a&gt; 表结构的 SQL 代码&lt;/h4&gt;
+&lt;p&gt;以下是创建上述表的 SQL 代码示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Source_Website (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    URL_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    NAME_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Record_vaccine (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    VACCINE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINES &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Record_age (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    AGE_GROUP &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_Total (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    VACCINES &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;200&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SOURCE_WEBSITE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINATION &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_DISTRIBUTED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SHARE_DOSES_USED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;FOREIGN&lt;/span&gt; KEY (SOURCE_WEBSITE) &lt;span class=&#34;keyword&#34;&gt;REFERENCES&lt;/span&gt; Source_Website(URL_)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_non_total (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SOURCE_WEBSITE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_PEOPLE_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;FOREIGN&lt;/span&gt; KEY (SOURCE_WEBSITE) &lt;span class=&#34;keyword&#34;&gt;REFERENCES&lt;/span&gt; Source_Website(URL_)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; US_Location (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; ISO_Location (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ISO_CODE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_Per (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS_RAW &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINATIONS_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED_PERHUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS_PER_MILION &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_PEOPLE_VACCINATED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DISTRIBUTED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;数据库标准化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库标准化&#34;&gt;#&lt;/a&gt; 数据库标准化&lt;/h3&gt;
+&lt;p&gt;通过分析各表的属性关系，消除了冗余，确保所有表格均满足第三范式 (3NF)，以提高数据存储和查询的效率。&lt;/p&gt;
+&lt;h3 id=&#34;总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h3&gt;
+&lt;p&gt;本项目通过详细的数据分析与设计，构建了一个规范化的数据库模型，用于全球 COVID-19 疫苗接种数据的存储和分析。通过 ERD 设计与数据库模式映射，成功实现了数据的高效存储和查询。标准化过程有效地消除了数据冗余，提高了数据库的性能和可维护性。项目最终成果满足了所有设计要求，确保了数据的完整性和一致性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://enjundu.github.io/misc/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E%EF%BC%9A%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%92%8C%E4%BC%81%E4%B8%9A%E8%BD%AC%E5%9E%8B_%E9%80%9A%E8%AF%86%E7%BB%93%E8%AF%BE%E8%AE%BA%E6%96%87/</guid>
             <title>数字经济：科技创新和企业转型_通识结课论文</title>
             <link>https://enjundu.github.io/misc/%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E%EF%BC%9A%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0%E5%92%8C%E4%BC%81%E4%B8%9A%E8%BD%AC%E5%9E%8B_%E9%80%9A%E8%AF%86%E7%BB%93%E8%AF%BE%E8%AE%BA%E6%96%87/</link>
@@ -350,145 +489,6 @@
 &lt;li&gt;调试分析：解决选择排序中 temp 值指代错误的问题。&lt;/li&gt;
 &lt;li&gt;测试结果：成功实现三种排序算法，输出预期结果。&lt;/li&gt;
 &lt;/ul&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://enjundu.github.io/misc/%E5%93%88%E4%BD%9B%E5%A4%A7%E4%BD%9C%E4%B8%9A/</guid>
-            <title>哈佛数据库大作业</title>
-            <link>https://enjundu.github.io/misc/%E5%93%88%E4%BD%9B%E5%A4%A7%E4%BD%9C%E4%B8%9A/</link>
-            <category>Hexo</category>
-            <category>Front Matter</category>
-            <category>code</category>
-            <category>homework</category>
-            <pubDate>Wed, 03 Jul 2024 22:41:31 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;本项目github仓库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本项目github仓库&#34;&gt;#&lt;/a&gt; 本项目 github 仓库：&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL0VuanVuRHUvSGFydmFyZC1EYXRhYmFzZS1EZXNpZ24tUHJvamVjdA==&#34;&gt;Harvard-Database-Design-Project&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;项目总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目总结&#34;&gt;#&lt;/a&gt; 项目总结&lt;/h2&gt;
-&lt;h3 id=&#34;项目概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目概述&#34;&gt;#&lt;/a&gt; 项目概述&lt;/h3&gt;
-&lt;p&gt;本项目旨在设计和实现一个用于存储和分析全球 COVID-19 疫苗接种数据的数据库模型。数据集包括全球不同国家和地区的疫苗接种信息，并定期更新。为了完成数据库的概念模型设计，我们需要对所涉及的数据集进行详细分析，构建关系模式，并实现数据库结构。&lt;/p&gt;
-&lt;h3 id=&#34;项目要求&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目要求&#34;&gt;#&lt;/a&gt; 项目要求&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;数据集概述&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;locations.csv&lt;/strong&gt;: 包含国家名称及其使用的疫苗类型，每一行代表某一国家的最后一次观测。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;us_state_vaccinations.csv&lt;/strong&gt;: 包含美国各州的疫苗接种历史数据。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations-by-age-group.csv&lt;/strong&gt;: 包含各国不同年龄组的疫苗接种历史数据。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations-by-manufacturer.csv&lt;/strong&gt;: 包含各国使用的不同类型疫苗的历史数据。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations.csv&lt;/strong&gt;: 包含全球各国的疫苗接种数据，每一行代表一个观测日期。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;country_data/Wales.csv, Canada.csv, United States.csv, Denmark.csv&lt;/strong&gt;: 包含这些国家的每日疫苗接种数据。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据库设计要求&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;设计数据库的概念模型，确保符合第三范式 (3NF)。&lt;/li&gt;
-&lt;li&gt;使用实体关系图 (ERD) 映射为数据库模式。&lt;/li&gt;
-&lt;li&gt;完成数据库的标准化，消除数据冗余。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;数据分析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据分析&#34;&gt;#&lt;/a&gt; 数据分析&lt;/h3&gt;
-&lt;h4 id=&#34;数据集分析与关系确定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据集分析与关系确定&#34;&gt;#&lt;/a&gt; 数据集分析与关系确定&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;country_data&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;vaccine&lt;/code&gt; ,  &lt;code&gt;source_url&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; vaccine, source_url, total_vaccinations, people_vaccinated, people_fully_vaccinated, total_boosters&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;进一步分析：存在推测关系  &lt;code&gt;total_vaccinations ≈ people_vaccinated + people_fully_vaccinated + total_boosters&lt;/code&gt; ，验证后确定可以消除  &lt;code&gt;total_vaccinations&lt;/code&gt; 。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations-by-age-group&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;age_group&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_with_booster_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, date, age_group) -&amp;gt; people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, people_with_booster_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations-by-manufacturer&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;vaccine&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, date, vaccine) -&amp;gt; total_vaccinations&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;locations&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt; ,  &lt;code&gt;vaccines&lt;/code&gt; ,  &lt;code&gt;last_observation_date&lt;/code&gt; ,  &lt;code&gt;source_name&lt;/code&gt; ,  &lt;code&gt;source_website&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, last_observation_date) -&amp;gt; vaccines, source_website&lt;/code&gt;  和  &lt;code&gt;(source_website) -&amp;gt; source_name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;vaccinations&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_per_million&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; people_vaccinated, people_fully_vaccinated, total_boosters, daily_vaccinations, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, daily_vaccinations_per_million, daily_people_vaccinated, daily_people_vaccinated_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;us_state_vaccinations&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;包含属性： &lt;code&gt;location&lt;/code&gt; ,  &lt;code&gt;date&lt;/code&gt; ,  &lt;code&gt;total_vaccinations&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt; ,  &lt;code&gt;total_distributed&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;share_doses_used&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;关系： &lt;code&gt;(location, date) -&amp;gt; people_vaccinated, people_fully_vaccinated, total_boosters, daily_vaccinations, total_distributed, people_fully_vaccinated_per_hundred, total_boosters_per_hundred, share_doses_used, daily_people_vaccinated, people_vaccinated_per_hundred, distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;数据库实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库实现&#34;&gt;#&lt;/a&gt; 数据库实现&lt;/h3&gt;
-&lt;h4 id=&#34;概念模型设计&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概念模型设计&#34;&gt;#&lt;/a&gt; 概念模型设计&lt;/h4&gt;
-&lt;p&gt;使用实体关系图 (ERD) 进行概念模型设计，将数据重要性与残缺程度较好的属性用黑色表示，其他属性存在较大分析困难度，用浅色表示。&lt;/p&gt;
-&lt;h4 id=&#34;数据库模式映射&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库模式映射&#34;&gt;#&lt;/a&gt; 数据库模式映射&lt;/h4&gt;
-&lt;p&gt;使用七步映射法 (7-step mapping process) 将 ERD 映射为数据库模式，创建以下表项：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Source_Website&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;url (主键)&lt;/code&gt; ,  &lt;code&gt;source_name&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Record_vaccine&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;vaccine (主键)&lt;/code&gt; ,  &lt;code&gt;total_vaccines&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Record_age&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;age_group (主键)&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Location_Data_Total&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;vaccines&lt;/code&gt; ,  &lt;code&gt;source_website (外键)&lt;/code&gt; ,  &lt;code&gt;total_vaccination&lt;/code&gt; ,  &lt;code&gt;total_distributed&lt;/code&gt; ,  &lt;code&gt;share_doses_used&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Location_Data_non_total&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;source_website (外键)&lt;/code&gt; ,  &lt;code&gt;people_vaccinated&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated&lt;/code&gt; ,  &lt;code&gt;total_boosters&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;US_Location&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;ISO_Location&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;iso_code&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Location_Data_Per&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;属性： &lt;code&gt;location (主键)&lt;/code&gt; ,  &lt;code&gt;date (主键)&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_raw&lt;/code&gt; ,  &lt;code&gt;total_vaccinations_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;people_fully_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;total_boosters_per_hundred&lt;/code&gt; ,  &lt;code&gt;daily_vaccinations_per_million&lt;/code&gt; ,  &lt;code&gt;daily_people_vaccinated_per_hundred&lt;/code&gt; ,  &lt;code&gt;distributed_per_hundred&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;表结构的-sql-代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#表结构的-sql-代码&#34;&gt;#&lt;/a&gt; 表结构的 SQL 代码&lt;/h4&gt;
-&lt;p&gt;以下是创建上述表的 SQL 代码示例：&lt;/p&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Source_Website (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    URL_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    NAME_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Record_vaccine (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    VACCINE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINES &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Record_age (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    AGE_GROUP &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS_HUND &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_Total (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    VACCINES &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;200&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SOURCE_WEBSITE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINATION &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_DISTRIBUTED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SHARE_DOSES_USED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;FOREIGN&lt;/span&gt; KEY (SOURCE_WEBSITE) &lt;span class=&#34;keyword&#34;&gt;REFERENCES&lt;/span&gt; Source_Website(URL_)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_non_total (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SOURCE_WEBSITE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_PEOPLE_VACCINATED &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;FOREIGN&lt;/span&gt; KEY (SOURCE_WEBSITE) &lt;span class=&#34;keyword&#34;&gt;REFERENCES&lt;/span&gt; Source_Website(URL_)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; US_Location (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; ISO_Location (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ISO_CODE &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;NOT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TABLE&lt;/span&gt; Location_Data_Per (&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LOCATION_ &lt;span class=&#34;type&#34;&gt;VARCHAR&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50&lt;/span&gt;) &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DATE_ DATETIME &lt;span class=&#34;keyword&#34;&gt;PRIMARY&lt;/span&gt; KEY,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS_RAW &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_VACCINATIONS_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_VACCINATED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PEOPLE_FULLY_VACCINATED_PERHUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    TOTAL_BOOSTERS_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_VACCINATIONS_PER_MILION &lt;span class=&#34;type&#34;&gt;INT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DAILY_PEOPLE_VACCINATED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DISTRIBUTED_PER_HUNDRED &lt;span class=&#34;type&#34;&gt;FLOAT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;数据库标准化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据库标准化&#34;&gt;#&lt;/a&gt; 数据库标准化&lt;/h3&gt;
-&lt;p&gt;通过分析各表的属性关系，消除了冗余，确保所有表格均满足第三范式 (3NF)，以提高数据存储和查询的效率。&lt;/p&gt;
-&lt;h3 id=&#34;总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#总结&#34;&gt;#&lt;/a&gt; 总结&lt;/h3&gt;
-&lt;p&gt;本项目通过详细的数据分析与设计，构建了一个规范化的数据库模型，用于全球 COVID-19 疫苗接种数据的存储和分析。通过 ERD 设计与数据库模式映射，成功实现了数据的高效存储和查询。标准化过程有效地消除了数据冗余，提高了数据库的性能和可维护性。项目最终成果满足了所有设计要求，确保了数据的完整性和一致性。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
