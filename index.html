@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/cI2aroK5AZfHs7U.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/OLqrN6bKDJHW5ek.jpg"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></li>
-          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/sTHU7wL5qkSiloC.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/n89zJmuTd1cqNrW.jpg"></li>
           <li class="item" data-background-image="https://s2.loli.net/2024/07/04/ArOLs3qhENaXcUV.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/crRxfhWIzOaUvSj.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/l29P4JN75BkxmQu.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/04/f5ySCsjMgUO27Yh.jpg"></li>
+          <li class="item" data-background-image="https://s2.loli.net/2024/07/03/6vserUNHJbOxI4y.gif"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,7 @@
           
 <article class="item">
   <div class="cover">
-    <a href="/README/" itemprop="url" title="蓝天の留言"><img data-src="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></a>
+    <a href="/README/" itemprop="url" title="蓝天の留言"><img data-src="https://s2.loli.net/2024/07/04/crRxfhWIzOaUvSj.jpg"></a>
   </div>
   <div class="info">
     
@@ -363,11 +363,12 @@
     <div class="inner">
         <ul class="posts">
             <li><a title="复杂组合逻辑模块设计" href="/shudian/%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%8A%A5%E5%91%8A/">复杂组合逻辑模块设计</a></li>
+            <li><a title="数码管扫描点亮电路" href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%89/">数码管扫描点亮电路</a></li>
             <li><a title="组合逻辑基础模块" href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%80/">组合逻辑基础模块</a></li>
         </ul>
         <div class="meta footer">
           <span>
-            <i class="ic i-file"></i>2 posts in total
+            <i class="ic i-file"></i>3 posts in total
           </span>
         </div>
         <a href="/categories/shudian/" itemprop="url" title="数字逻辑实验" class="btn">more...</a>
@@ -381,7 +382,61 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4/" itemprop="url" title="亚太数模——洪水"><img data-src="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></a>
+    <a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%89/" itemprop="url" title="数码管扫描点亮电路"><img data-src="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2024-07-06 02:17:48">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2024-07-06T02:17:48+08:00">2024-07-06</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4.1k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%89/" itemprop="url" title="数码管扫描点亮电路">数码管扫描点亮电路</a></h3>
+    <div class="excerpt">
+        # 数码管扫描点亮电路
+# 实验描述
+# 实验一个多数码管扫描显示电路
+
+输入 100MHz 时钟，由 EGO1 板通过 FPGA 管脚直接输入
+
+循环点亮四个数码管，四个数码管分别显示 1 2 3 4，显示位置如下图所示，每次只点亮一个数码管，例如，当左侧数码管显示 1 的时候，其余三个数码管均不亮，然后第二个数码管显示 2，同时熄灭左侧显示 1 的数码管，依此类推
+
+时钟频率为 100MHz，即周期为 10ns，要求每个数码管点亮时间保持2262^{26}226 个时钟周期（大约 0.6 秒）
+
+数码管显示译码电路直接调用实验一中所设计的模块
+
+#...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/shudian/" itemprop="url" title="数字逻辑实验"><i class="ic i-flag"></i>数字逻辑实验</a>
+      </span>
+    </div>
+    <a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%89/" itemprop="url" title="数码管扫描点亮电路" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4/" itemprop="url" title="亚太数模——洪水"><img data-src="https://s2.loli.net/2024/07/03/PwEoecqCVMZg6kp.jpg"></a>
   </div>
   <div class="info">
     
@@ -423,7 +478,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/" itemprop="url" title="亚太数模——新能源汽车"><img data-src="https://s2.loli.net/2024/07/04/n89zJmuTd1cqNrW.jpg"></a>
+    <a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/" itemprop="url" title="亚太数模——新能源汽车"><img data-src="https://s2.loli.net/2024/07/03/6vserUNHJbOxI4y.gif"></a>
   </div>
   <div class="info">
     
@@ -466,7 +521,7 @@ This study presents a comprehensive analysis of new energy electric vehicles (NE
         
 <article class="item">
   <div class="cover">
-    <a href="/shudian/%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%8A%A5%E5%91%8A/" itemprop="url" title="复杂组合逻辑模块设计"><img data-src="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></a>
+    <a href="/shudian/%E5%AE%9E%E9%AA%8C%E4%BA%8C%E6%8A%A5%E5%91%8A/" itemprop="url" title="复杂组合逻辑模块设计"><img data-src="https://s2.loli.net/2024/07/03/PwEoecqCVMZg6kp.jpg"></a>
   </div>
   <div class="info">
     
@@ -517,7 +572,7 @@ This study presents a comprehensive analysis of new energy electric vehicles (NE
         
 <article class="item">
   <div class="cover">
-    <a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%80/" itemprop="url" title="组合逻辑基础模块"><img data-src="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></a>
+    <a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%80/" itemprop="url" title="组合逻辑基础模块"><img data-src="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></a>
   </div>
   <div class="info">
     
@@ -572,7 +627,7 @@ SW7 的优先级最高，对应输出编码为 111，SW6...
         
 <article class="item">
   <div class="cover">
-    <a href="/Sanfordcs231n/README_2_Linear%20Classification/" itemprop="url" title="k-NN最近分类器"><img data-src="https://s2.loli.net/2024/07/03/NDKVsh3T5XY8lnp.gif"></a>
+    <a href="/Sanfordcs231n/README_2_Linear%20Classification/" itemprop="url" title="k-NN最近分类器"><img data-src="https://s2.loli.net/2024/07/04/f5ySCsjMgUO27Yh.jpg"></a>
   </div>
   <div class="info">
     
@@ -616,7 +671,7 @@ SW7 的优先级最高，对应输出编码为 111，SW6...
         
 <article class="item">
   <div class="cover">
-    <a href="/Sanfordcs231n/README_1_KNN/" itemprop="url" title="线性分类器"><img data-src="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></a>
+    <a href="/Sanfordcs231n/README_1_KNN/" itemprop="url" title="线性分类器"><img data-src="https://s2.loli.net/2024/07/03/2CIcORrG8hxpSnD.jpg"></a>
   </div>
   <div class="info">
     
@@ -658,7 +713,7 @@ SW7 的优先级最高，对应输出编码为 111，SW6...
         
 <article class="item">
   <div class="cover">
-    <a href="/recommendation/README/" itemprop="url" title="b_README"><img data-src="https://s2.loli.net/2024/07/03/8Rq9gGbxm7TXjfp.png"></a>
+    <a href="/recommendation/README/" itemprop="url" title="b_README"><img data-src="https://s2.loli.net/2024/07/03/qk7VYGUEtZ2oeyB.gif"></a>
   </div>
   <div class="info">
     
@@ -701,7 +756,7 @@ SW7 的优先级最高，对应输出编码为 111，SW6...
         
 <article class="item">
   <div class="cover">
-    <a href="/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/" itemprop="url" title="美赛——七鳃鳗"><img data-src="https://s2.loli.net/2024/07/04/OLqrN6bKDJHW5ek.jpg"></a>
+    <a href="/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/" itemprop="url" title="美赛——七鳃鳗"><img data-src="https://s2.loli.net/2024/07/04/cI2aroK5AZfHs7U.jpg"></a>
   </div>
   <div class="info">
     
@@ -747,7 +802,7 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
         
 <article class="item">
   <div class="cover">
-    <a href="/misc/%E4%BC%8A%E8%97%A4%E5%BE%AE%E7%A7%AF%E5%88%86/" itemprop="url" title="随机过程——运用伊藤微积分对布朗运动进行分析"><img data-src="https://s2.loli.net/2024/07/03/8Rq9gGbxm7TXjfp.png"></a>
+    <a href="/misc/%E4%BC%8A%E8%97%A4%E5%BE%AE%E7%A7%AF%E5%88%86/" itemprop="url" title="随机过程——运用伊藤微积分对布朗运动进行分析"><img data-src="https://s2.loli.net/2024/07/04/crRxfhWIzOaUvSj.jpg"></a>
   </div>
   <div class="info">
     
@@ -789,60 +844,6 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
   </div>
 </article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/misc/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B%E5%A4%A7%E4%BD%9C%E4%B8%9A/" itemprop="url" title="Untitled"><img data-src="https://s2.loli.net/2024/07/04/f5ySCsjMgUO27Yh.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2024-07-03 23:01:48">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2024-07-03T23:01:48+08:00">2024-07-03</time>
-  </span>
-  <span class="item" title="Symbols count in article">
-    <span class="icon">
-      <i class="ic i-pen"></i>
-    </span>
-    <span>67k</span>
-    <span class="text">words</span>
-  </span>
-  <span class="item" title="Reading time">
-    <span class="icon">
-      <i class="ic i-clock"></i>
-    </span>
-    <span>1:01</span>
-  </span>
-</div>
-
-    <h3><a href="/misc/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B%E5%A4%A7%E4%BD%9C%E4%B8%9A/" itemprop="url" title="Untitled">Untitled</a></h3>
-    <div class="excerpt">
-        目录
-1 引言	
-2. 符号	
-2.1 uBlock 所用符号	
-2.2 uBlock 术语解释	
-2.2.1 并置	
-2.2.2 半字节（Nibble）	4
-2.2.3 向量置换（Permutation of Vectors）	
-2.2.4 轮密钥（Round Key）	
-3.uBlock 分组密码及两种工作模式的来历	
-3.1 uBlock 算法来历	
-3.2 ECB 分组密码模式来历	
-3.2.1 ECB 的设计背景	
-3.2.2 ECB 的来历	
-3.2.3 ECB 的迭代过程	
-3.2.4 ECB 的安全性讨论	
-3.3 CBC 模式分析	6
-3.3.1 CBC...
-    </div>
-    <a href="/misc/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B%E5%A4%A7%E4%BD%9C%E4%B8%9A/" itemprop="url" title="Untitled" class="btn">more...</a>
-  </div>
-</article>
-
     </div>
 
   </div>
@@ -878,7 +879,7 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">40</span>
+        <span class="count">41</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -940,50 +941,10 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/ECEA/" title="In 单片机小学期 ECEA">单片机小学期 ECEA</a>
-</div>
-
-    <span><a href="/ECEA/4%E4%BA%A7%E7%94%9F%E4%B8%83%E8%89%B2%E7%81%AF/" title="Generate colorful lights">Generate colorful lights</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/LLMstestoracle/" title="In LLM 的 test oracle 生成">LLM 的 test oracle 生成</a>
 </div>
 
-    <span><a href="/LLMstestoracle/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Sanfordcs231n/" title="In 斯坦福 CS231n 课程">斯坦福 CS231n 课程</a>
-</div>
-
-    <span><a href="/Sanfordcs231n/README_1_KNN/" title="线性分类器">线性分类器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/shudian/" title="In 数字逻辑实验">数字逻辑实验</a>
-</div>
-
-    <span><a href="/shudian/%E6%95%B0%E7%94%B5%E5%AE%9E%E9%AA%8C%E4%B8%80/" title="组合逻辑基础模块">组合逻辑基础模块</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/misc/" title="In 闲来无事赚丶米">闲来无事赚丶米</a>
-</div>
-
-    <span><a href="/misc/README/" title="a_README">a_README</a></span>
+    <span><a href="/LLMstestoracle/2_cronex-master/" title="cronex">cronex</a></span>
   </li>
 
       
@@ -1003,7 +964,7 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
 <a href="/categories/IntroductiontoNetSecurityLab/" title="In 网安导论实验">网安导论实验</a>
 </div>
 
-    <span><a href="/IntroductiontoNetSecurityLab/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E5%AE%89%E5%85%A8_%E5%90%8E%E9%97%A8%E9%98%B2%E5%BE%A1_%E9%80%89%E5%81%9A/" title="人工智能算法安全_后门防御_选座">人工智能算法安全_后门防御_选座</a></span>
+    <span><a href="/IntroductiontoNetSecurityLab/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E5%AE%89%E5%85%A8_%E5%90%8E%E9%97%A8%E6%94%BB%E5%87%BB/" title="人工智能的后门攻击">人工智能的后门攻击</a></span>
   </li>
 
       
@@ -1013,17 +974,7 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
 <a href="/categories/misc/" title="In 闲来无事赚丶米">闲来无事赚丶米</a>
 </div>
 
-    <span><a href="/misc/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/" title="数据结构实验">数据结构实验</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/IntroductiontoNetSecurityLab/" title="In 网安导论实验">网安导论实验</a>
-</div>
-
-    <span><a href="/IntroductiontoNetSecurityLab/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E5%AE%89%E5%85%A8_%E5%90%8E%E9%97%A8%E6%94%BB%E5%87%BB/" title="人工智能的后门攻击">人工智能的后门攻击</a></span>
+    <span><a href="/misc/%E4%BC%8A%E8%97%A4%E5%BE%AE%E7%A7%AF%E5%88%86/" title="随机过程——运用伊藤微积分对布朗运动进行分析">随机过程——运用伊藤微积分对布朗运动进行分析</a></span>
   </li>
 
       
@@ -1033,7 +984,56 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
 <a href="/categories/LLMstestoracle/" title="In LLM 的 test oracle 生成">LLM 的 test oracle 生成</a>
 </div>
 
-    <span><a href="/LLMstestoracle/1_PythonProjectTemplate-master/" title="PythonProjectTemplate-master">PythonProjectTemplate-master</a></span>
+    <span><a href="/LLMstestoracle/5_giskard-main/" title="Giskard-AI&#x2F;giskard">Giskard-AI/giskard</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LLMstestoracle/" title="In LLM 的 test oracle 生成">LLM 的 test oracle 生成</a>
+</div>
+
+    <span><a href="/LLMstestoracle/4_oj-master/" title="online-judge-tools&#x2F;oj">online-judge-tools/oj</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ECEBC/" title="In 嵩天的爱 - ECE-BC">嵩天的爱 - ECE-BC</a>
+</div>
+
+    <span><a href="/ECEBC/redis-dict.c%20%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/" title="DICT.C源码阅读报告">DICT.C源码阅读报告</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/bit/" title="In BIT-study">BIT-study</a>
+</div>
+
+    <span><a href="/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/" title="亚太数模——新能源汽车">亚太数模——新能源汽车</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IntroductiontoNetSecurityLab/" title="In 网安导论实验">网安导论实验</a>
+</div>
+
+    <span><a href="/IntroductiontoNetSecurityLab/%E5%85%AC%E9%92%A5%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BDPKI/" title="公钥设施基础kpi">公钥设施基础kpi</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/misc/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B%E5%A4%A7%E4%BD%9C%E4%B8%9A/" title="Untitled">Untitled</a></span>
   </li>
 
   </ul>
@@ -1058,13 +1058,13 @@ species deviate from an even sex ratio. This is called adaptive sex ratio variat
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">529k words</span>
+    <span title="Symbols count total">533k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:01</span>
+    <span title="Reading time total">8:05</span>
   </div>
   <div class="powered-by">
     Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
