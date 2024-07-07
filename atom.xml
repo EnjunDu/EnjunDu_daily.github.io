@@ -10,11 +10,66 @@
     <category term="recommendation" />
     <category term="homework" />
     <entry>
-        <id>https://enjundu.github.io/ctf/README/</id>
-        <title>a_README</title>
-        <link rel="alternate" href="https://enjundu.github.io/ctf/README/"/>
-        <content type="html">&lt;h2 id=&#34;1&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1&#34;&gt;#&lt;/a&gt; 1&lt;/h2&gt;
-&lt;p&gt;还没更，别急&lt;/p&gt;
+        <id>https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
+        <title>NSC暑期培训——web</title>
+        <link rel="alternate" href="https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
+        <content type="html">&lt;h2 id=&#34;java安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java安装&#34;&gt;#&lt;/a&gt; Java 安装&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开点击链接进入下载界面&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;​		&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamF2YXNlOHUyMTEtbGF0ZXItYXJjaGl2ZS1kb3dubG9hZHMuaHRtbA==&#34;&gt;网页链接&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​		&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamF2YXNlOHUyMTEtbGF0ZXItYXJjaGl2ZS1kb3dubG9hZHMuaHRtbA==&#34;&gt;https://www.oracle.com/java/technologies/javase/javase8u211-later-archive-downloads.html&lt;/span&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;选择制定版本 java jdk 下载&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java SE Development Kit 8u211&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb3dubG9hZC5vcmFjbGUuY29tL290bi9qYXZhL2pkay84dTIxMS1iMTIvNDc4YTYyYjdkNGUzNGI3OGI2NzFjNzU0ZWFhZjM4YWIvamRrLTh1MjExLXdpbmRvd3MteDY0LmV4ZQ==&#34;&gt;jdk-8u211-windows-x64.exe&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;点击下载后注册登录 Oracle 即可下载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/WpQ5CIL8Hw1Olhs.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击下载包并且安装网页，记住你的下载地址【默认为 C:\Program Files\Java\jdk1.8.0_211】&lt;br /&gt;
+注：一般而言，计算机软件我们都&lt;strong&gt;不推荐在 C 盘安装&lt;/strong&gt;。在 C 盘安装会影响计算机的运行。但是&lt;strong&gt; JAVA 特例&lt;/strong&gt;，我们通常安在 C 盘，这样&lt;strong&gt;使得 Java 的优先级更高&lt;/strong&gt;。无需去其他盘访问。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/OiWJjsR1oPdkgGm.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装后就会出现一个&lt;strong&gt; jdk 文件夹和 jar 文件夹&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;jre 是 java runtime environment, 是 java 程序的运行环境。既然是运行，当然要包含 jvm，也就是虚拟机，还有所有 java 类库的 class 文件，都在 lib 目录下打包成了 jar。在 windows 上的虚拟机是 jre/bin/client 里面是一个 jvm.dll。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;jdk 是 java development kit，是 java 的开发工具包，主要是给 ide 用的，里面包含了各种类库和工具。当然也包括了另外一个 Jre.，而且 jdk/jre/bin 里面也有一个 server 文件夹， server 文件夹下面也有一个 jvm.dll 虚拟机。（这个虚拟机是什么后，面会涉及）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;环境配置&lt;/strong&gt;：Windows 下面搜索框搜索并打开&lt;strong&gt;编辑系统环境变量&lt;/strong&gt;&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/jtxluQsB1YobrAV.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用户变量界面新建&lt;br /&gt;
+&lt;strong&gt; JAVA_HOME&lt;/strong&gt; 变量名 (一定要大写！)&lt;/p&gt;
+&lt;p&gt;变量值为&lt;strong&gt; C:\Program Files\Java\jdk1.8.0_211&lt;/strong&gt;（替换为你实际的 jdk 地址）&lt;/p&gt;
+&lt;p&gt;再次新建：&lt;/p&gt;
+&lt;p&gt;变量名：classpath（这次要小写）&lt;/p&gt;
+&lt;p&gt;变量值：有点难你直接复制就行&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;,;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/36vYcZ2eFGgLQJS.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在系统变量里找到 Path 目录然后点击进去添加 jdk 的 bin 目录（一般是 C:\Program Files\Java\jdk1.8.0_211\bin）&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/mxUqTHKiAjgCz1y.png&#34; alt=&#34;image.png&#34; /&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/bP6WM1hAOcd49pt.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Win+R 弹出运行窗口，输入 cmd 后弹出 DOS 命令窗口&lt;/p&gt;
+&lt;p&gt;然后输入&lt;strong&gt; java -version&lt;/strong&gt;，如果出现如下信息，说明已经安装完成&lt;br /&gt;
+&lt;img data-src=&#34;https://s2.loli.net/2024/07/07/shXN3tuDwxdrCWc.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;over&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="Hexo" />
         <category term="Front Matter" />
