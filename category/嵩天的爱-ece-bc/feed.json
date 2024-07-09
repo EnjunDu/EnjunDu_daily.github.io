@@ -16,17 +16,6 @@
             ]
         },
         {
-            "id": "https://enjundu.github.io/ECEBC/example/",
-            "url": "https://enjundu.github.io/ECEBC/example/",
-            "title": "example",
-            "date_published": "2024-07-06T17:41:31.000Z",
-            "content_html": "",
-            "tags": [
-                "Hexo",
-                "Front Matter"
-            ]
-        },
-        {
             "id": "https://enjundu.github.io/ECEBC/%E5%9B%BE%E5%83%8F%E9%9A%90%E5%86%99/",
             "url": "https://enjundu.github.io/ECEBC/%E5%9B%BE%E5%83%8F%E9%9A%90%E5%86%99/",
             "title": "图像隐写",
@@ -43,6 +32,17 @@
             "title": "动态规划",
             "date_published": "2024-07-06T17:41:31.000Z",
             "content_html": "<h1 id=\"项目介绍\"><a class=\"anchor\" href=\"#项目介绍\">#</a> 项目介绍</h1>\n<h2 id=\"项目背景\"><a class=\"anchor\" href=\"#项目背景\">#</a> 项目背景</h2>\n<h3 id=\"高楼扔鸡蛋\"><a class=\"anchor\" href=\"#高楼扔鸡蛋\">#</a> 高楼扔鸡蛋</h3>\n<p><img data-src=\"https://s2.loli.net/2024/07/09/JsZmign31Lvle4x.png\" alt=\"image.png\" /></p>\n<h3 id=\"动态规划\"><a class=\"anchor\" href=\"#动态规划\">#</a> 动态规划</h3>\n<p>动态规划既是一种数学优化方法，也是一种计算机编程方法，该方法是由理查德・贝尔曼 (Richard Bellman) 在 20 世纪 50 年代开发的，已在从航空航天工程到经济学的许多领域中得到应用。</p>\n<p>在这两种情况下，它都指通过以递归方式将其分解为更简单的子问题来简化复杂的问题。虽然某些决策问题无法以这种方式解决，但跨越多个时间点的决策通常会递归地分解。同样，在计算机科学中，如果可以通过将问题分解为子问题，然后递归地找到子问题的最优解来最佳地解决问题，则称它具有最佳的子结构。</p>\n<p>如果子问题可以递归地嵌套在较大的问题中，以便动态规划方法适用，则较大问题的值与子问题的值之间存在关系。</p>\n<h2 id=\"项目目标\"><a class=\"anchor\" href=\"#项目目标\">#</a> 项目目标</h2>\n<h3 id=\"主要目标\"><a class=\"anchor\" href=\"#主要目标\">#</a> 主要目标</h3>\n<p>给你 k 个相同的水杯，并可以使用一栋从第 1 层到第 n 层共有 n 层楼的高层建筑。</p>\n<p>已知存在楼层 f ，满足 0 &lt;= f &lt;= n ，任何从 高于 f 的楼层落下的水杯都会碎，从 f 楼层或比它低的楼层落下的水杯都不会破。</p>\n<p>每次你可以拿一个没有碎的水杯并把它从任一楼层 x 扔下（满足 1 &lt;= x &lt;= n）。如果水杯碎了，你就不能再次使用它。如果某个水杯扔下后没有摔碎，则可以在之后的操作中重复使用这个水杯。</p>\n<p>请你计算并返回要确定 f 确切的值的最小操作次数是多少？</p>\n<h2 id=\"课堂要求\"><a class=\"anchor\" href=\"#课堂要求\">#</a> 课堂要求</h2>\n<h3 id=\"提交项目结构\"><a class=\"anchor\" href=\"#提交项目结构\">#</a> 提交项目结构</h3>\n<p><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">main.py\t\t\t\t主文件</span><br><span class=\"line\">README.md\t\t\t项目描述说明文档</span><br><span class=\"line\">requirements.txt\t项目依赖包版本号（项目需要下载到本地执行，如果有第三方依赖包，必须填写）</span><br></pre></td></tr></table></figure></p>\n<h3 id=\"标注核心算法函数位置\"><a class=\"anchor\" href=\"#标注核心算法函数位置\">#</a> 标注核心算法函数位置</h3>\n<p><figure class=\"highlight python\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"comment\"># 位于 mian.py 文件 第15行</span></span><br><span class=\"line\"></span><br><span class=\"line\"><span class=\"keyword\">def</span> <span class=\"title function_\">cup_drop</span>(<span class=\"params\">k: <span class=\"built_in\">int</span>, n: <span class=\"built_in\">int</span></span>) -&gt; <span class=\"built_in\">int</span>:</span><br><span class=\"line\">\t<span class=\"keyword\">pass</span></span><br></pre></td></tr></table></figure></p>\n<h3 id=\"程序运行效果\"><a class=\"anchor\" href=\"#程序运行效果\">#</a> 程序运行效果</h3>\n<p><figure class=\"highlight python\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">if</span> __name__ == <span class=\"string\">&quot;__main__&quot;</span>:</span><br><span class=\"line\">    number = cup_drop(k=<span class=\"number\">2</span>, n=<span class=\"number\">6</span>)</span><br><span class=\"line\">    <span class=\"built_in\">print</span>(number)  <span class=\"comment\"># 3</span></span><br><span class=\"line\">    number = cup_drop(k=<span class=\"number\">3</span>, n=<span class=\"number\">14</span>)</span><br><span class=\"line\">    <span class=\"built_in\">print</span>(number)  <span class=\"comment\"># 4</span></span><br></pre></td></tr></table></figure></p>\n",
+            "tags": [
+                "Hexo",
+                "Front Matter"
+            ]
+        },
+        {
+            "id": "https://enjundu.github.io/ECEBC/example/",
+            "url": "https://enjundu.github.io/ECEBC/example/",
+            "title": "example",
+            "date_published": "2024-07-06T17:41:31.000Z",
+            "content_html": "",
             "tags": [
                 "Hexo",
                 "Front Matter"

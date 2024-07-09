@@ -88,15 +88,6 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/ECEBC/example/</guid>
-            <title>example</title>
-            <link>https://enjundu.github.io/ECEBC/example/</link>
-            <category>Hexo</category>
-            <category>Front Matter</category>
-            <pubDate>Sun, 07 Jul 2024 01:41:31 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://enjundu.github.io/ECEBC/%E5%9B%BE%E5%83%8F%E9%9A%90%E5%86%99/</guid>
             <title>图像隐写</title>
             <link>https://enjundu.github.io/ECEBC/%E5%9B%BE%E5%83%8F%E9%9A%90%E5%86%99/</link>
@@ -154,6 +145,15 @@
 &lt;h3 id=&#34;程序运行效果&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序运行效果&#34;&gt;#&lt;/a&gt; 程序运行效果&lt;/h3&gt;
 &lt;p&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; __name__ == &lt;span class=&#34;string&#34;&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    number = cup_drop(k=&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, n=&lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(number)  &lt;span class=&#34;comment&#34;&gt;# 3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    number = cup_drop(k=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, n=&lt;span class=&#34;number&#34;&gt;14&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(number)  &lt;span class=&#34;comment&#34;&gt;# 4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://enjundu.github.io/ECEBC/example/</guid>
+            <title>example</title>
+            <link>https://enjundu.github.io/ECEBC/example/</link>
+            <category>Hexo</category>
+            <category>Front Matter</category>
+            <pubDate>Sun, 07 Jul 2024 01:41:31 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/ECEBC/%E7%94%B5%E5%BD%B1%E7%BD%91%E7%AB%99/</guid>
