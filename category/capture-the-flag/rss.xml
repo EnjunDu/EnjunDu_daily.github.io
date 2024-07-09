@@ -697,7 +697,7 @@
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/09/CyudBa3VrTSwqig.png&#34; alt=&#34;QQ_1720497597660.png&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;思考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#思考&#34;&gt;#&lt;/a&gt; 思考：&lt;/h3&gt;
+&lt;h3 id=&#34;思考&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#思考&#34;&gt;#&lt;/a&gt; 思考&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;分析代码：为什么 username 不能使用 &lt;code&gt;&#39; OR &#39;1&#39;=&#39;1&lt;/code&gt;  进行注入？&lt;/li&gt;
 &lt;li&gt;分析代码：为什么 password 进行注入的时候，username 必须为 &lt;code&gt;ISCC_2024_sky_Jack_Du&lt;/code&gt; ？&lt;/li&gt;
