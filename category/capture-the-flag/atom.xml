@@ -13,7 +13,42 @@
         <id>https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
         <title>NSC暑期培训——web</title>
         <link rel="alternate" href="https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
-        <content type="html">&lt;h1 id=&#34;java安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java安装&#34;&gt;#&lt;/a&gt; Java 安装&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;vmware安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vmware安装&#34;&gt;#&lt;/a&gt; VMware 安装&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudm13YXJlLmNvbS9jbi9wcm9kdWN0cy93b3Jrc3RhdGlvbi1wcm8vd29ya3N0YXRpb24tcHJvLWV2YWx1YXRpb24uaHRtbA==&#34;&gt;官网地址&lt;/span&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudm13YXJlLmNvbS9jbi9wcm9kdWN0cy93b3Jrc3RhdGlvbi1wcm8vd29ya3N0YXRpb24tcHJvLWV2YWx1YXRpb24uaHRtbA==&#34;&gt;https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入官网选择&lt;strong&gt; for windows&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载完后双击点开，点击下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;遇到安装路径请自定义【不要什么都堆到 C 盘！！】，然后选择增强型键盘驱动程序和将控制台工具添加到系统 PATH&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根据自身情况适当选择 “启动时检查产品更新” 与 “帮助完善 VMware Workstation Pro” 复选框，然后单击 “下一步”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下一步，【建议点击添加到桌面】&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后输入许可证，VMware 16 的许可证如下&lt;br /&gt;
+ &lt;code&gt;YF390-0HF8P-M81RQ-2DXQE-M2UT6&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;若不可用请自行百度可用版本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后即可使用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;kaliubuntu安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#kaliubuntu安装&#34;&gt;#&lt;/a&gt; kali&amp;amp;Ubuntu 安装&lt;/h1&gt;
+&lt;p&gt;为 &lt;code&gt;[我]&lt;/code&gt;  了 [懒] 锻 &lt;code&gt;[得]&lt;/code&gt;  炼 [写] 同学们的自行搜索能力，请自行 csdn 或者百度搜索 Kali 或 Ubuntu 的下载&lt;/p&gt;
+&lt;p&gt;确保&lt;strong&gt;至少&lt;/strong&gt;成功在 VM 上安装一个！&lt;/p&gt;
+&lt;h1 id=&#34;java安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java安装&#34;&gt;#&lt;/a&gt; Java 安装&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;打开点击链接进入下载界面&lt;/li&gt;
 &lt;/ol&gt;
