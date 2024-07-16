@@ -610,7 +610,10 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
             <category>code</category>
             <category>recommendation</category>
             <pubDate>Sun, 07 Jul 2024 09:41:31 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;vmware安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vmware安装&#34;&gt;#&lt;/a&gt; VMware 安装&lt;/h1&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;攻防世界账号注册&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻防世界账号注册&#34;&gt;#&lt;/a&gt; 攻防世界账号注册&lt;/h1&gt;
+&lt;p&gt;在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;攻防世界&lt;/span&gt;官网注册账号。&lt;br /&gt;
+网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;https://adworld.xctf.org.cn/&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;vmware安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vmware安装&#34;&gt;#&lt;/a&gt; VMware 安装&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudm13YXJlLmNvbS9jbi9wcm9kdWN0cy93b3Jrc3RhdGlvbi1wcm8vd29ya3N0YXRpb24tcHJvLWV2YWx1YXRpb24uaHRtbA==&#34;&gt;官网地址&lt;/span&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cudm13YXJlLmNvbS9jbi9wcm9kdWN0cy93b3Jrc3RhdGlvbi1wcm8vd29ya3N0YXRpb24tcHJvLWV2YWx1YXRpb24uaHRtbA==&#34;&gt;https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html&lt;/span&gt;&lt;/p&gt;
@@ -1399,6 +1402,48 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
 &lt;li&gt;&lt;strong&gt;使用 Flask 的 &lt;code&gt;escape&lt;/code&gt;  函数&lt;/strong&gt;：对用户输入的内容进行 HTML 转义，如上代码所示，使用 &lt;code&gt;escape&lt;/code&gt;  函数对 &lt;code&gt;query&lt;/code&gt;  和 &lt;code&gt;comment&lt;/code&gt;  进行处理。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;内容安全策略（CSP）&lt;/strong&gt;：配置 HTTP 响应头，限制浏览器只执行可信任的脚本。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1 id=&#34;实战&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实战&#34;&gt;#&lt;/a&gt; 实战&lt;/h1&gt;
+&lt;h2 id=&#34;view_source&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#view_source&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuL2NoYWxsZW5nZXMvbGlzdA==&#34;&gt;view_source&lt;/span&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;点击获取在线场景&lt;/li&gt;
+&lt;li&gt;F12&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get_post&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#get_post&#34;&gt;#&lt;/a&gt; get_post&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;hackbar&lt;/li&gt;
+&lt;li&gt;get——?a=x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;robots&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#robots&#34;&gt;#&lt;/a&gt; robots&lt;/h2&gt;
+&lt;p&gt;obots 协议也称爬虫协议、爬虫规则等，是指&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTclQkQlOTElRTclQUIlOTkvMTU1NzIyP2Zyb21Nb2R1bGU9bGVtbWFfaW5saW5r&#34;&gt;网站&lt;/span&gt;可建立一个 robots.txt 文件来告诉&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTAlOUMlRTclQjQlQTIlRTUlQkMlOTUlRTYlOTMlOEUvMTA0ODEyP2Zyb21Nb2R1bGU9bGVtbWFfaW5saW5r&#34;&gt;搜索引擎&lt;/span&gt;哪些页面可以抓取，哪些页面不能抓取，而搜索引擎则通过读取 robots.txt 文件来识别这个页面是否允许被抓取。但是，这个 robots 协议不是防火墙，也没有&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQkMlQkElRTUlODglQjYlRTYlODklQTclRTglQTElOEMlRTUlOEElOUIvNTUxODA2MzY/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt;强制执行力&lt;/span&gt;，搜索引擎完全可以忽视 robots.txt&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlOTYlODclRTQlQkIlQjYlRTUlOEUlQkIvMTg5NzM5Nzg/ZnJvbU1vZHVsZT1sZW1tYV9pbmxpbms=&#34;&gt; 文件去&lt;/span&gt;抓取网页的&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQkYlQUIlRTclODUlQTcvMzI3MDM4P2Zyb21Nb2R1bGU9bGVtbWFfaW5saW5r&#34;&gt;快照&lt;/span&gt;&lt;strong&gt;。&lt;/strong&gt; [5] 如果想单独定义搜索引擎的漫游器访问&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlQUQlOTAlRTclOUIlQUUlRTUlQkQlOTUvNDcyODAyNj9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;子目录&lt;/span&gt;时的行为，那么可以将自定的设置合并到&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQTAlQjklRTclOUIlQUUlRTUlQkQlOTUvNjA2MTMzMD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt;根目录&lt;/span&gt;下的 robots.txt，或者使用 robots&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlODUlODMlRTYlOTUlQjAlRTYlOEQlQUUvMTk0NjA5MD9mcm9tTW9kdWxlPWxlbW1hX2lubGluaw==&#34;&gt; 元数据&lt;/span&gt;（Metadata，又称元数据）。&lt;/p&gt;
+&lt;h2 id=&#34;backup&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#backup&#34;&gt;#&lt;/a&gt; backup&lt;/h2&gt;
+&lt;h3 id=&#34;备份文件后缀名&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#备份文件后缀名&#34;&gt;#&lt;/a&gt; 备份文件后缀名：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.svn&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.swp&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.~&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.bak&lt;/code&gt; ☆&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.bash_history&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.bkf&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;linux&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux&#34;&gt;#&lt;/a&gt; linux&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;dirsearch&lt;/code&gt;  的用法&lt;/p&gt;
+&lt;h2 id=&#34;cookie&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cookie&#34;&gt;#&lt;/a&gt; cookie&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用 / Application&lt;/li&gt;
+&lt;li&gt;Cookies&lt;/li&gt;
+&lt;li&gt;response？&lt;/li&gt;
+&lt;li&gt;网络 / Network&lt;/li&gt;
+&lt;li&gt;重新加载&lt;/li&gt;
+&lt;li&gt;点击 php, 看到 flag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disabled_button&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#disabled_button&#34;&gt;#&lt;/a&gt; disabled_button&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;F12，指针指过去，发现是 post&lt;/li&gt;
+&lt;li&gt;右键，以 html 格式修改，删除 disable.&lt;/li&gt;
+&lt;li&gt;Hackbar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;class-over&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#class-over&#34;&gt;#&lt;/a&gt; Class Over!&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
