@@ -10,6 +10,8 @@
     <category term="recommendation" />
     <category term="homework" />
     <category term="deep_learning" />
+    <category term="LLM" />
+    <category term="assert" />
     <entry>
         <id>https://enjundu.github.io/recommendation/basic_knowledge/</id>
         <title>basic_knowledge</title>

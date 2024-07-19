@@ -10,6 +10,8 @@
     <category term="recommendation" />
     <category term="homework" />
     <category term="deep_learning" />
+    <category term="LLM" />
+    <category term="assert" />
     <entry>
         <id>https://enjundu.github.io/IntroductiontoNetSecurityLab/%E6%A0%88%E6%BA%A2%E5%87%BA/</id>
         <title>栈溢出</title>
