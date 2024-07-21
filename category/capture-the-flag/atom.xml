@@ -114,11 +114,15 @@
 &lt;p&gt;**What&#39;s more:**java 编译器：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9taXJyb3Iua2FrYW8uY29tL2VjbGlwc2UvdGVjaG5vbG9neS9lcHAvZG93bmxvYWRzL3JlbGVhc2UvMjAyNC0wNi9SL2VjbGlwc2UtamVlLTIwMjQtMDYtUi13aW4zMi14ODZfNjQuemlwJUVGJUJDJThDJUU5JTgwJTg5JUU2JThCJUE5JUU2JTgwJUE3JUU0JUI4JThCJUU4JUJEJUJEJUVGJUJDJTg4JUU2JTlDJUFDJUU4JUFGJUJFJUU3JUE4JThCJUU0JUI4JThEJUU3JUExJUFDJUU2JTgwJUE3JUU4JUE2JTgxJUU2JUIxJTgyJUVGJUJDJTg5JUUzJTgwJTgy&#34;&gt;https://mirror.kakao.com/eclipse/technology/epp/downloads/release/2024-06/R/eclipse-jee-2024-06-R-win32-x86_64.zip，选择性下载（本课程不硬性要求）。&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;chorme浏览器安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chorme浏览器安装&#34;&gt;#&lt;/a&gt; Chorme 浏览器安装&lt;/h1&gt;
+&lt;h1 id=&#34;火狐浏览器安装配置hackbar&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#火狐浏览器安装配置hackbar&#34;&gt;#&lt;/a&gt; 火狐浏览器安装 &amp;amp; 配置 Hackbar&lt;/h1&gt;
+&lt;p&gt;Hackbar 推荐使用火狐浏览器下载拓展，具体方法请 csdn，直接下载 Hackbar V2 即可。（原版 Hackbar 现在需要收费，如果你能通过破解教程成功破解也行。）&lt;br /&gt;
+之后的课程中使用的拓展也是火狐浏览器里的 Hackbar V2&lt;/p&gt;
+&lt;h1 id=&#34;暂时不用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#暂时不用&#34;&gt;#&lt;/a&gt; 暂时不用&lt;/h1&gt;
+&lt;h2 id=&#34;chorme浏览器安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#chorme浏览器安装&#34;&gt;#&lt;/a&gt; Chorme 浏览器安装&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9jaHJvbWUvI2V1bGE=&#34;&gt;最新稳定版（Stable Channel）Chrome 在线安装&lt;/span&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9jaHJvbWUvI2V1bGE=&#34;&gt;https://www.google.com/chrome/#eula&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9jaHJvbWUvP2V4dHJhPWJldGFjaGFubmVs&#34;&gt;最新测试版（Beta Channel）Chrome 在线安装&lt;/span&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9jaHJvbWUvP2V4dHJhPWJldGFjaGFubmVs&#34;&gt;https://www.google.com/chrome/?extra=betachannel&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RsLmdvb2dsZS5jb20vY2hyb21lL2luc3RhbGwvMjY2LjAvY2hyb21lX2luc3RhbGxlci5leGU=&#34;&gt;离线下载地址&lt;/span&gt;:&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RsLmdvb2dsZS5jb20vY2hyb21lL2luc3RhbGwvMjY2LjAvY2hyb21lX2luc3RhbGxlci5leGU=&#34;&gt;http://dl.google.com/chrome/install/266.0/chrome_installer.exe&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;hackbar安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hackbar安装&#34;&gt;#&lt;/a&gt; Hackbar 安装&lt;/h1&gt;
+&lt;h2 id=&#34;hackbar安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#hackbar安装&#34;&gt;#&lt;/a&gt; Hackbar 安装&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;打开 Chrome 浏览器，然后打开 “&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jaHJvbWUuZ29vZ2xlLmNvbS93ZWJzdG9yZS9jYXRlZ29yeS9leHRlbnNpb25z&#34;&gt;chrome 网上应用店&lt;/span&gt;”，在搜索框搜索 “&lt;strong&gt;hackbar&lt;/strong&gt;”&lt;/li&gt;
 &lt;li&gt;搜索完成后，选择 hackbar 插件，点击 “&lt;strong&gt;添加至 Chrome&lt;/strong&gt;”，会弹出框询问 “&lt;strong&gt;要添加‘HackBar’吗？&lt;/strong&gt;”，点击 “&lt;strong&gt;添加扩展程序&lt;/strong&gt;”&lt;/li&gt;
