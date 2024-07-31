@@ -17,18 +17,6 @@
             ]
         },
         {
-            "id": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/",
-            "url": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/",
-            "title": "深度学习_6_RNN",
-            "date_published": "2024-07-29T07:02:28.000Z",
-            "content_html": "<ul>\n<li>自然语言→有顺序关系 —— 依赖于词</li>\n</ul>\n<h1 id=\"recurrent-neural-network\"><a class=\"anchor\" href=\"#recurrent-neural-network\">#</a> Recurrent Neural Network</h1>\n",
-            "tags": [
-                "Hexo",
-                "Front Matter",
-                "deep_learning"
-            ]
-        },
-        {
             "id": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/",
             "url": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/",
             "title": "深度学习_4_多分类问题",
