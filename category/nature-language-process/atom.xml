@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://enjundu.github.io</id>
+    <title>Hexo • Posts by &#34;nature-language-process&#34; category</title>
+    <link href="https://enjundu.github.io" />
+    <updated>2024-08-02T02:48:58.000Z</updated>
+    <category term="Hexo" />
+    <category term="Front Matter" />
+    <category term="code" />
+    <category term="recommendation" />
+    <category term="homework" />
+    <category term="deep_learning" />
+    <category term="LLM" />
+    <category term="assert" />
+    <category term="deep-learning" />
+    <category term="NLP" />
+    <entry>
+        <id>https://enjundu.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</id>
+        <title>01_课程介绍与词向量</title>
+        <link rel="alternate" href="https://enjundu.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/"/>
+        <content type="html">&lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
+</content>
+        <category term="deep-learning" />
+        <category term="NLP" />
+        <updated>2024-08-02T02:48:58.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://enjundu.github.io/nlp/example/</id>
+        <title>example</title>
+        <link rel="alternate" href="https://enjundu.github.io/nlp/example/"/>
+        <content type="html">&lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
+</content>
+        <category term="deep-learning" />
+        <category term="NLP" />
+        <updated>2024-08-02T02:48:58.000Z</updated>
+    </entry>
+</feed>
