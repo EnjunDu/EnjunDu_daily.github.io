@@ -1062,7 +1062,6 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
 &lt;li&gt;如果是，将其偏置初始化为 0。&lt;/li&gt;
 &lt;li&gt;这样做可以确保线性层的偏置在初始时不会对输入数据产生任何偏移。&lt;/li&gt;
 &lt;/ul&gt;
-
 \begin{equation}
 L_{\text{local}} = \sum_{u \in U} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{u,2}) / \tau)}{\sum_{u&#39; \in U, u&#39; \neq u} \exp(\text{sim}(x_{u,1}, x_{u&#39;,2}) / \tau)} + \sum_{i \in I} -\log \frac{\exp(\text{sim}(x_{i,1}, x_{i,2}) / \tau)}{\sum_{i&#39; \in I, i&#39; \neq i} \exp(\text{sim}(x_{i,1}, x_{i&#39;,2}) / \tau)}
 \end{equation}
