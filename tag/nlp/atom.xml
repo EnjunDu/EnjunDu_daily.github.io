@@ -6,6 +6,8 @@
     <updated>2024-08-09T02:48:58.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
+    <category term="ECEA" />
+    <category term="ECEBC" />
     <category term="deep-learning" />
     <category term="NLP" />
     <category term="RA" />
@@ -13,8 +15,8 @@
     <category term="assert" />
     <category term="code" />
     <category term="recommendation" />
-    <category term="homework" />
     <category term="deep_learning" />
+    <category term="homework" />
     <entry>
         <id>https://enjundu.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/</id>
         <title>01_KnowGPT Knowledge Graph based PrompTing for Large Language Models</title>

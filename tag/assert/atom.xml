@@ -6,6 +6,8 @@
     <updated>2024-07-18T18:07:35.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
+    <category term="ECEA" />
+    <category term="ECEBC" />
     <category term="deep-learning" />
     <category term="NLP" />
     <category term="RA" />
@@ -13,8 +15,8 @@
     <category term="assert" />
     <category term="code" />
     <category term="recommendation" />
-    <category term="homework" />
     <category term="deep_learning" />
+    <category term="homework" />
     <entry>
         <id>https://enjundu.github.io/LLMstestoracle/01_conductor-main/</id>
         <title>01_conductor</title>
