@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Hexo • Posts by &#34;hkust_ra&#34; category</title>
+        <link>https://enjundu.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 09 Aug 2024 10:48:58 +0800</pubDate>
+        <lastBuildDate>Fri, 09 Aug 2024 10:48:58 +0800</lastBuildDate>
+        <category>Hexo</category>
+        <category>Front Matter</category>
+        <category>code</category>
+        <category>recommendation</category>
+        <category>homework</category>
+        <category>deep_learning</category>
+        <category>LLM</category>
+        <category>assert</category>
+        <category>deep-learning</category>
+        <category>NLP</category>
+        <category>RA</category>
+        <item>
+            <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/example/</guid>
+            <title>example</title>
+            <link>https://enjundu.github.io/HKUST-RA/example/</link>
+            <category>deep-learning</category>
+            <category>NLP</category>
+            <category>RA</category>
+            <pubDate>Fri, 09 Aug 2024 10:48:58 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

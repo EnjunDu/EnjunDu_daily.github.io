@@ -5,6 +5,18 @@
     "home_page_url": "https://enjundu.github.io",
     "items": [
         {
+            "id": "https://enjundu.github.io/HKUST-RA/example/",
+            "url": "https://enjundu.github.io/HKUST-RA/example/",
+            "title": "example",
+            "date_published": "2024-08-09T02:48:58.000Z",
+            "content_html": "<h1 id=\"this-is-an-example\"><a class=\"anchor\" href=\"#this-is-an-example\">#</a> this is an example</h1>\n",
+            "tags": [
+                "deep-learning",
+                "NLP",
+                "RA"
+            ]
+        },
+        {
             "id": "https://enjundu.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/",
             "url": "https://enjundu.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/",
             "title": "01_Introduction to the course and word vectors",

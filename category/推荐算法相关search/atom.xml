@@ -14,6 +14,7 @@
     <category term="assert" />
     <category term="deep-learning" />
     <category term="NLP" />
+    <category term="RA" />
     <entry>
         <id>https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</id>
         <title>Contrastive Learning for Sequential Recommendation</title>
