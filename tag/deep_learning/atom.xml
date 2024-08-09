@@ -6,15 +6,15 @@
     <updated>2024-08-08T06:02:28.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
+    <category term="deep-learning" />
+    <category term="NLP" />
+    <category term="RA" />
+    <category term="LLM" />
+    <category term="assert" />
     <category term="code" />
     <category term="recommendation" />
     <category term="homework" />
     <category term="deep_learning" />
-    <category term="LLM" />
-    <category term="assert" />
-    <category term="deep-learning" />
-    <category term="NLP" />
-    <category term="RA" />
     <entry>
         <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/</id>
         <title>深度学习_7_Transformer</title>
@@ -1119,9 +1119,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
         <updated>2024-07-21T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
-        <title>深度学习_1</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+        <title>深度学习_1_基础知识</title>
+        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
         <content type="html">&lt;h1 id=&#34;逻辑斯特回归&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑斯特回归&#34;&gt;#&lt;/a&gt; 逻辑斯特回归&lt;/h1&gt;
 &lt;p&gt;逻辑斯特回归（Logistic Regression）是一种广泛应用于分类问题的统计方法。尽管名字中带有 “回归” 一词，但逻辑斯特回归实际上是用于二分类问题的。&lt;/p&gt;
 &lt;h2 id=&#34;基本原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本原理&#34;&gt;#&lt;/a&gt; 基本原理&lt;/h2&gt;
@@ -1331,7 +1331,6 @@ Y=\begin{bmatrix}y^{(1)}&amp;y^{(2)}&amp;\cdots&amp;y^{(m)}\end&lt;/li&gt;
 &lt;li&gt;不同的上表方括号表示神经网络里不同的值&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;: 表示神经网络的第&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 层&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.65952em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;：表示层中的第&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.65952em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 个节点&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;神经网络-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#神经网络-2&#34;&gt;#&lt;/a&gt; 神经网络&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/15/GQjqUm53nLoK16J.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
@@ -1680,9 +1679,9 @@ dZ^{[2]}=u
         <updated>2024-07-17T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-        <title>深度学习_1_基础知识</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
+        <title>深度学习_1</title>
+        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;h1 id=&#34;逻辑斯特回归&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑斯特回归&#34;&gt;#&lt;/a&gt; 逻辑斯特回归&lt;/h1&gt;
 &lt;p&gt;逻辑斯特回归（Logistic Regression）是一种广泛应用于分类问题的统计方法。尽管名字中带有 “回归” 一词，但逻辑斯特回归实际上是用于二分类问题的。&lt;/p&gt;
 &lt;h2 id=&#34;基本原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本原理&#34;&gt;#&lt;/a&gt; 基本原理&lt;/h2&gt;
@@ -1892,6 +1891,7 @@ Y=\begin{bmatrix}y^{(1)}&amp;y^{(2)}&amp;\cdots&amp;y^{(m)}\end&lt;/li&gt;
 &lt;li&gt;不同的上表方括号表示神经网络里不同的值&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;: 表示神经网络的第&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;l&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 层&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.65952em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;：表示层中的第&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.65952em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 个节点&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;神经网络-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#神经网络-2&#34;&gt;#&lt;/a&gt; 神经网络&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/15/GQjqUm53nLoK16J.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;

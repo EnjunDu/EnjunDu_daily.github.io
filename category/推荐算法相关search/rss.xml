@@ -9,15 +9,15 @@
         <lastBuildDate>Sun, 04 Aug 2024 09:41:31 +0800</lastBuildDate>
         <category>Hexo</category>
         <category>Front Matter</category>
+        <category>deep-learning</category>
+        <category>NLP</category>
+        <category>RA</category>
+        <category>LLM</category>
+        <category>assert</category>
         <category>code</category>
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
-        <category>LLM</category>
-        <category>assert</category>
-        <category>deep-learning</category>
-        <category>NLP</category>
-        <category>RA</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
             <title>Contrastive Learning for Sequential Recommendation</title>

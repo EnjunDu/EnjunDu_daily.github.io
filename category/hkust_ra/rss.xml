@@ -9,15 +9,40 @@
         <lastBuildDate>Fri, 09 Aug 2024 10:48:58 +0800</lastBuildDate>
         <category>Hexo</category>
         <category>Front Matter</category>
+        <category>deep-learning</category>
+        <category>NLP</category>
+        <category>RA</category>
+        <category>LLM</category>
+        <category>assert</category>
         <category>code</category>
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
-        <category>LLM</category>
-        <category>assert</category>
-        <category>deep-learning</category>
-        <category>NLP</category>
-        <category>RA</category>
+        <item>
+            <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/</guid>
+            <title>01_KnowGPT Knowledge Graph based PrompTing for Large Language Models</title>
+            <link>https://enjundu.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/</link>
+            <category>deep-learning</category>
+            <category>NLP</category>
+            <category>RA</category>
+            <pubDate>Fri, 09 Aug 2024 10:48:58 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;检索增强生成retrieval-augmented-generationrag&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#检索增强生成retrieval-augmented-generationrag&#34;&gt;#&lt;/a&gt; 检索增强生成（Retrieval-Augmented Generation，RAG）&lt;/h1&gt;
+&lt;p&gt;是一种结合了信息检索和生成式模型的技术，旨在提高生成模型（如 GPT 等大语言模型）的回答准确性和信息丰富度。RAG 模型通过从外部知识库或文档集合中检索相关信息，来增强生成模型的能力，从而生成更加精确和上下文相关的回答。以下是 RAG 的主要概念和工作机制：&lt;/p&gt;
+&lt;h3 id=&#34;1-核心概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-核心概念&#34;&gt;#&lt;/a&gt; 1. &lt;strong&gt;核心概念&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;检索模块&lt;/strong&gt;：首先，RAG 模型包括一个检索模块，该模块负责从外部知识库或文档集合中找到与输入查询最相关的内容。这些知识库可以是结构化的数据库、非结构化的文本集合、或网络资源等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成模块&lt;/strong&gt;：检索到的相关内容会被传递给生成模块。这个模块通常是一个大型生成式模型，如 GPT 或 BART 等。生成模块利用这些检索到的信息和输入查询，生成最终的回答。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-工作机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2-工作机制&#34;&gt;#&lt;/a&gt; 2. &lt;strong&gt;工作机制&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;查询输入&lt;/strong&gt;：用户输入一个查询（问题或请求）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;信息检索&lt;/strong&gt;：检索模块根据输入查询，从预定义的知识库中检索出若干个与查询相关的文档或信息片段。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;信息整合&lt;/strong&gt;：生成模块将输入查询与检索到的信息进行整合，生成一个基于检索内容的响应。这一过程使得生成的内容不仅基于模型的内置知识，还基于外部检索到的最新或更精确的信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成输出&lt;/strong&gt;：最终，模型输出一个结合了检索信息的生成式回答。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;知识图谱knowledge-graphs-kgs&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识图谱knowledge-graphs-kgs&#34;&gt;#&lt;/a&gt; 知识图谱（Knowledge Graphs, KGs）&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/example/</guid>
             <title>example</title>
