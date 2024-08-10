@@ -7,9 +7,9 @@
         <language>en</language>
         <pubDate>Fri, 02 Aug 2024 10:48:58 +0800</pubDate>
         <lastBuildDate>Fri, 02 Aug 2024 10:48:58 +0800</lastBuildDate>
-        <category>ECEA</category>
         <category>Hexo</category>
         <category>Front Matter</category>
+        <category>ECEA</category>
         <category>ECEBC</category>
         <category>deep-learning</category>
         <category>NLP</category>
@@ -18,8 +18,8 @@
         <category>assert</category>
         <category>code</category>
         <category>recommendation</category>
-        <category>deep_learning</category>
         <category>homework</category>
+        <category>deep_learning</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</guid>
             <title>01_Introduction to the course and word vectors</title>

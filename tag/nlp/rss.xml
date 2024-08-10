@@ -7,9 +7,9 @@
         <language>en</language>
         <pubDate>Sat, 10 Aug 2024 13:48:58 +0800</pubDate>
         <lastBuildDate>Sat, 10 Aug 2024 13:48:58 +0800</lastBuildDate>
-        <category>ECEA</category>
         <category>Hexo</category>
         <category>Front Matter</category>
+        <category>ECEA</category>
         <category>ECEBC</category>
         <category>deep-learning</category>
         <category>NLP</category>
@@ -18,8 +18,8 @@
         <category>assert</category>
         <category>code</category>
         <category>recommendation</category>
-        <category>deep_learning</category>
         <category>homework</category>
+        <category>deep_learning</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/</guid>
             <title>02_Cost Sensitive GNN-based Imbalanced Learning for Mobile Social Network Fraud Detection</title>
