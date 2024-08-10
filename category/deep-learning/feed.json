@@ -113,6 +113,18 @@
             ]
         },
         {
+            "id": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/",
+            "url": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/",
+            "title": "深度学习_9_GNN",
+            "date_published": "2024-07-17T06:02:28.000Z",
+            "content_html": "<h1 id=\"introduction\"><a class=\"anchor\" href=\"#introduction\">#</a> INTRODUCTION</h1>\n<ul>\n<li>图数据的复杂性对现有的机器学习算法提出了重大挑战：\n<ul>\n<li>图可以是不规则的</li>\n<li>一个图可能有不同大小的无序节点</li>\n<li>来自一个图的节点可能有不同数量的邻居</li>\n<li>一些重要的操作 (如卷积) 在图像域很容易计算，但很难应用到图域</li>\n</ul>\n</li>\n</ul>\n<p><img data-src=\"https://s2.loli.net/2024/08/10/ATae51FgouW7CGc.png\" alt=\"image.png\" /></p>\n<ul>\n<li>\n<p>二维卷积：在二维卷积中，图像被视为一个规则的网格，每个像素点是一个节点，像素点之间的连接形成了一个规则的邻域结构。二维卷积操作的基本步骤包括：</p>\n<ul>\n<li>在二维卷积中，通过一个滤波器（filter）在图像上滑动，取<strong>红色节点及其邻居节点</strong>的像素值的<strong>加权平均值</strong>。这些邻居节点是有序且大小固定的。</li>\n<li>滤波器的大小通常是固定的（例如 3x3），它在图像上滑动的过程中，产生了对图像的局部特征提取。</li>\n</ul>\n</li>\n<li>\n<p>图卷积将二维卷积的思想推广到一般的图结构上，图结构可以是任何形式的节点和边的连接。图卷积的基本原理包括以下几个步骤：</p>\n<ol>\n<li>邻居信息聚合：\n<ul>\n<li>对于图中的每一个节点，图卷积会从该节点的邻居节点中聚合信息。邻居节点可以是直接与该节点相连的其他节点。</li>\n<li>聚合方式可以是加权平均、求和或最大值等操作。比如，如果使用加权平均，图卷积会考虑每个邻居节点的特征，并根据边的权重进行加权。</li>\n</ul>\n</li>\n<li>特征更新：\n<ul>\n<li>聚合完邻居节点的信息后，该节点的特征将被更新为聚合信息的结果。这个更新过程类似于二维卷积中的特征提取，即将邻域信息整合进来，生成新的节点表示。</li>\n<li>更新过程可以通过一个线性变换（例如矩阵乘法）和一个非线性激活函数（如 ReLU）来实现，使得模型能够学习到复杂的特征表示。</li>\n</ul>\n</li>\n<li>堆叠多个卷积层：\n<ul>\n<li>为了捕捉更高层次的特征表示，可以堆叠多个图卷积层。每一层都会进一步聚合更广泛的邻居信息，从而捕捉到更多的图结构信息。</li>\n<li>多层的图卷积可以看作是在更深的网络中传递和更新节点特征，使得最终的节点表示能够包含全局图结构的信息。</li>\n</ul>\n</li>\n</ol>\n</li>\n<li>\n<p>基本数学公式表达</p>\n</li>\n<li></li>\n</ul>\n",
+            "tags": [
+                "Hexo",
+                "Front Matter",
+                "deep_learning"
+            ]
+        },
+        {
             "id": "https://enjundu.github.io/deep-learning/README_3_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/",
             "url": "https://enjundu.github.io/deep-learning/README_3_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/",
             "title": "神经网络_Sanfordcs231n",
