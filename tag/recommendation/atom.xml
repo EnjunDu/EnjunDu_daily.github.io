@@ -102,7 +102,7 @@ L_{cl}(s&lt;rt&gt;&lt;/rt&gt;&lt;/ruby&gt;_u, s^&lt;ruby&gt;a_j}_u) = - \log \fr
     </entry>
     <entry>
         <id>https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</id>
-        <title>S^3-Rec:Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization</title>
+        <title>S3-Rec:Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization</title>
         <link rel="alternate" href="https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/"/>
         <content type="html">&lt;h1 id=&#34;基于互信息最大化的自监督学习序列推荐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于互信息最大化的自监督学习序列推荐&#34;&gt;#&lt;/a&gt; 基于互信息最大化的自监督学习序列推荐&lt;/h1&gt;
 &lt;h2 id=&#34;相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关知识&#34;&gt;#&lt;/a&gt; 相关知识&lt;/h2&gt;
