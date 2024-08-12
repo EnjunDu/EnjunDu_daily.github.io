@@ -3,7 +3,7 @@
     <id>https://enjundu.github.io</id>
     <title>Enjun Du • Posts by &#34;nlp&#34; tag</title>
     <link href="https://enjundu.github.io" />
-    <updated>2024-08-10T05:48:58.000Z</updated>
+    <updated>2024-08-12T02:48:58.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
     <category term="ECEA" />
@@ -17,6 +17,133 @@
     <category term="recommendation" />
     <category term="homework" />
     <category term="deep_learning" />
+    <entry>
+        <id>https://enjundu.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</id>
+        <title>BOOSTING GRAPH ANOMALY DETECTION WITH ADAPTIVE MESSAGE PASSING</title>
+        <link rel="alternate" href="https://enjundu.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/"/>
+        <content type="html">&lt;h1 id=&#34;自适应消息传递增强图异常检测&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自适应消息传递增强图异常检测&#34;&gt;#&lt;/a&gt; 自适应消息传递增强图异常检测&lt;/h1&gt;
+&lt;h1 id=&#34;a-b-s-t-r-a-c-t&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#a-b-s-t-r-a-c-t&#34;&gt;#&lt;/a&gt; A B S T R A C T&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;现有方法主要集中在（局部不一致挖掘）LIM 上 —— 基于很难在异常节点与其邻居之间建立高相似性的直觉&lt;/li&gt;
+&lt;li&gt;图神经网络 (gnn) 采用的消息传递导致局部异常信号丢失，因为 gnn 倾向于使连接节点相似，这与 LIM 直觉相冲突。&lt;/li&gt;
+&lt;li&gt;在本文中，提出了&lt;strong&gt; GADAM&lt;/strong&gt;，这是一个新的框架，它不仅解决了 LIM 和消息传递之间的冲突，而且利用消息传递通过一种超越 LIM 的异常挖掘方法来增强异常检测。&lt;/li&gt;
+&lt;li&gt;首先提出一种有效的基于 mlp 的 LIM 方法，以无冲突的方式获得局部异常分数。&lt;/li&gt;
+&lt;li&gt;接下来介绍了一种从全局角度捕获异常信号的新方法。&lt;/li&gt;
+&lt;li&gt;涉及到基于混合注意的自适应信息传递，使节点能够选择性地从周围环境中吸收异常或正常信号。&lt;/li&gt;
+&lt;li&gt;在 9 个基准数据集 (包括 2 个大规模 OGB 数据集) 上进行的大量实验表明，GADAM 在有效性和效率方面都优于现有的最先进方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lim局部不一致性挖掘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lim局部不一致性挖掘&#34;&gt;#&lt;/a&gt; LIM：局部不一致性挖掘&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;局部不一致性挖掘 (LIM)&lt;/strong&gt; 是一种在图异常检测中常用的方法。LIM 基于这样一个直观假设：异常节点与其邻居之间的特征相似性通常较低。这是因为异常节点往往具有与周围节点明显不同的属性或连接模式。因此，通过测量一个节点与其邻居之间的特征或连接模式的不一致性，可以识别出潜在的异常节点。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;特征表示&lt;/strong&gt;：每个节点都用一个特征向量来表示。这些特征可以从节点的属性（如节点的标签、嵌入向量等）中提取。对于不同的应用场景，特征的类型和维度可能有所不同。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;相似性计算&lt;/strong&gt;：然后，LIM 通过计算特征向量之间的相似性来评估节点之间的特征相似性。常用的相似性度量方法包括余弦相似性、欧氏距离、Jaccard 相似性等。具体选择哪种度量方法取决于特征向量的特性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;局部相似性评估&lt;/strong&gt;：LIM 关注的是局部相似性，即每个节点与其邻居之间的相似性。因此，它计算每个节点与其邻居节点的特征相似性。通过这种方式，LIM 可以得到局部图中每个节点与其邻居之间的相似性分布。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;具体原理：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;局部特征相似性计算&lt;/strong&gt;：首先，LIM 计算每个节点与其邻居之间的特征相似性，如上文所述。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不一致性度量&lt;/strong&gt;：然后，LIM 对每个节点计算一个不一致性得分。这通常通过统计节点与其邻居之间相似性的分布来实现。若某个节点的特征与大多数邻居的特征显著不同，则其不一致性得分较高。具体计算方法可能包括：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;相似性均值差异&lt;/strong&gt;：计算节点特征向量与其邻居特征向量的平均相似性差异。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;基于熵的度量&lt;/strong&gt;：利用熵来度量相似性分布的集中度，熵越大，不一致性越高。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常检测&lt;/strong&gt;：根据不一致性得分，LIM 可以识别图中的异常节点或异常子图。高不一致性得分的节点被认为是与其局部环境不一致的，因此可能是异常的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果分析和解释&lt;/strong&gt;：最后，LIM 的输出结果是一个不一致性得分的排序列表。研究人员或算法可以根据这个列表进一步分析潜在的异常点，或者将这些异常点作为标记数据来进行进一步的学习和优化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lim工作流程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lim工作流程&#34;&gt;#&lt;/a&gt; LIM 工作流程&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;节点特征提取&lt;/strong&gt;：首先，需要提取图中每个节点的特征。这些特征可以包括节点的属性（如在社交网络中，用户的个人信息）或结构特征（如节点的度、邻居的平均属性等）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;相似性度量&lt;/strong&gt;：然后，计算每个节点与其邻居之间的相似性。常见的相似性度量包括欧氏距离、余弦相似性等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不一致性计算&lt;/strong&gt;：对于每个节点，通过计算其与邻居之间的相似性，来衡量其与邻居的不一致性。通常，不一致性较高的节点被认为是异常的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常分数计算&lt;/strong&gt;：最后，将不一致性值转换为异常分数。通常，不一致性越高，异常分数也越高。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lim与gnn消息传递机制的冲突&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#lim与gnn消息传递机制的冲突&#34;&gt;#&lt;/a&gt; LIM 与 GNN 消息传递机制的冲突&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;图神经网络 (GNN)&lt;/strong&gt; 是一种通过消息传递机制来学习节点表示的方法。在 GNN 中，节点的表示是通过聚合其邻居节点的特征来更新的。这种消息传递的基本思想是：通过反复将节点的邻居信息传递给节点本身，使得图中的每个节点逐渐拥有其局部邻域的综合信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gnn消息传递机制&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gnn消息传递机制&#34;&gt;#&lt;/a&gt; GNN 消息传递机制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;特征聚合&lt;/strong&gt;：在每一层 GNN 中，每个节点会从其直接邻居中收集信息（即消息传递），这些信息通常以邻居节点的特征表示。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;特征更新&lt;/strong&gt;：节点通过聚合其邻居的特征（例如，通过求和或取平均）来更新自身的特征表示。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多层聚合&lt;/strong&gt;：GNN 通过多层次的聚合，使得每个节点可以间接地从更远的节点获取信息，最终形成一个综合的节点表示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;冲突解释&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#冲突解释&#34;&gt;#&lt;/a&gt; 冲突解释&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;特征趋同现象&lt;/strong&gt;：由于 GNN 的消息传递机制会聚合邻居节点的特征，这意味着与一个节点相邻的节点，其特征会逐渐变得相似。随着消息传递层数的增加，这种相似性会逐渐扩展到更大的邻域。** 这与 LIM 的基本假设 —— 异常节点与其邻居之间的特征相似性较低 —— 直接矛盾。**GNN 的特征聚合会导致异常节点的特征与其邻居的特征更加相似，从而掩盖了这些异常信号。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常信号丢失&lt;/strong&gt;：GNN 的特征聚合倾向于将相邻节点的特征进行平滑处理，从而使得节点之间的差异性降低。这种平滑处理的效果是，原本应当突显出来的异常节点反而被 “冲淡” 了，导致异常信号在聚合过程中丢失。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;局部不一致性的减弱&lt;/strong&gt;：LIM 依赖于检测节点与邻居之间的局部不一致性，但 GNN 的消息传递会增强节点与其邻居之间的相似性，这直接削弱了局部不一致性挖掘的效果。因此，基于 GNN 的 LIM 可能无法有效区分正常节点与异常节点，因为它们的特征变得更加相似，局部不一致性被弱化。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;i-n-t-r-o-d-u-c-t-i-o-n&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#i-n-t-r-o-d-u-c-t-i-o-n&#34;&gt;#&lt;/a&gt; I N T R O D U C T I O N&lt;/h1&gt;
+&lt;h2 id=&#34;图异常节点类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图异常节点类型&#34;&gt;#&lt;/a&gt; 图异常节点类型&lt;/h2&gt;
+&lt;h3 id=&#34;上下文异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#上下文异常&#34;&gt;#&lt;/a&gt; 上下文异常&lt;/h3&gt;
+&lt;p&gt;上下文异常指的是那些节点的属性与其邻居节点属性显著不同的情况。换句话说，这些节点的特征在其局部上下文（即邻居节点的集合）中显得不合常理。&lt;/p&gt;
+&lt;p&gt;** 判断依据：** 在图数据中，上下文异常的节点可能具有与其周围邻居完全不同的属性。例如，在社交网络中，某个用户的兴趣标签与其好友的兴趣标签有显著不同，就可能被视为上下文异常。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以通过比较每个节点与其邻居的属性差异来判断是否为上下文异常。&lt;/li&gt;
+&lt;li&gt;具体方法可能包括计算节点属性与其邻居属性的相似性（如欧氏距离、余弦相似度），如果该相似度低于某个阈值，则该节点可能是上下文异常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;结构异常&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#结构异常&#34;&gt;#&lt;/a&gt; 结构异常&lt;/h3&gt;
+&lt;p&gt;结构异常指的是在图的连接结构上表现异常的节点。具体来说，结构异常节点的连接模式与正常节点不同，可能表现为连接密度异常高或异常低。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;连接密度异常&lt;/strong&gt;：结构异常的节点可能在邻域内有着过多或过少的连接。例如，某些节点可能与非常多的其他节点形成连接（形成团块），这可能是不正常的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;连接模式异常&lt;/strong&gt;：某些节点可能与通常不会连接的其他节点形成连接，这也是一种结构异常。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;方法：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以通过分析节点的度数（与之相连的边的数量）以及邻域内的连接密度来判断是否为结构异常。&lt;/li&gt;
+&lt;li&gt;例如，如果某个节点的度数明显高于或低于其所在图的平均度数，这可能是结构异常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;尽管消息传递存在这些潜在的问题，但&lt;strong&gt;完全舍弃消息传递并不可取&lt;/strong&gt;。这是因为图结构中存在的许多有价值的信息（例如，结构异常）仍然需要通过消息传递机制来捕捉和利用。因此，解决方案不应是简单地取消消息传递，而应是设计一种能够在保留消息传递优势的同时，减轻其对异常检测负面影响的方法。&lt;/p&gt;
+&lt;h2 id=&#34;现有优化方法及存在的问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#现有优化方法及存在的问题&#34;&gt;#&lt;/a&gt; 现有优化方法及存在的问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;这些方法旨在增强异常的局部显著性并产生可区分的表示，通常利用注意机制来减少异常节点与其相邻节点之间的消息传递，从而增强异常信号的局部显著性并产生更具区分性的节点表示。——&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt; 这这些方法主要适用于发现上下文异常（Contextual Anomalies），即那些特征与周围邻居显著不同的节点。对于这类异常，减少与邻居之间的消息传递有助于保持异常特征的突出性。&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结构异常&lt;/strong&gt;结构异常的挑战结构异常（Structural Anomalies）通常表现为具有相似特征和异常行为的节点集群。由于这些节点倾向于形成共享相似属性和行为的簇，简单地减少或阻止消息传递可能会与这种结构异常的固有性质冲突。这意味着现有方法在处理结构异常时可能效果不佳，因为这些方法试图通过减少消息传递来保持节点之间的特征差异，而结构异常的性质要求维护这种异常节点的集群一致性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;现有半监督方法的尝试&lt;/strong&gt;：一些半监督方法通过精细化的消息传递和合理的异常挖掘策略在一定程度上提高了性能。然而，即使是这些改进的半监督方法，也仍然没有完全解决这个问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;our-workugad&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#our-workugad&#34;&gt;#&lt;/a&gt; Our Work——UGAD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;通过对消息传递的精心控制来确保无冲突的 LIM&lt;/li&gt;
+&lt;li&gt;在没有标签的情况下，实现对节点特定消息与其邻居之间传递的细粒度控制&lt;/li&gt;
+&lt;li&gt;设计新的学习目标和超越 LIM 的异常挖掘方法，利用消息传递的效用增强异常检测。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;G&lt;/strong&gt;raph &lt;strong&gt;A&lt;/strong&gt;nomaly &lt;strong&gt;D&lt;/strong&gt;etection with &lt;strong&gt;A&lt;/strong&gt;daptive &lt;strong&gt;M&lt;/strong&gt;essage passing（基于自适应消息传递的图异常检测）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我们提出了 GADAM1 (图异常检测与自适应消息传递)，一个清晰灵活的两阶段框架，执行 LIM 和消息传递解耦。在第一阶段，我们提出了一种基于 mlp 的无消息传递的 LIM 对比方法，使 LIM 能够更有效地从局部角度识别异常节点并产生异常分数。在第二阶段，我们将学习目标转换为二元分类任务，利用局部异常分数作为伪标签。具体而言，利用第一阶段的局部异常分数建立两个高置信度的正常和异常节点集。&lt;/li&gt;
+&lt;li&gt;随后，我们定义了学习目标，以区分节点与全局正常上下文 (即高置信度正态节点的平均值) 之间的对齐，并从全局视图生成异常分数。第二阶段将进行半监督训练，由伪标签引导，并由自适应消息传递方案促进。为了实现具有不同角色节点的自适应消息传递，我们进一步提出了一种创新的混合注意机制，该机制既考虑异常评分差异，又考虑与相邻节点的特征相似性。&lt;/li&gt;
+&lt;li&gt;异常挖掘视角的转变，结合混合注意机制的设计，使消息传递能够丰富异常挖掘，类似于 gnn 中的特征聚合如何增强分类任务 (Huang et al, 2020;Wang &amp;amp; Zhang, 2022; 朱，2005)。两个阶段的异常分数将结合起来，提供节点异常的整体度量。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;拆分解析：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第一阶段：基于 MLP 的对比学习（MLP-based Contrastive Learning）
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;无消息传递的 LIM&lt;/strong&gt;：在第一阶段，GADAM 采用基于多层感知机（MLP）的对比学习方法，不进行消息传递。这样做的目的是避免 GNNs 中的消息传递机制对 LIM 产生的冲突，确保能够更有效地识别异常节点。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成局部异常分数&lt;/strong&gt;：通过对比学习，模型能够从局部视角识别出异常节点，并为每个节点生成一个局部异常分数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;第二阶段：基于伪标签的二分类任务
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;转换学习目标&lt;/strong&gt;：在第二阶段，GADAM 将学习目标转换为一个二分类任务。这一阶段利用第一阶段生成的局部异常分数作为伪标签，创建出高置信度的正常节点集和异常节点集。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;全局异常检测&lt;/strong&gt;：在这一阶段，模型通过比较节点与全局正常上下文的对齐情况（全局正常上下文是指高置信度正常节点集的平均值），来生成全局异常分数。这个阶段的训练是半监督的，由伪标签引导，并结合自适应消息传递方案来进行。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;自适应消息传递与混合注意力机制
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;创新的混合注意力机制&lt;/strong&gt;：为了实现对具有不同角色节点的自适应消息传递，GADAM 提出了一种创新的混合注意力机制。这个机制结合了节点与其邻居之间的异常分数差异以及特征相似性，来精细地调整消息传递的强度。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;异常挖掘视角的转变&lt;/strong&gt;：通过这种混合注意力机制，消息传递在异常挖掘中得到了有效的应用，类似于 GNNs 在分类任务中通过特征聚合来提升效果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;综合异常分数
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多维度的异常检测&lt;/strong&gt;：GADAM 通过结合来自第一阶段的局部异常分数和第二阶段的全局异常分数，为每个节点生成一个综合的异常分数。这个分数能够全面衡量节点的异常程度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;GADAM 提出了一种新颖的、基于两阶段方法的图异常检测框架，通过解耦 LIM 和消息传递，使得在不丢失图结构信息的前提下，更加有效地检测异常节点。创新的混合注意力机制进一步增强了消息传递的适应性，使得模型能够更好地应对不同类型的异常信号。&lt;/p&gt;
+</content>
+        <category term="deep-learning" />
+        <category term="NLP" />
+        <category term="RA" />
+        <updated>2024-08-12T02:48:58.000Z</updated>
+    </entry>
     <entry>
         <id>https://enjundu.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/</id>
         <title>02_Cost Sensitive GNN-based Imbalanced Learning for Mobile Social Network Fraud Detection</title>
