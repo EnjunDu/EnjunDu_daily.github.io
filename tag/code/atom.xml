@@ -1878,14 +1878,7 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
 &lt;/ul&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/08/aT2BLS6xV1dWmRE.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;小明的表情包&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小明的表情包&#34;&gt;#&lt;/a&gt; 小明的表情包&lt;/h1&gt;
-&lt;p&gt;首先我们可以发现有一串密码为 “AVARGRRA AVARGL AVAR”，这个密码实在是太短了。我们上述才提到过的网站即可轻松爆破。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/23/eD8uGs9vPMBYnZE.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;我们可以知道他的年份为 1999 年，而题目中是 “日月年”，故我们知道其压缩包密码为 xxxx1999, 根据这个原理我们采用 “zip 暴力破解器” 进行暴力破解，并设置格式为 xxxx1999，最终我们可以得到暴力破解后的压缩包密码为 “07071999”。解压该文件。&lt;/p&gt;
-&lt;p&gt;密码 07071999&lt;/p&gt;
-&lt;p&gt;解压后打开发现小明的表情包.jpg 为损坏文件，故我们需要使用 010editor 来分析他。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/23/fx4QS5lkFVbK1sW.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;我们发现该 jpg 图片缺少头文件。由于 JPG 的头文件为 FFD8FFE1，我们检查发现下面小红框为 0000FFE1，故我们将其修改为 FFD8FFE1 后，删除前面的一行十六进制 data 后点击保存然后查看图片。即可得到图片。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/23/d2BKH3qGZ1VEL9Y.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;spoiler&#34; title=&#34;你知道得太多了&#34;&gt;不准抄作业！&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;社会主义核心价值观&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#社会主义核心价值观&#34;&gt;#&lt;/a&gt; 社会主义核心价值观&lt;/h1&gt;
 &lt;p css-module=&#34;.&#34;&gt;你对社会主义核心价值观学习得怎么样？ 下面来考考你吧～&lt;br /&gt;
  答案格式: flag&lt;/p&gt;

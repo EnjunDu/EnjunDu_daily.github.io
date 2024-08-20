@@ -5,8 +5,8 @@
         <link>https://enjundu.github.io</link>
         <description></description>
         <language>en</language>
-        <pubDate>Mon, 12 Aug 2024 10:48:58 +0800</pubDate>
-        <lastBuildDate>Mon, 12 Aug 2024 10:48:58 +0800</lastBuildDate>
+        <pubDate>Thu, 15 Aug 2024 10:48:58 +0800</pubDate>
+        <lastBuildDate>Thu, 15 Aug 2024 10:48:58 +0800</lastBuildDate>
         <category>Hexo</category>
         <category>Front Matter</category>
         <category>ECEA</category>
@@ -20,6 +20,16 @@
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
+        <item>
+            <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/04_%E7%94%A8%E4%BA%8E%E5%9B%BE%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B%E7%9A%84%E5%88%86%E5%8C%BA%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/</guid>
+            <title>04_Partitioning Message Passing for Graph Fraud Detection</title>
+            <link>https://enjundu.github.io/HKUST-RA/04_%E7%94%A8%E4%BA%8E%E5%9B%BE%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B%E7%9A%84%E5%88%86%E5%8C%BA%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/</link>
+            <category>deep-learning</category>
+            <category>RA</category>
+            <pubDate>Thu, 15 Aug 2024 10:48:58 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</guid>
             <title>03_BOOSTING GRAPH ANOMALY DETECTION WITH ADAPTIVE MESSAGE PASSING</title>

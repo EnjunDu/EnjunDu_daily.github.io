@@ -5,6 +5,17 @@
     "home_page_url": "https://enjundu.github.io",
     "items": [
         {
+            "id": "https://enjundu.github.io/HKUST-RA/04_%E7%94%A8%E4%BA%8E%E5%9B%BE%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B%E7%9A%84%E5%88%86%E5%8C%BA%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/",
+            "url": "https://enjundu.github.io/HKUST-RA/04_%E7%94%A8%E4%BA%8E%E5%9B%BE%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B%E7%9A%84%E5%88%86%E5%8C%BA%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/",
+            "title": "04_Partitioning Message Passing for Graph Fraud Detection",
+            "date_published": "2024-08-15T02:48:58.000Z",
+            "content_html": "<h1 id=\"this-is-an-example\"><a class=\"anchor\" href=\"#this-is-an-example\">#</a> this is an example</h1>\n",
+            "tags": [
+                "deep-learning",
+                "RA"
+            ]
+        },
+        {
             "id": "https://enjundu.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/",
             "url": "https://enjundu.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/",
             "title": "03_BOOSTING GRAPH ANOMALY DETECTION WITH ADAPTIVE MESSAGE PASSING",
