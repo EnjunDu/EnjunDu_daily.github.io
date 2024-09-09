@@ -5,6 +5,17 @@
     "home_page_url": "https://enjundu.github.io",
     "items": [
         {
+            "id": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_10_GNN/",
+            "url": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_10_GNN/",
+            "title": "深度学习_10_图神经网络",
+            "date_published": "2024-08-22T06:02:28.000Z",
+            "content_html": "",
+            "tags": [
+                "Hexo",
+                "Front Matter"
+            ]
+        },
+        {
             "id": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/",
             "url": "https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/",
             "title": "深度学习_7_Transformer",
