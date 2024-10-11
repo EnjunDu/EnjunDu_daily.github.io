@@ -20,6 +20,7 @@
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
+        <category>MoE</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
             <title>Contrastive Learning for Sequential Recommendation</title>

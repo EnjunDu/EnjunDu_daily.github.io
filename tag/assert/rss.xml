@@ -20,6 +20,7 @@
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
+        <category>MoE</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/LLMstestoracle/01_conductor-main/</guid>
             <title>01_conductor</title>

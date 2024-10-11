@@ -20,6 +20,7 @@
         <category>recommendation</category>
         <category>homework</category>
         <category>deep_learning</category>
+        <category>MoE</category>
         <item>
             <guid isPermalink="true">https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/</guid>
             <title>深度学习_7_Transformer</title>
