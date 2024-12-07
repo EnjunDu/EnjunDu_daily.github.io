@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Enjun Du • Posts by &#34;moe&#34; tag</title>
-        <link>https://enjundu_daily.github.io</link>
+        <link>https://enjundu.github.io/EnjunDu_daily.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Fri, 11 Oct 2024 10:48:58 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>deep_learning</category>
         <category>MoE</category>
         <item>
-            <guid isPermalink="true">https://enjundu_daily.github.io/HKUST-RA/MoE%20for%20grapsh%20survey/</guid>
+            <guid isPermalink="true">https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/MoE%20for%20grapsh%20survey/</guid>
             <title>MoE for Graph Survey</title>
-            <link>https://enjundu_daily.github.io/HKUST-RA/MoE%20for%20grapsh%20survey/</link>
+            <link>https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/MoE%20for%20grapsh%20survey/</link>
             <category>deep-learning</category>
             <category>RA</category>
             <category>MoE</category>

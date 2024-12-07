@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Enjun Du • Posts by &#34;nature-language-process&#34; category</title>
-        <link>https://enjundu_daily.github.io</link>
+        <link>https://enjundu.github.io/EnjunDu_daily.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Fri, 02 Aug 2024 10:48:58 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>deep_learning</category>
         <category>MoE</category>
         <item>
-            <guid isPermalink="true">https://enjundu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</guid>
+            <guid isPermalink="true">https://enjundu.github.io/EnjunDu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</guid>
             <title>01_Introduction to the course and word vectors</title>
-            <link>https://enjundu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</link>
+            <link>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</link>
             <category>deep-learning</category>
             <category>NLP</category>
             <pubDate>Fri, 02 Aug 2024 10:48:58 +0800</pubDate>
@@ -167,9 +167,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
+            <guid isPermalink="true">https://enjundu.github.io/EnjunDu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
             <title>02_Word Vectors, Word Senses, and Neural Network Classifiers</title>
-            <link>https://enjundu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</link>
+            <link>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</link>
             <category>deep-learning</category>
             <category>NLP</category>
             <pubDate>Fri, 02 Aug 2024 10:48:58 +0800</pubDate>
@@ -347,9 +347,9 @@ minimize probability that random words appear around center word.&lt;/li&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu_daily.github.io/nlp/example/</guid>
+            <guid isPermalink="true">https://enjundu.github.io/EnjunDu_daily.github.io/nlp/example/</guid>
             <title>example</title>
-            <link>https://enjundu_daily.github.io/nlp/example/</link>
+            <link>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/example/</link>
             <category>deep-learning</category>
             <category>NLP</category>
             <pubDate>Fri, 02 Aug 2024 10:48:58 +0800</pubDate>

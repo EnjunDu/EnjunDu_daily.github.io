@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enjundu_daily.github.io</id>
+    <id>https://enjundu.github.io/EnjunDu_daily.github.io</id>
     <title>Enjun Du • Posts by &#34;nlp&#34; tag</title>
-    <link href="https://enjundu_daily.github.io" />
+    <link href="https://enjundu.github.io/EnjunDu_daily.github.io" />
     <updated>2024-08-12T02:48:58.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
@@ -19,9 +19,9 @@
     <category term="deep_learning" />
     <category term="MoE" />
     <entry>
-        <id>https://enjundu_daily.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</id>
         <title>03_BOOSTING GRAPH ANOMALY DETECTION WITH ADAPTIVE MESSAGE PASSING</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/03_%E8%87%AA%E9%80%82%E5%BA%94%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92%E5%A2%9E%E5%BC%BA%E5%9B%BE%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/"/>
         <content type="html">&lt;h1 id=&#34;自适应消息传递增强图异常检测&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#自适应消息传递增强图异常检测&#34;&gt;#&lt;/a&gt; 自适应消息传递增强图异常检测&lt;/h1&gt;
 &lt;h1 id=&#34;a-b-s-t-r-a-c-t&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#a-b-s-t-r-a-c-t&#34;&gt;#&lt;/a&gt; A B S T R A C T&lt;/h1&gt;
 &lt;ul&gt;
@@ -419,9 +419,9 @@ g_{i}=\mathrm{Dis}(h_{i}^{\mathrm{mix}},C)=h_{i}^{\mathrm{mix}}C^{T} \\
         <updated>2024-08-12T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/</id>
         <title>02_Cost Sensitive GNN-based Imbalanced Learning for Mobile Social Network Fraud Detection</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/02_Cost%20Sensitive%20GNN-based%20Imbalanced%20Learning%20for%20Mobile%20Social%20Network%20Fraud%20Detection/"/>
         <content type="html">&lt;h1 id=&#34;综述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#综述&#34;&gt;#&lt;/a&gt; 综述&lt;/h1&gt;
 &lt;h3 id=&#34;1-研究背景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-研究背景&#34;&gt;#&lt;/a&gt; 1. &lt;strong&gt;研究背景&lt;/strong&gt;&lt;/h3&gt;
 &lt;ul&gt;
@@ -835,9 +835,9 @@ p_{k}(v)&amp;amp; =\mathrm{Softmax}\left(\mathbf{C}[v,k]\cdot\mathbf{z}_{v}[k]\r
         <updated>2024-08-10T05:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/</id>
         <title>01_KnowGPT Knowledge Graph based PrompTing for Large Language Models</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/01_KnowGPT%20Knowledge%20Graph%20based%20PrompTing%20for%20Large%20Language%20Models/"/>
         <content type="html">&lt;h1 id=&#34;检索增强生成retrieval-augmented-generationrag&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#检索增强生成retrieval-augmented-generationrag&#34;&gt;#&lt;/a&gt; 检索增强生成（Retrieval-Augmented Generation，RAG）&lt;/h1&gt;
 &lt;p&gt;是一种结合了信息检索和生成式模型的技术，旨在提高生成模型（如 GPT 等大语言模型）的回答准确性和信息丰富度。RAG 模型通过从外部知识库或文档集合中检索相关信息，来增强生成模型的能力，从而生成更加精确和上下文相关的回答。以下是 RAG 的主要概念和工作机制：&lt;/p&gt;
 &lt;h3 id=&#34;1-核心概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-核心概念&#34;&gt;#&lt;/a&gt; 1. &lt;strong&gt;核心概念&lt;/strong&gt;&lt;/h3&gt;
@@ -941,9 +941,9 @@ V_{k}^{*}(s)\leftarrow\max_{a}\sum_{s^{\prime}}P(s^{\prime}|s,a)\left(R(s,a,s^{\
         <updated>2024-08-09T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/HKUST-RA/example/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/example/</id>
         <title>example</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/HKUST-RA/example/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/HKUST-RA/example/"/>
         <content type="html">&lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
 </content>
         <category term="deep-learning" />
@@ -952,9 +952,9 @@ V_{k}^{*}(s)\leftarrow\max_{a}\sum_{s^{\prime}}P(s^{\prime}|s,a)\left(R(s,a,s^{\
         <updated>2024-08-09T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/deep-learning/GNN/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/deep-learning/GNN/</id>
         <title>GNN</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/GNN/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/deep-learning/GNN/"/>
         <content type="html">&lt;h1 id=&#34;gnn&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gnn&#34;&gt;#&lt;/a&gt; GNN&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;V: Vertex (or node) attributes&lt;/li&gt;
@@ -1107,9 +1107,9 @@ V_{k}^{*}(s)\leftarrow\max_{a}\sum_{s^{\prime}}P(s^{\prime}|s,a)\left(R(s,a,s^{\
         <updated>2024-08-09T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/</id>
         <title>01_Introduction to the course and word vectors</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/nlp/01_%E8%AF%BE%E7%A8%8B%E4%BB%8B%E7%BB%8D%E4%B8%8E%E8%AF%8D%E5%90%91%E9%87%8F/"/>
         <content type="html">&lt;h1 id=&#34;how-do-we-represent-the-meaning-of-a-word&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#how-do-we-represent-the-meaning-of-a-word&#34;&gt;#&lt;/a&gt; How do we represent the meaning of a word?&lt;/h1&gt;
 &lt;h2 id=&#34;definition-its-meaningwebster-dictionary&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#definition-its-meaningwebster-dictionary&#34;&gt;#&lt;/a&gt; Definition its meaning(Webster dictionary)&lt;/h2&gt;
 &lt;ul&gt;
@@ -1252,9 +1252,9 @@ V_{k}^{*}(s)\leftarrow\max_{a}\sum_{s^{\prime}}P(s^{\prime}|s,a)\left(R(s,a,s^{\
         <updated>2024-08-02T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/</id>
         <title>02_Word Vectors, Word Senses, and Neural Network Classifiers</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/nlp/02_%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%86%E7%B1%BB%E5%99%A8/"/>
         <content type="html">&lt;h1 id=&#34;review-main-idea-of-word2vec&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#review-main-idea-of-word2vec&#34;&gt;#&lt;/a&gt; Review :Main idea of word2vec&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1432,9 +1432,9 @@ minimize probability that random words appear around center word.&lt;/li&gt;
         <updated>2024-08-02T02:48:58.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu_daily.github.io/nlp/example/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/nlp/example/</id>
         <title>example</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/nlp/example/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/nlp/example/"/>
         <content type="html">&lt;h1 id=&#34;this-is-an-example&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-is-an-example&#34;&gt;#&lt;/a&gt; this is an example&lt;/h1&gt;
 </content>
         <category term="deep-learning" />

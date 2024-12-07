@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enjundu_daily.github.io</id>
+    <id>https://enjundu.github.io/EnjunDu_daily.github.io</id>
     <title>Enjun Du • Posts by &#34;capture-the-flag&#34; category</title>
-    <link href="https://enjundu_daily.github.io" />
+    <link href="https://enjundu.github.io/EnjunDu_daily.github.io" />
     <updated>2024-07-07T01:41:31.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
@@ -19,9 +19,9 @@
     <category term="deep_learning" />
     <category term="MoE" />
     <entry>
-        <id>https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
+        <id>https://enjundu.github.io/EnjunDu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
         <title>NSC暑期培训——web</title>
-        <link rel="alternate" href="https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
+        <link rel="alternate" href="https://enjundu.github.io/EnjunDu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
         <content type="html">&lt;h1 id=&#34;攻防世界账号注册&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻防世界账号注册&#34;&gt;#&lt;/a&gt; 攻防世界账号注册&lt;/h1&gt;
 &lt;p&gt;在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;攻防世界&lt;/span&gt;官网注册账号。&lt;br /&gt;
 网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;https://adworld.xctf.org.cn/&lt;/span&gt;&lt;/p&gt;

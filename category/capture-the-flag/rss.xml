@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Enjun Du • Posts by &#34;capture-the-flag&#34; category</title>
-        <link>https://enjundu_daily.github.io</link>
+        <link>https://enjundu.github.io/EnjunDu_daily.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Sun, 07 Jul 2024 09:41:31 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>deep_learning</category>
         <category>MoE</category>
         <item>
-            <guid isPermalink="true">https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</guid>
+            <guid isPermalink="true">https://enjundu.github.io/EnjunDu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</guid>
             <title>NSC暑期培训——web</title>
-            <link>https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</link>
+            <link>https://enjundu.github.io/EnjunDu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
