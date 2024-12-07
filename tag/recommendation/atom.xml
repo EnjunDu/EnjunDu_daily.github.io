@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enjundu.github.io</id>
+    <id>https://enjundu_daily.github.io</id>
     <title>Enjun Du • Posts by &#34;recommendation&#34; tag</title>
-    <link href="https://enjundu.github.io" />
+    <link href="https://enjundu_daily.github.io" />
     <updated>2024-08-04T01:41:31.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
@@ -19,9 +19,9 @@
     <category term="deep_learning" />
     <category term="MoE" />
     <entry>
-        <id>https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</id>
+        <id>https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</id>
         <title>Contrastive Learning for Sequential Recommendation</title>
-        <link rel="alternate" href="https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/"/>
         <content type="html">&lt;h1 id=&#34;阅读报告contrastive-learning-for-sequential-recommendation-与-self-supervised-learning-for-sequential-recommendation-with-mutual-information-maximization&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#阅读报告contrastive-learning-for-sequential-recommendation-与-self-supervised-learning-for-sequential-recommendation-with-mutual-information-maximization&#34;&gt;#&lt;/a&gt; 阅读报告：Contrastive Learning for Sequential Recommendation 与 Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization&lt;/h1&gt;
 &lt;hr /&gt;
 &lt;h2 id=&#34;1-概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1-概述&#34;&gt;#&lt;/a&gt; 1. 概述&lt;/h2&gt;
@@ -102,9 +102,9 @@ L_{cl}(s&lt;rt&gt;&lt;/rt&gt;&lt;/ruby&gt;_u, s^&lt;ruby&gt;a_j}_u) = - \log \fr
         <updated>2024-08-04T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</id>
+        <id>https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</id>
         <title>S3-Rec:Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization</title>
-        <link rel="alternate" href="https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/"/>
         <content type="html">&lt;h1 id=&#34;基于互信息最大化的自监督学习序列推荐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基于互信息最大化的自监督学习序列推荐&#34;&gt;#&lt;/a&gt; 基于互信息最大化的自监督学习序列推荐&lt;/h1&gt;
 &lt;h2 id=&#34;相关知识&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#相关知识&#34;&gt;#&lt;/a&gt; 相关知识&lt;/h2&gt;
 &lt;ul&gt;
@@ -1172,9 +1172,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
         <updated>2024-07-29T11:25:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/recommendation/basic_knowledge/</id>
+        <id>https://enjundu_daily.github.io/recommendation/basic_knowledge/</id>
         <title>basic_knowledge</title>
-        <link rel="alternate" href="https://enjundu.github.io/recommendation/basic_knowledge/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/recommendation/basic_knowledge/"/>
         <content type="html">&lt;h1 id=&#34;gcn&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#gcn&#34;&gt;#&lt;/a&gt; GCN&lt;/h1&gt;
 &lt;h2 id=&#34;卷积&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#卷积&#34;&gt;#&lt;/a&gt; 卷积&lt;/h2&gt;
 &lt;p&gt;卷积是两个函数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;f&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 和&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;g&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.625em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;g&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的数学运算，产生第三个函数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;h&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;h&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;h&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1382,9 +1382,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
         <updated>2024-07-14T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</id>
+        <id>https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</id>
         <title>密码工程大作业</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/"/>
         <content type="html">&lt;p&gt;目录&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#_Toc5215&#34;&gt;1 引言	&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#_Toc22057&#34;&gt;2. 符号	&lt;/a&gt;&lt;/p&gt;
@@ -1761,9 +1761,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
         <updated>2024-07-08T07:39:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
+        <id>https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</id>
         <title>NSC暑期培训——web</title>
-        <link rel="alternate" href="https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/"/>
         <content type="html">&lt;h1 id=&#34;攻防世界账号注册&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#攻防世界账号注册&#34;&gt;#&lt;/a&gt; 攻防世界账号注册&lt;/h1&gt;
 &lt;p&gt;在&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;攻防世界&lt;/span&gt;官网注册账号。&lt;br /&gt;
 网址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hZHdvcmxkLnhjdGYub3JnLmNuLw==&#34;&gt;https://adworld.xctf.org.cn/&lt;/span&gt;&lt;/p&gt;
@@ -2742,9 +2742,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
         <updated>2024-07-07T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</id>
+        <id>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</id>
         <title>亚太数模——新能源汽车</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/"/>
         <content type="html">&lt;h2 id=&#34;abstract&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#abstract&#34;&gt;#&lt;/a&gt; ABSTRACT&lt;/h2&gt;
 &lt;p&gt;This study presents a comprehensive analysis of new energy electric vehicles (NEEVs) in China, employing a range of statistical methods and advanced algorithms. Using tools such as MATLAB, SPSS, and Excel, the research systematically addresses several critical questions regarding the development, impact, and future trajectory of NEEVs.&lt;/p&gt;
 &lt;ol&gt;
@@ -3913,9 +3913,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
         <updated>2024-07-04T14:49:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</id>
+        <id>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</id>
         <title>亚太数模——洪水</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;改前版本 直接从 word 转的  凑合着看吧&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;代码解析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码解析&#34;&gt;#&lt;/a&gt; 代码解析&lt;/h1&gt;
 &lt;h2 id=&#34;before-problem-数据传入与预处理全局函数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#before-problem-数据传入与预处理全局函数设置&#34;&gt;#&lt;/a&gt; Before Problem -- 数据传入与预处理，全局函数设置&lt;/h2&gt;
@@ -5189,9 +5189,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         <updated>2024-07-04T14:49:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</id>
+        <id>https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</id>
         <title>美赛——七鳃鳗</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/"/>
         <content type="html">&lt;h1 id=&#34;mcm-paper&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mcm-paper&#34;&gt;#&lt;/a&gt; MCM paper&lt;/h1&gt;
 &lt;h2 id=&#34;question&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#question&#34;&gt;#&lt;/a&gt; question&lt;/h2&gt;
 &lt;p&gt;​	While some animal species exist outside of the usual male or female sexes, most species are&lt;/p&gt;
@@ -5642,9 +5642,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         <updated>2024-07-04T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/recommendation/README/</id>
+        <id>https://enjundu_daily.github.io/recommendation/README/</id>
         <title>b_README</title>
-        <link rel="alternate" href="https://enjundu.github.io/recommendation/README/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/recommendation/README/"/>
         <content type="html">&lt;h2 id=&#34;a-b-s-t-r-a-c-t&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#a-b-s-t-r-a-c-t&#34;&gt;#&lt;/a&gt; A B S T R A C T&lt;/h2&gt;
 &lt;p&gt;一些和推荐算法相关的自学过程&lt;/p&gt;
 </content>
@@ -5655,9 +5655,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         <updated>2024-07-04T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/recommendation/SASRec/</id>
+        <id>https://enjundu_daily.github.io/recommendation/SASRec/</id>
         <title>SASrec</title>
-        <link rel="alternate" href="https://enjundu.github.io/recommendation/SASRec/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/recommendation/SASRec/"/>
         <content type="html">&lt;h1 id=&#34;self-attentive-sequential-recommendation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#self-attentive-sequential-recommendation&#34;&gt;#&lt;/a&gt; Self-Attentive Sequential Recommendation&lt;/h1&gt;
 &lt;h2 id=&#34;马尔科夫链mc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#马尔科夫链mc&#34;&gt;#&lt;/a&gt; 马尔科夫链（mc）&lt;/h2&gt;
 &lt;p&gt;马尔科夫链（Markov Chain）是一种数学模型，用于描述一个系统从一个状态转移到另一个状态的过程。这种模型特别适用于分析随机过程，其中每个状态的转移仅依赖于当前状态，而与之前的状态无关。这种特性被称为 “马尔科夫性” 或 “无记忆性”。&lt;/p&gt;

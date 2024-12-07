@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enjundu.github.io</id>
+    <id>https://enjundu_daily.github.io</id>
     <title>Enjun Du • Posts by &#34;deep_learning&#34; tag</title>
-    <link href="https://enjundu.github.io" />
+    <link href="https://enjundu_daily.github.io" />
     <updated>2024-08-08T06:02:28.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
@@ -19,9 +19,9 @@
     <category term="deep_learning" />
     <category term="MoE" />
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/</id>
         <title>深度学习_7_Transformer</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_7_Transformer/"/>
         <content type="html">&lt;h1 id=&#34;self-attention&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#self-attention&#34;&gt;#&lt;/a&gt; Self-attention&lt;/h1&gt;
 &lt;p&gt;An attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence.&lt;/p&gt;
 &lt;p&gt;Usually used in reading comprehension, abstractIve summarization, textual entailment and learning task-independent sentence representations.&lt;/p&gt;
@@ -241,9 +241,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
         <updated>2024-08-08T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/</id>
         <title>深度学习_6_RNN</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_6_RNN/"/>
         <content type="html">&lt;ul&gt;
 &lt;li&gt;自然语言→有顺序关系 —— 依赖于词&lt;/li&gt;
 &lt;/ul&gt;
@@ -377,9 +377,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
         <updated>2024-07-29T07:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_5_CNN/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_5_CNN/</id>
         <title>深度学习_5_CNN</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_5_CNN/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_5_CNN/"/>
         <content type="html">&lt;h1 id=&#34;卷积神经网络&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#卷积神经网络&#34;&gt;#&lt;/a&gt; 卷积神经网络&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/23/sNYuvbPIipF3aZX.png&#34; alt=&#34;QQ_1721747809171.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/07/29/4iFKf53Wtc2xMIP.png&#34; alt=&#34;QQ_1722182572913.png&#34; /&gt;&lt;/p&gt;
@@ -591,9 +591,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
         <updated>2024-07-28T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/</id>
         <title>深度学习_4_多分类问题</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_4_%E5%A4%9A%E5%88%86%E7%B1%BB%E9%97%AE%E9%A2%98/"/>
         <content type="html">&lt;h1 id=&#34;如何实现多分类问题&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#如何实现多分类问题&#34;&gt;#&lt;/a&gt; &lt;strong&gt;如何实现多分类问题？&lt;/strong&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;概率分布&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概率分布&#34;&gt;#&lt;/a&gt; 概率分布&lt;/h2&gt;
 &lt;ul&gt;
@@ -699,9 +699,9 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z&#39;/&gt;
         <updated>2024-07-28T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_3_%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E5%BA%A6%E8%BE%93%E5%85%A5/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_3_%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E5%BA%A6%E8%BE%93%E5%85%A5/</id>
         <title>深度学习_3_多维度输入</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_3_%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E5%BA%A6%E8%BE%93%E5%85%A5/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_3_%E5%A4%84%E7%90%86%E5%A4%9A%E7%BB%B4%E5%BA%A6%E8%BE%93%E5%85%A5/"/>
         <content type="html">&lt;h1 id=&#34;多维特征输入&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多维特征输入&#34;&gt;#&lt;/a&gt; 多维特征输入&lt;/h1&gt;
 &lt;h2 id=&#34;激活函数变化&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#激活函数变化&#34;&gt;#&lt;/a&gt; 激活函数变化&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;katex-display&#34;&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34; display=&#34;block&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mover accent=&#34;true&#34;&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mo stretchy=&#34;true&#34;&gt;^&lt;/mo&gt;&lt;/mover&gt;&lt;mrow&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;σ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;munderover&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;mn&gt;8&lt;/mn&gt;&lt;/munderover&gt;&lt;msubsup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mrow&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msubsup&gt;&lt;mo&gt;⋅&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;ω&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\widehat{y}^{(i)}=\sigma(\sum_{n=1}^{8}{x_{n}^{(i)}}\cdot{\omega_{n}}+b)
@@ -868,9 +868,9 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z&#39;/&gt;
         <updated>2024-07-27T16:11:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_2_%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_2_%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
         <title>深度学习_2_实战</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_2_%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_2_%E6%B7%B1%E5%B1%82%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
         <content type="html">&lt;h1 id=&#34;矩阵求导的书&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵求导的书&#34;&gt;#&lt;/a&gt; 矩阵求导的书&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;matrix.cookbook&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;线性模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#线性模型&#34;&gt;#&lt;/a&gt; 线性模型&lt;/h1&gt;
@@ -1122,9 +1122,9 @@ M834 80h400000v40h-400000z&#39;/&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/s
         <updated>2024-07-21T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
         <title>深度学习_1_基础知识</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_1_%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
         <content type="html">&lt;h1 id=&#34;逻辑斯特回归&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑斯特回归&#34;&gt;#&lt;/a&gt; 逻辑斯特回归&lt;/h1&gt;
 &lt;p&gt;逻辑斯特回归（Logistic Regression）是一种广泛应用于分类问题的统计方法。尽管名字中带有 “回归” 一词，但逻辑斯特回归实际上是用于二分类问题的。&lt;/p&gt;
 &lt;h2 id=&#34;基本原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本原理&#34;&gt;#&lt;/a&gt; 基本原理&lt;/h2&gt;
@@ -1682,9 +1682,9 @@ dZ^{[2]}=u
         <updated>2024-07-17T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
         <title>深度学习_1</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;h1 id=&#34;逻辑斯特回归&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#逻辑斯特回归&#34;&gt;#&lt;/a&gt; 逻辑斯特回归&lt;/h1&gt;
 &lt;p&gt;逻辑斯特回归（Logistic Regression）是一种广泛应用于分类问题的统计方法。尽管名字中带有 “回归” 一词，但逻辑斯特回归实际上是用于二分类问题的。&lt;/p&gt;
 &lt;h2 id=&#34;基本原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基本原理&#34;&gt;#&lt;/a&gt; 基本原理&lt;/h2&gt;
@@ -2243,9 +2243,9 @@ dZ^{[2]}=u
         <updated>2024-07-17T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/</id>
         <title>深度学习_9_GNN</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_9_GNN/"/>
         <content type="html">&lt;p&gt;&lt;img data-src=&#34;https://s2.loli.net/2024/08/10/CFjUTWg3A6YRdnB.png&#34; alt=&#34;image.png&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt; INTRODUCTION&lt;/h1&gt;
 &lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h2&gt;
@@ -2594,9 +2594,9 @@ dZ^{[2]}=u
         <updated>2024-07-17T06:02:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_8_%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
+        <id>https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_8_%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</id>
         <title>深度学习_8_图神经网络</title>
-        <link rel="alternate" href="https://enjundu.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_8_%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/deep-learning/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0_8_%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
         <content type="html">&lt;h1 id=&#34;图拉普拉斯graph-laplacian&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图拉普拉斯graph-laplacian&#34;&gt;#&lt;/a&gt; 图拉普拉斯（Graph Laplacian）&lt;/h1&gt;
 &lt;h2 id=&#34;图拉普拉斯的定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#图拉普拉斯的定义&#34;&gt;#&lt;/a&gt; 图拉普拉斯的定义&lt;/h2&gt;
 &lt;p&gt;图拉普拉斯矩阵是基于图的邻接矩阵和度矩阵定义的。给定一个无向图 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mo separator=&#34;true&#34;&gt;,&lt;/mo&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;G=(V,E)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;G&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mpunct&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.16666666666666666em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05764em;&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, 其中&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;V&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是节点的集合，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;E&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.68333em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05764em;&#34;&gt;E&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是边的集合。图的邻接矩阵 A 是一个&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∣&lt;/mi&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∣&lt;/mi&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∣&lt;/mi&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∣&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;|V|×|V|&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;∣&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;∣&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;×&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;∣&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.22222em;&#34;&gt;V&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的矩阵，其中&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;A_{ij}=1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.969438em;vertical-align:-0.286108em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.311664em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.05724em;&#34;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.286108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 表示节点&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;i&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.65952em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 和节点&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;j&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.85396em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05724em;&#34;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 之间存在边，否则&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;j&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;A_{ij}=0&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.969438em;vertical-align:-0.286108em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.311664em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mathnormal mtight&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;mord mathnormal mtight&#34; style=&#34;margin-right:0.05724em;&#34;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.286108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;

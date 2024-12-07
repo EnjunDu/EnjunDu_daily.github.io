@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Enjun Du • Posts by &#34;推荐算法相关search&#34; category</title>
-        <link>https://enjundu.github.io</link>
+        <link>https://enjundu_daily.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Sun, 04 Aug 2024 09:41:31 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>deep_learning</category>
         <category>MoE</category>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
             <title>Contrastive Learning for Sequential Recommendation</title>
-            <link>https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</link>
+            <link>https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -105,9 +105,9 @@ L_{cl}(s&lt;rt&gt;&lt;/rt&gt;&lt;/ruby&gt;_u, s^&lt;ruby&gt;a_j}_u) = - \log \fr
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</guid>
             <title>S3-Rec:Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization</title>
-            <link>https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</link>
+            <link>https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1175,9 +1175,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/basic_knowledge/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/basic_knowledge/</guid>
             <title>basic_knowledge</title>
-            <link>https://enjundu.github.io/recommendation/basic_knowledge/</link>
+            <link>https://enjundu_daily.github.io/recommendation/basic_knowledge/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1385,9 +1385,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/README/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/README/</guid>
             <title>b_README</title>
-            <link>https://enjundu.github.io/recommendation/README/</link>
+            <link>https://enjundu_daily.github.io/recommendation/README/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1398,9 +1398,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/SASRec/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/SASRec/</guid>
             <title>SASrec</title>
-            <link>https://enjundu.github.io/recommendation/SASRec/</link>
+            <link>https://enjundu_daily.github.io/recommendation/SASRec/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>

@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Enjun Du • Posts by &#34;recommendation&#34; tag</title>
-        <link>https://enjundu.github.io</link>
+        <link>https://enjundu_daily.github.io</link>
         <description></description>
         <language>en</language>
         <pubDate>Sun, 04 Aug 2024 09:41:31 +0800</pubDate>
@@ -22,9 +22,9 @@
         <category>deep_learning</category>
         <category>MoE</category>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</guid>
             <title>Contrastive Learning for Sequential Recommendation</title>
-            <link>https://enjundu.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</link>
+            <link>https://enjundu_daily.github.io/recommendation/Contrastive%20Learning%20for%20Sequential%20Recommendation%20%E4%B8%8E%20Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20Maximization/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -105,9 +105,9 @@ L_{cl}(s&lt;rt&gt;&lt;/rt&gt;&lt;/ruby&gt;_u, s^&lt;ruby&gt;a_j}_u) = - \log \fr
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</guid>
             <title>S3-Rec:Self-Supervised Learning for Sequential Recommendation with Mutual Information Maximization</title>
-            <link>https://enjundu.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</link>
+            <link>https://enjundu_daily.github.io/recommendation/Self-Supervised%20Learning%20for%20Sequential%20Recommendation%20with%20Mutual%20Information%20/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1175,9 +1175,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/basic_knowledge/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/basic_knowledge/</guid>
             <title>basic_knowledge</title>
-            <link>https://enjundu.github.io/recommendation/basic_knowledge/</link>
+            <link>https://enjundu_daily.github.io/recommendation/basic_knowledge/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1385,9 +1385,9 @@ L_{\text{global}} = \sum_{(u,v) \in S} -\log \frac{\exp(\text{sim}(x_{u,1}, x_{v
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</guid>
             <title>密码工程大作业</title>
-            <link>https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</link>
+            <link>https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -1764,9 +1764,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</guid>
             <title>NSC暑期培训——web</title>
-            <link>https://enjundu.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</link>
+            <link>https://enjundu_daily.github.io/ctf/nscweb%E6%8E%88%E8%AF%BE/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -2745,9 +2745,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</guid>
             <title>亚太数模——新能源汽车</title>
-            <link>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</link>
+            <link>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -3916,9 +3916,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</guid>
             <title>亚太数模——洪水</title>
-            <link>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</link>
+            <link>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -5192,9 +5192,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</guid>
             <title>美赛——七鳃鳗</title>
-            <link>https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</link>
+            <link>https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -5645,9 +5645,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/README/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/README/</guid>
             <title>b_README</title>
-            <link>https://enjundu.github.io/recommendation/README/</link>
+            <link>https://enjundu_daily.github.io/recommendation/README/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>
@@ -5658,9 +5658,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://enjundu.github.io/recommendation/SASRec/</guid>
+            <guid isPermalink="true">https://enjundu_daily.github.io/recommendation/SASRec/</guid>
             <title>SASrec</title>
-            <link>https://enjundu.github.io/recommendation/SASRec/</link>
+            <link>https://enjundu_daily.github.io/recommendation/SASRec/</link>
             <category>Hexo</category>
             <category>Front Matter</category>
             <category>code</category>

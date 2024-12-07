@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://enjundu.github.io</id>
+    <id>https://enjundu_daily.github.io</id>
     <title>Enjun Du • Posts by &#34;bit-study&#34; category</title>
-    <link href="https://enjundu.github.io" />
+    <link href="https://enjundu_daily.github.io" />
     <updated>2024-07-08T07:39:23.000Z</updated>
     <category term="Hexo" />
     <category term="Front Matter" />
@@ -19,9 +19,9 @@
     <category term="deep_learning" />
     <category term="MoE" />
     <entry>
-        <id>https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</id>
+        <id>https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/</id>
         <title>密码工程大作业</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E5%AF%86%E7%A0%81%E5%B7%A5%E7%A8%8B/"/>
         <content type="html">&lt;p&gt;目录&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#_Toc5215&#34;&gt;1 引言	&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;#_Toc22057&#34;&gt;2. 符号	&lt;/a&gt;&lt;/p&gt;
@@ -398,9 +398,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
         <updated>2024-07-08T07:39:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</id>
+        <id>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/</id>
         <title>亚太数模——新能源汽车</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6/"/>
         <content type="html">&lt;h2 id=&#34;abstract&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#abstract&#34;&gt;#&lt;/a&gt; ABSTRACT&lt;/h2&gt;
 &lt;p&gt;This study presents a comprehensive analysis of new energy electric vehicles (NEEVs) in China, employing a range of statistical methods and advanced algorithms. Using tools such as MATLAB, SPSS, and Excel, the research systematically addresses several critical questions regarding the development, impact, and future trajectory of NEEVs.&lt;/p&gt;
 &lt;ol&gt;
@@ -1569,9 +1569,9 @@ uBlock 128-128 的运算时间为 1.162s![img](file:///C:\Users\JackDu\AppData\L
         <updated>2024-07-04T14:49:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</id>
+        <id>https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/</id>
         <title>亚太数模——洪水</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E4%BA%9A%E5%A4%AA%E6%95%B0%E6%A8%A1%E2%80%94%E2%80%94%E6%B4%AA%E6%B0%B4%E9%A2%84%E6%B5%8B/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;改前版本 直接从 word 转的  凑合着看吧&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&#34;代码解析&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#代码解析&#34;&gt;#&lt;/a&gt; 代码解析&lt;/h1&gt;
 &lt;h2 id=&#34;before-problem-数据传入与预处理全局函数设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#before-problem-数据传入与预处理全局函数设置&#34;&gt;#&lt;/a&gt; Before Problem -- 数据传入与预处理，全局函数设置&lt;/h2&gt;
@@ -2845,9 +2845,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         <updated>2024-07-04T14:49:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</id>
+        <id>https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/</id>
         <title>美赛——七鳃鳗</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E7%BE%8E%E8%B5%9B%E2%80%94%E2%80%94%E4%B8%83%E9%B3%83%E9%B3%97/"/>
         <content type="html">&lt;h1 id=&#34;mcm-paper&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mcm-paper&#34;&gt;#&lt;/a&gt; MCM paper&lt;/h1&gt;
 &lt;h2 id=&#34;question&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#question&#34;&gt;#&lt;/a&gt; question&lt;/h2&gt;
 &lt;p&gt;​	While some animal species exist outside of the usual male or female sexes, most species are&lt;/p&gt;
@@ -3298,9 +3298,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         <updated>2024-07-04T01:41:31.000Z</updated>
     </entry>
     <entry>
-        <id>https://enjundu.github.io/bit/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/</id>
+        <id>https://enjundu_daily.github.io/bit/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/</id>
         <title>数据结构实验</title>
-        <link rel="alternate" href="https://enjundu.github.io/bit/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/"/>
+        <link rel="alternate" href="https://enjundu_daily.github.io/bit/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C/"/>
         <content type="html">&lt;h1 id=&#34;数据结构实验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据结构实验&#34;&gt;#&lt;/a&gt; 数据结构实验&lt;/h1&gt;
 &lt;h2 id=&#34;实验要求&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#实验要求&#34;&gt;#&lt;/a&gt; 实验要求&lt;/h2&gt;
 &lt;h3 id=&#34;采用单向环表实现约瑟夫环&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#采用单向环表实现约瑟夫环&#34;&gt;#&lt;/a&gt; 采用单向环表实现约瑟夫环&lt;/h3&gt;
